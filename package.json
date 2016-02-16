@@ -1,0 +1,18 @@
+{
+  "name": "jumplink-october-theme",
+  "version": "0.0.0",
+  "description": "OctoberCMS theme for jumplink.eu",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "bower install",
+    "postinstall": "npm run build",
+    "sass": "node_modules/.bin/node-sass assets/sass/theme.scss assets/css/theme.css",
+    "build": "npm run sass",
+    "watch": "npm run sass -- -w"
+  },
+  "author": "Pascal Garber <pascal.jumplink.eu>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^3.4.2"
+  }
+}

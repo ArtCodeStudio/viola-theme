@@ -1,0 +1,16 @@
+{
+    "name": "jumplink/jumplink-theme",
+    "description": "OctoberCMS theme for jumplink.eu",
+    "type": "october-theme",
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pascal Garber",
+            "email": "pascal@jumplink.eu"
+        }
+    ]
+}

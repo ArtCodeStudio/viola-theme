@@ -1,0 +1,23 @@
+{
+  "name": "jumplink-october-theme",
+  "description": "OctoberCMS theme for jumplink.eu",
+  "main": "",
+  "private": true,
+  "moduleType": [],
+  "authors": [
+    "Pascal Garber <pascal@jumplink.eu>"
+  ],
+  "license": "MIT",
+  "homepage": "http://jumplink.eu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "tether": "^1.1.1"
+  }
+}
