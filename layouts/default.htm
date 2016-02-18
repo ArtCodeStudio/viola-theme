@@ -18,24 +18,7 @@ description = "Default layout"
         ]|theme }}" rel="stylesheet">
     </head>
     <body>
-
-        <!-- Header -->
-        <header id="layout-header">
-
-            <!-- Nav -->
-            <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-                <div class="container"><a href="#" class="navbar-brand">JumpLink</a>
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item {% if this.page.id == 'programming' %}active{% endif %}"><a href="#" class="nav-link">Programming <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-        </header>
-
+        
         <!-- Content -->
         <section id="layout-content">
             {% page %}
@@ -46,7 +29,8 @@ description = "Default layout"
             'assets/vendor/jquery/dist/jquery.js',
             'assets/vendor/tether/dist/js/tether.js',
             'assets/vendor/bootstrap/dist/js/bootstrap.js',
-            'assets/javascript/app.js'
+            'assets/vendor/vivus/dist/vivus.js',
+            'assets/javascript/app.js',
         ]|theme }}"></script>
         {% framework extras %}
         {% scripts %}

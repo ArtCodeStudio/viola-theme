@@ -3,3 +3,36 @@ url = "/programming"
 layout = "default"
 is_hidden = 0
 ==
+<div class="home">
+    <!-- Nav -->
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        <div class="container"><a href="#" class="navbar-brand">JumpLink</a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item {% if this.page.id == 'programming' %}active{% endif %}"><a href="#programming" class="nav-link">Programming <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="#design" class="nav-link">Design</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="programming">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <object id="jumplink" type="image/svg+xml" class="img-fluid" data="{{ 'assets/images/peace+text_dark_bg+untertext.svg' | theme }}"></object>
+                </div>
+            </div>
+        </div>
+    </header>
+    lalalala
+    <header id="design">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid" data="{{ 'assets/images/jumplink+mediamor.svg' | theme }}"></object>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>

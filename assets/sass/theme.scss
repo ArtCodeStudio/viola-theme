@@ -1,15 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic);
 
-$font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Ubuntu", Helvetica, Arial, sans-serif;
+$gray-dark:                 #272822 !default;
 
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .navbar-brand {
-  min-width: 40px;
-  // font-family: "Ubuntu", $font-family-sans-serif; 
-  background-image: url(../images/logo_inverse.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: auto 100%;
-  padding-left: 50px;
+    min-width: 40px;
+    background-image: url(../images/logo_inverse.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    padding-left: 50px;
+}
+
+.home {
+    padding-top: 54px;
+    #programming, #design {
+        background-color: $gray-dark;
+    }
 }
