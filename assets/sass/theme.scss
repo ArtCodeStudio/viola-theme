@@ -20,9 +20,26 @@ body {
     padding-left: 50px;
 }
 
-.home {
+.marketing {
+    text-align: center;
+}
+
+.home { 
     padding-top: 54px;
-    #programming, #design {
-        background-color: $gray-dark;
+    #programming {
+        header {
+            background-color: $gray-dark;
+        }
+        #apps {
+            background-color: #ffe7a5;
+            object {
+                width: 100%;
+            }
+        }
+    }
+    #design {
+        header {
+            background-color: $gray-dark;
+        }
     }
 }

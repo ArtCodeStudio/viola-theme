@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap": "v4.0.0-alpha.2",
     "tether": "^1.1.1",
-    "vivus": "~0.3.0"
+    "vivus": "~0.3.0",
+    "Snap.svg": "^0.4.1"
   }
 }
