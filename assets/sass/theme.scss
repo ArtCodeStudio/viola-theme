@@ -3,6 +3,7 @@
 
 $font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Ubuntu", Helvetica, Arial, sans-serif;
 $gray-dark:                 #272822 !default;
+$apps-iframe-decrease:      1.8;
 
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 @import "./load-awesome.scss";
@@ -40,31 +41,32 @@ body {
                 .foreground, .foreground_finger {
                     background-repeat: no-repeat;
                     position: absolute;
-                    height: 500px;
-                    width: 100%;
                     pointer-events: none;
                 }
                 .foreground {
                     background-image: url(../images/apps_foreground.svg);
                     background-position: center bottom;
+                    height: 500px;
+                    width: 100%;
                     z-index: 2;
                 }
                 .foreground_finger {
                     background-image: url(../images/apps_foreground_finger.svg);
-                    background-position: 50vw 250px;
+                    background-position: center 200px; 
+                    height: 500px;
+                    width: 100%;
                     z-index: 3;
                 }
-                
                 .framewrapper {
                     position: relative;
-                    bottom: 9px;
-                    height: 250px * 2;
-                    width: 160px * 2;
-                    -webkit-transform: scale(1 / 2);
-                    -moz-transform: scale(1 / 2);
-                    -ms-transform: scale(1 / 2);
-                    -o-transform: scale(1 / 2);
-                    transform: scale(1 / 2);
+                    top: 16px; // TODO calc this?
+                    height: 250px * $apps-iframe-decrease;
+                    width: 160px * $apps-iframe-decrease;
+                    -webkit-transform: scale(1 / $apps-iframe-decrease);
+                    -moz-transform: scale(1 / $apps-iframe-decrease);
+                    -ms-transform: scale(1 / $apps-iframe-decrease);
+                    -o-transform: scale(1 / $apps-iframe-decrease);
+                    transform: scale(1 / $apps-iframe-decrease);
                     background-color: white;
                     .la-square-jelly-box {
                         position: absolute;

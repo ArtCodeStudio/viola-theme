@@ -16,6 +16,32 @@ description = "Default layout"
         <link href="{{ [
             'assets/css/theme.css',
         ]|theme }}" rel="stylesheet">
+        <script>
+            /**
+             * Handling code which relies on jQuery before jQuery is loaded.
+             * 1. Defines `deferAfterjQueryLoaded` lazily, so you don't need to inject that into head.
+             * 2. Defines a setter for `window.$`. When jQuery loads, one of the last things it does is assign to the global `$` variable. This allows you to trigger a function when that happens.
+             * 3. Schedules the deferred functions to run as soon as possible after the jQuery script finishes (`setTimeout(..., 0);`).
+             * 4. Has the setter remove itself.
+             * For complete cleanliness you could have the scheduled function remove `deferAfterjQueryLoaded` as well.
+             * @see http://stackoverflow.com/questions/8298430/handling-code-which-relies-on-jquery-before-jquery-is-loaded
+             */
+            if ( ! window.deferAfterjQueryLoaded ) {
+                window.deferAfterjQueryLoaded = [];
+                Object.defineProperty(window, "$", {
+                    set: function(value) {
+                        window.setTimeout(function() {
+                            $.each(window.deferAfterjQueryLoaded, function(index, fn) {
+                                fn();
+                            });
+                        }, 0);
+                        Object.defineProperty(window, "$", { value: value });
+                    },
+
+                    configurable: true
+                });
+            }
+        </script>
     </head>
     <body>
         

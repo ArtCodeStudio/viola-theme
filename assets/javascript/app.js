@@ -1,28 +1,32 @@
-var movingImageOnMousemove = function () {
-    var movementStrength = 25;
+/**
+ * Moving background-image on mousemove
+ * @see http://codepen.io/chrisboon27/pen/rEDIC
+ */
+var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffset, yOffset, centerX, centerY, movementStrength) {
     var height = movementStrength / $(window).height();
     var width = movementStrength / $(window).width();
-    $("#apps .svg_apps_col").mousemove(function(e){
-        console.log(e);
-        var pageX = e.pageX - ($(window).width() / 2);
-        var pageY = e.pageY - ($(window).height() / 2);
-        var newvalueX = width * pageX * -1 - 25;
-        var newvalueY = height * pageY * -1 - 50;
-        $('#apps .foreground_finger').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    
+    var move = function (pageX, pageY) {
+        pageX = pageX - ($(window).width() / 2);
+        pageY = pageY - ($(window).height() / 2);
+        var newvalueX = (width * pageX * -1) + xOffset;
+        var newvalueY = (height * pageY * -1) + yOffset;
+        if(centerX === true) {
+            newvalueX += $(mouseSelector).width() / 2;
+        }
+        if(centerY === true) {
+            newvalueY += $(mouseSelector).height() / 2;
+        }
+        $(backgroundSelector).css("background-position", newvalueX+"px "+newvalueY+"px");
+    }
+    // initial position
+    move(0, 0);
+    // reset position on windows resize
+    $( window ).resize(function() {
+        move(0, 0);
+    });
+    // move background on mousemove
+    $(mouseSelector).mousemove(function(e) {
+        move(e.pageX, e.pageY);
     });
 };
-
-$( document ).ready(function() {
-    console.log("ready");
-    // new Vivus('jumplink_mediamor', {duration: 200}, function() {
-    //     console.log("Vivus cb");
-    // });
-    var svgElement = document.getElementById("screen");
-    console.log("svg el", svgElement);
-    // var appSvg = Snap(svgElement);
-    // console.log("appSvg", appSvg);
-    // var screen = appSvg.select('#screen');
-    // console.log("screen", screen);
-    // movingImageOnMousemove();
-
-});

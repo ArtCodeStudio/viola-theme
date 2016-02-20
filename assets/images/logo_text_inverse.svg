@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1110"
-   height="400"
-   viewBox="0 0 1110 399.99997"
+   width="800"
+   height="202.28398"
+   viewBox="0 0 800 202.28396"
    id="svg4316"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="peace+text_dark_bg+untertext.svg"
+   sodipodi:docname="logo_text_inverse.svg"
    inkscape:export-filename="/home/jumplink/Dokumente/Arbeit/Material/Logo/peace+text_dark_bg.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="586.52588"
-     inkscape:cy="486.75547"
+     inkscape:zoom="0.7"
+     inkscape:cx="410.87412"
+     inkscape:cy="11.23881"
      inkscape:document-units="px"
      inkscape:current-layer="g4175"
      showgrid="false"
@@ -62,7 +62,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1133.1059,3713.9959)">
+     transform="translate(933.81333,3626.3375)">
     <g
        id="g4164"
        transform="matrix(0.46295649,0,0,0.46295649,-276.74553,-2931.6093)">
@@ -74,7 +74,7 @@
          transform="matrix(0.61368526,0,0,0.61368526,-856.50257,-366.74937)">
         <g
            id="g3373"
-           transform="translate(-78.55055,619.92606)">
+           transform="matrix(1.1118688,0,0,1.1118227,31.091026,816.24175)">
           <g
              id="g4150"
              transform="translate(0,77.490639)"

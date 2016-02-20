@@ -20,7 +20,7 @@ is_hidden = 0
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <object id="jumplink" type="image/svg+xml" class="img-fluid" data="{{ 'assets/images/peace+text_dark_bg+untertext.svg' | theme }}"></object>
+                        <object id="jumplink" type="image/svg+xml" class="img-fluid m-y-3 center-block" data="{{ 'assets/images/logo_text_inverse.svg' | theme }}"></object>
                     </div>
                     <div class="col-xs-12">
                         <h3 class="m-y-3 text-xs-center">Leidenschaftlich Software entwickeln.</h3>
@@ -32,7 +32,7 @@ is_hidden = 0
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1 class="m-y-3 text-xs-center">Entwickelung von Apps</h3>
+                        <h1 class="m-y-3 text-xs-center">Entwickelung von Apps.</h3>
                     </div>
                 </div>
             </div>
@@ -53,11 +53,22 @@ is_hidden = 0
         <header class="bg-inverse">
             <div class="container">
                 <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid m-y-3" data="{{ 'assets/images/logo_text_inverse.svg' | theme }}"></object>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid m-y-3" data="{{ 'assets/images/mediamor.svg' | theme }}"></object>
+                    </div>
+<!--                    <div class="col-xs-12">
+                        <h3 class="m-y-3 text-xs-center">JumpLink + Mediamor</h3>
+                    </div>-->
                     <div class="col-xs-12">
-                        <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid m-y-3" data="{{ 'assets/images/jumplink+mediamor.svg' | theme }}"></object>
+                        <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid center-block m-y-3" data="{{ 'assets/images/jumplink_mediamor.svg' | theme }}"></object>
                     </div>
                     <div class="col-xs-12">
-                        <h3 class="m-y-3 text-xs-center">Leidenschaftlich entwickeln + gestalten mit <span style="color:#bd1a1c">♥</span>.</h3>
+                        <h3 class="m-t-3 text-xs-center">Leidenschaftlich entwickeln</h3>
+                        <h3 class="text-xs-center">+</h3>
+                        <h3 class="m-b-3 text-xs-center">Gestalten mit <span style="color:#bd1a1c">♥</span></h3>
                     </div>
                 </div>
             </div>
@@ -76,3 +87,18 @@ is_hidden = 0
         </div>
     </div>
 </div>
+<script>
+window.deferAfterjQueryLoaded.push(function() {
+    console.log("ready");
+    // new Vivus('jumplink_mediamor', {duration: 200}, function() {
+    //     console.log("Vivus cb");
+    // });
+    var svgElement = document.getElementById("screen");
+    console.log("svg el", svgElement);
+    // var appSvg = Snap(svgElement);
+    // console.log("appSvg", appSvg);
+    // var screen = appSvg.select('#screen');
+    // console.log("screen", screen);
+    movingImageOnMousemove("#apps .svg_apps_col", '#apps .foreground_finger', 50, 200, true, false, 50);
+});
+</script>
