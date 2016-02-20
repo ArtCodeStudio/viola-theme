@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="500mm"
-   height="250mm"
-   viewBox="0 0 1771.6536 885.82672"
+   width="1110"
+   height="400"
+   viewBox="0 0 1110 399.99997"
    id="svg4316"
    version="1.1"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="peace+text_dark_bg+untertext.svg"
    inkscape:export-filename="/home/jumplink/Dokumente/Arbeit/Material/Logo/peace+text_dark_bg.png"
    inkscape:export-xdpi="90"
@@ -29,22 +29,23 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="984.42851"
-     inkscape:cy="217.62488"
+     inkscape:cx="586.52588"
+     inkscape:cy="486.75547"
      inkscape:document-units="px"
-     inkscape:current-layer="g4164"
+     inkscape:current-layer="g4175"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1680"
-     inkscape:window-height="1013"
-     inkscape:window-x="3360"
-     inkscape:window-y="30"
+     inkscape:window-width="1280"
+     inkscape:window-height="987"
+     inkscape:window-x="1680"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true" />
+     inkscape:guide-bbox="true"
+     units="px" />
   <metadata
      id="metadata4321">
     <rdf:RDF>
@@ -61,7 +62,7 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1133.1059,4199.8227)">
+     transform="translate(1133.1059,3713.9959)">
     <g
        id="g4164"
        transform="matrix(0.46295649,0,0,0.46295649,-276.74553,-2931.6093)">
@@ -70,10 +71,10 @@
          transform="translate(-78.55056,-43.6392)" />
       <g
          id="g4175"
-         transform="translate(-271.30362,-57.537711)">
+         transform="matrix(0.61368526,0,0,0.61368526,-856.50257,-366.74937)">
         <g
            id="g3373"
-           transform="translate(-78.550557,-43.639156)">
+           transform="translate(-78.55055,619.92606)">
           <g
              id="g4150"
              transform="translate(0,77.490639)"
@@ -113,18 +114,6 @@
              id="circle4193"
              inkscape:connector-curvature="0" />
         </g>
-        <text
-           sodipodi:linespacing="125%"
-           id="text3571"
-           y="-1019.0472"
-           x="-457.52386"
-           style="font-style:normal;font-weight:normal;font-size:76.08357239px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:97.20136261px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';fill:#ffffff;fill-opacity:1"
-             y="-1019.0472"
-             x="-457.52386"
-             id="tspan3573"
-             sodipodi:role="line">Leidenschaftlich Software entwickeln.</tspan></text>
       </g>
     </g>
   </g>
