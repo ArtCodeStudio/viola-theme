@@ -8,7 +8,7 @@ description = "Default layout"
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="Pascal Garber">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="generator" content="OctoberCMS">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}" />
@@ -43,12 +43,45 @@ description = "Default layout"
             }
         </script>
     </head>
-    <body>
+    <body data-spy="scroll">
         
-        <!-- Content -->
-        <section id="layout-content">
-            {% page %}
-        </section>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="bg-inverse">
+            <header>
+                <h2>Menu</h2>
+            </header>
+            <div class="list-group">
+                <a href="#programming" class="list-group-item">{{'Programmierung'|_}}</a>
+                <a href="#design" class="list-group-item">{{'Design'|_}}</a>
+            </div>
+        </nav>
+        
+        <!-- Nav -->
+        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+            <button class="navbar-toggler hidden-md-up" type="button">
+                &#9776;
+            </button>
+            <div class="container hidden-sm-down">
+                <a href="#programming" class="navbar-brand">JumpLink</a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="#programming" class="nav-link">{{'Programmierung'|_}}</a></li>
+                    <li class="nav-item"><a href="#design" class="nav-link">{{'Design'|_}}</a></li>
+                </ul>
+                <form class="form-inline pull-xs-right">
+                    {% component 'localePicker' %}
+                </form>
+                <!--<a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a>
+                <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'de'">German</a>-->
+            </div>
+        </nav>
+        
+        <main id="panel">
+            
+            <!-- Content -->
+            <section id="layout-content">
+                {% page %}
+            </section>
+        </main>
 
         <!-- Scripts -->
         <script src="{{ [
@@ -57,6 +90,7 @@ description = "Default layout"
             'assets/vendor/bootstrap/dist/js/bootstrap.js',
             'assets/vendor/vivus/dist/vivus.js',
             'assets/vendor/Snap.svg/dist/snap.svg.js',
+            'assets/vendor/slideout.js/dist/slideout.js',
             'assets/javascript/app.js',
         ]|theme }}"></script>
         {% framework extras %}

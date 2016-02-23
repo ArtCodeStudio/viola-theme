@@ -259,7 +259,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Ubuntu", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #272822;
@@ -2490,7 +2490,7 @@ input[type="button"].btn-block {
   .c-inputs-stacked .c-input + .c-input {
     margin-left: 0; }
 
-.c-select {
+.c-select, select[name="locale"] {
   display: inline-block;
   max-width: 100%;
   padding: .375rem 1.75rem .375rem .75rem;
@@ -2503,10 +2503,10 @@ input[type="button"].btn-block {
   border: 1px solid #ccc;
   -moz-appearance: none;
   -webkit-appearance: none; }
-  .c-select:focus {
+  .c-select:focus, select[name="locale"]:focus {
     border-color: #51a7e8;
     outline: none; }
-  .c-select::-ms-expand {
+  .c-select::-ms-expand, select[name="locale"]::-ms-expand {
     opacity: 0; }
 
 .c-select-sm {
@@ -3742,7 +3742,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Ubuntu", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3821,7 +3821,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Ubuntu", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4263,7 +4263,7 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #c9302c; }
 
-.bg-inverse {
+.bg-inverse, .slideout-menu .list-group-item, select[name="locale"] {
   color: #eceeef;
   background-color: #272822; }
 
@@ -4739,7 +4739,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-color: #fff;
   border-radius: 30px;
   position: absolute;
-  top: 100;
   opacity: 0.6; }
 
 [data-type=white_1]:before {
@@ -4880,8 +4879,42 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-animation-delay: -50s; }
 
 body {
+  width: 100%;
+  height: 100%; }
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 54px;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none; }
+  .slideout-menu .list-group-item {
+    border: none;
+    border-radius: 0; }
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform; }
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden; }
+
+.slideout-open .slideout-menu {
+  display: block; }
+
+body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative; }
 
 .navbar-brand {
   min-width: 40px;
@@ -4891,51 +4924,65 @@ body {
   background-size: auto 100%;
   padding-left: 50px; }
 
-.marketing {
-  text-align: center; }
+select[name="locale"] {
+  opacity: 0.5;
+  border: none;
+  background-image: url(../images/select_inverse.png); }
+  select[name="locale"]:hover {
+    opacity: 0.75; }
 
-.home {
+.home #programming header {
   padding-top: 54px; }
-  .home #programming #apps {
-    background-color: #ffe7a5; }
-    .home #programming #apps .svg_apps_col {
-      background-image: url(../images/apps_background.svg);
+
+.home #programming #apps {
+  background-color: #ffe7a5; }
+  .home #programming #apps .svg_apps_col {
+    background-image: url(../images/apps_background.svg);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    height: 500px; }
+    .home #programming #apps .svg_apps_col .foreground, .home #programming #apps .svg_apps_col .foreground_finger {
+      background-repeat: no-repeat;
+      position: absolute;
+      pointer-events: none; }
+    .home #programming #apps .svg_apps_col .foreground {
+      background-image: url(../images/apps_foreground.svg);
       background-position: center bottom;
-      background-repeat: repeat-x;
-      height: 500px; }
-      .home #programming #apps .svg_apps_col .foreground, .home #programming #apps .svg_apps_col .foreground_finger {
-        background-repeat: no-repeat;
+      height: 500px;
+      width: 100%;
+      z-index: 2; }
+    .home #programming #apps .svg_apps_col .foreground_finger {
+      background-image: url(../images/apps_foreground_finger.svg);
+      background-position: center 200px;
+      height: 500px;
+      width: 100%;
+      z-index: 3; }
+    .home #programming #apps .svg_apps_col .framewrapper {
+      position: relative;
+      top: 16px;
+      height: 450px;
+      width: 288px;
+      -webkit-transform: scale(0.55556);
+      -moz-transform: scale(0.55556);
+      -ms-transform: scale(0.55556);
+      -o-transform: scale(0.55556);
+      transform: scale(0.55556);
+      background-color: white; }
+      .home #programming #apps .svg_apps_col .framewrapper .la-square-jelly-box {
         position: absolute;
-        pointer-events: none; }
-      .home #programming #apps .svg_apps_col .foreground {
-        background-image: url(../images/apps_foreground.svg);
-        background-position: center bottom;
-        height: 500px;
-        width: 100%;
-        z-index: 2; }
-      .home #programming #apps .svg_apps_col .foreground_finger {
-        background-image: url(../images/apps_foreground_finger.svg);
-        background-position: center 200px;
-        height: 500px;
-        width: 100%;
-        z-index: 3; }
-      .home #programming #apps .svg_apps_col .framewrapper {
+        margin: 70% 45%; }
+      .home #programming #apps .svg_apps_col .framewrapper iframe {
         position: relative;
-        top: 16px;
-        height: 450px;
-        width: 288px;
-        -webkit-transform: scale(0.55556);
-        -moz-transform: scale(0.55556);
-        -ms-transform: scale(0.55556);
-        -o-transform: scale(0.55556);
-        transform: scale(0.55556);
-        background-color: white; }
-        .home #programming #apps .svg_apps_col .framewrapper .la-square-jelly-box {
-          position: absolute;
-          margin: 70% 45%; }
-        .home #programming #apps .svg_apps_col .framewrapper iframe {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          border: none;
-          z-index: 1; }
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: 1; }
+
+.home #programming #ecommerce {
+  background-color: #b1e9f2; }
+  .home #programming #ecommerce #street {
+    width: 100%; }
+
+.home #design header {
+  padding-top: 55px;
+  margin-top: -1px; }

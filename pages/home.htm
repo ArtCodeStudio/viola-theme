@@ -2,28 +2,20 @@ title = "Home"
 url = "/home"
 layout = "default"
 is_hidden = 0
+
+[localePicker]
 ==
 <div class="home">
-    <!-- Nav -->
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-        <div class="container"><a href="#" class="navbar-brand">JumpLink</a>
-            <ul class="nav navbar-nav">
-                <li class="nav-item {% if this.page.id == 'programming' %}active{% endif %}"><a href="#programming" class="nav-link">Programming <span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a href="#design" class="nav-link">Design</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="programming">
+    <div id="programming" data-target="#programming">
         <header class="bg-inverse">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <object id="jumplink" type="image/svg+xml" class="img-fluid m-y-3 center-block" data="{{ 'assets/images/logo_text_inverse.svg' | theme }}"></object>
+                        {% content 'logo_text_inverse.htm' %}
+                        <!--<object id="jumplink" type="image/svg+xml" class="img-fluid m-y-3 center-block" data="{{ 'assets/images/logo_text_inverse.svg' | theme }}"></object>-->
                     </div>
                     <div class="col-xs-12">
-                        <h3 class="m-y-3 text-xs-center">Leidenschaftlich Software entwickeln.</h3>
+                        <h3 class="m-y-3 text-xs-center">{{'Leidenschaftlich Software entwickeln.'|_}}</h3>
                     </div>
                 </div>
             </div>
@@ -32,7 +24,7 @@ is_hidden = 0
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1 class="m-y-3 text-xs-center">Entwickelung von Apps.</h3>
+                        <h1 class="m-y-3 text-xs-center">{{'Entwicklung von Apps.'|_}} <small class="text-muted">{{'Für Android, Apple iOS, Ubuntu Touch und Selfish OS'|_}}</small> </h3>
                     </div>
                 </div>
             </div>
@@ -55,8 +47,35 @@ is_hidden = 0
                 </div>
             </div>
         </div>
+        <div id="ecommerce">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-xs-center">
+                        <h1 class="m-y-3">{{'Entwicklung von Online-Shops.'|_}} <small class="text-muted">{{'Mit Magento und Shopify'|_}}</small></h3>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-xs-center">
+                        <h2>Magento</h2>
+                        <img src="{{ 'assets/images/magento.svg' | theme }}" class="img-fluid center-block" alt="Magento">
+                        <p>{{'ecommerce_magento_description'|_}}</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 text-xs-center">
+                        <h2>Shopify</h2>
+                        <img src="{{ 'assets/images/shopify.svg' | theme }}" class="img-fluid center-block" alt="Shopify">
+                        <p>{{'ecommerce_shopify_description'|_}}</p>
+                    </div>
+                </div>
+            </div>
+<!--            <div class="cloud" data-type="white_4" style="top: 0;" data-speed="1"></div>
+            <div class="cloud" data-type="white_2" style="top: 100px;" data-speed="2"></div>
+            <div class="cloud" data-type="white_1" style="top: 50px;" data-speed="3"></div>
+            <div class="cloud" data-type="white_1" style="top: 25px;" data-speed="4"></div>
+            <div class="cloud" data-type="white_5" style="top: 30px;" data-speed="5"></div>
+            <div class="cloud" data-type="white_4" style="top: -10px;" data-speed="6"></div>
+            <div class="cloud" data-type="white_6" style="top: 15px;" data-speed="7"></div>-->
+            <object id="street" class="img-fluid" type="image/svg+xml" data="{{ 'assets/images/ecommerce.svg' | theme }}"></object>
+        </div>
     </div>
-    <div id="design">
+    <div id="design" data-target="#design">
         <header class="bg-inverse">
             <div class="container">
                 <div class="row">
@@ -66,29 +85,31 @@ is_hidden = 0
                     <div class="col-xs-12 col-md-6">
                         <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid m-y-3" data="{{ 'assets/images/mediamor.svg' | theme }}"></object>
                     </div>
-<!--                    <div class="col-xs-12">
-                        <h3 class="m-y-3 text-xs-center">JumpLink + Mediamor</h3>
-                    </div>-->
                     <div class="col-xs-12">
                         <object id="jumplink_mediamor" type="image/svg+xml" class="img-fluid center-block m-y-3" data="{{ 'assets/images/jumplink_mediamor.svg' | theme }}"></object>
                     </div>
-                    <div class="col-xs-12">
-                        <h3 class="m-t-3 text-xs-center">Leidenschaftlich entwickeln</h3>
+                    <div class="col-xs-12 hidden-md-up">
+                        <h3 class="m-t-3 text-xs-center">{{'Leidenschaftlich entwickeln'|_}}</h3>
                         <h3 class="text-xs-center">+</h3>
-                        <h3 class="m-b-3 text-xs-center">Gestalten mit <span style="color:#bd1a1c">♥</span></h3>
+                        <h3 class="m-b-3 text-xs-center">{{'Gestalten mit'|_}} <span style="color:#bd1a1c">❤</span></h3>
+                    </div>
+                    <div class="col-xs-12 hidden-sm-down">
+                        <h3 class="m-b-3 text-xs-center">{{'Leidenschaftlich entwickeln'|_}} + {{'Gestalten mit'|_}} <span style="color:#bd1a1c">♥</span></h3>
                     </div>
                 </div>
             </div>
         </header>
         <div class="container">
             <div class="row text-xs-center">
-                <div class="col-sm-12 col-xl-6">
-                    <img src="{{ 'assets/images/responsive_design.svg' | theme }}" class="img-fluid m-t-3" alt="Responsive Design">
-                    <h2>Responsive Design</h2>
-                    <p>Ihr Design ist bei uns auf allen Geräten hübsch.</p>
+                <div class="col-sm-12 m-t-3">
+                    <h2>{{'Corporate Identity Design'|_}}</h2>
+                    <p>{{'Ihr Corporate Design vom Logo bis zum Briefpapier.'|_}}</p>
+                    <img src="{{ 'assets/images/corporate_identity_design.svg' | theme }}" class="img-fluid m-t-3 center-block" alt="Corporate Identity Design">
                 </div>
-                <div class="col-sm-12 col-xl-6">
-                    One of two columns
+                <div class="col-sm-12 m-t-3">
+                    <h2>{{'Responsive Design'|_}}</h2>
+                    <p>{{'Ihr Design ist bei uns auf allen Geräten hübsch.'|_}}</p>
+                    <img src="{{ 'assets/images/responsive_design.svg' | theme }}" class="img-fluid center-block" alt="Responsive Design">
                 </div>
             </div>
         </div>
@@ -96,16 +117,6 @@ is_hidden = 0
 </div>
 <script>
 window.deferAfterjQueryLoaded.push(function() {
-    console.log("ready");
-    // new Vivus('jumplink_mediamor', {duration: 200}, function() {
-    //     console.log("Vivus cb");
-    // });
-    var svgElement = document.getElementById("screen");
-    console.log("svg el", svgElement);
-    // var appSvg = Snap(svgElement);
-    // console.log("appSvg", appSvg);
-    // var screen = appSvg.select('#screen');
-    // console.log("screen", screen);
-    movingImageOnMousemove("#apps .svg_apps_col", '#apps .foreground_finger', 50, 200, true, false, 50);
+    movingImageOnMousemove("#apps", '#apps .foreground_finger', 50, 200, true, false, 100);
 });
 </script>

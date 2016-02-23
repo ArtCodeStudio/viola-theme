@@ -30,3 +30,37 @@ var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffse
         move(e.pageX, e.pageY);
     });
 };
+
+/**
+ * Performs a smooth page scroll to an anchor on the same page.y
+ * @see https://css-tricks.com/snippets/jquery/smooth-scrolling/
+ */
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+/**
+ * @see https://github.com/mango/slideout
+ */
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('sidebar'),
+    'padding': 256,
+    'tolerance': 70
+});
+
+// Toggle button
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    slideout.toggle();
+});
