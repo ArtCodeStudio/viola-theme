@@ -4264,7 +4264,7 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #c9302c; }
 
-.bg-inverse, .slideout-menu .list-group-item, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"] {
+.bg-inverse, #sidebar .sidebar-wrapper .list-group-item, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"] {
   color: #eceeef;
   background-color: #272822; }
 
@@ -4879,40 +4879,16 @@ a.bg-danger:focus, a.bg-danger:hover {
   animation-iteration-count: infinite;
   -webkit-animation-delay: -50s; }
 
-body {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  overflow-x: hidden; }
-
-.slideout-menu {
-  position: fixed;
-  left: 0;
-  top: 54px;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+#sidebar {
   display: none; }
-  .slideout-menu .list-group-item {
-    border: none;
-    border-radius: 0; }
-
-.slideout-panel {
-  position: relative;
-  z-index: 1;
-  will-change: transform; }
-
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden; }
-
-.slideout-open .slideout-menu {
-  display: block; }
+  #sidebar .sidebar-wrapper {
+    top: 54px;
+    position: relative;
+    height: 100%;
+    overflow: auto; }
+    #sidebar .sidebar-wrapper .list-group-item {
+      border: none;
+      border-radius: 0; }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -4920,9 +4896,9 @@ body {
   overflow-x: hidden;
   position: relative; }
 
-:not(nav).bg-inverse a, .slideout-menu .list-group-item:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a {
+:not(nav).bg-inverse a, #sidebar .sidebar-wrapper .list-group-item:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a {
   color: rgba(255, 255, 255, 0.5); }
-  :not(nav).bg-inverse a:hover, .slideout-menu .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover {
+  :not(nav).bg-inverse a:hover, #sidebar .sidebar-wrapper .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover {
     color: white; }
 
 [onclick] {
@@ -4934,13 +4910,15 @@ body {
 .list-group-item.active-bg-inverse:hover {
   background-color: #eceeef; }
 
-.navbar-brand {
-  min-width: 40px;
-  background-image: url(../images/logo_inverse.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: auto 100%;
-  padding-left: 50px; }
+.navbar {
+  z-index: 3000; }
+  .navbar .navbar-brand {
+    min-width: 40px;
+    background-image: url(../images/logo_inverse.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    padding-left: 50px; }
 
 select[name="locale"] {
   opacity: 0.5;

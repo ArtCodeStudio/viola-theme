@@ -51,16 +51,21 @@ $(function() {
 });
 
 /**
- * @see https://github.com/mango/slideout
+ * @see http://dcdeiv.github.io/simpler-sidebar/
  */
-var slideout = new Slideout({
-    'panel': document.getElementById('panel'),
-    'menu': document.getElementById('sidebar'),
-    'padding': 256,
-    'tolerance': 70
-});
-
-// Toggle button
-document.querySelector('.navbar-toggler').addEventListener('click', function() {
-    slideout.toggle();
+$('#sidebar').show();
+$('#sidebar').simplerSidebar({
+	opener: '.navbar-toggler',
+	animation: {
+		duration: 1000,
+		easing: 'easeOutQuint'
+	},
+	sidebar: {
+		align: 'left',
+		width: 320,
+		closingLinks: 'a'
+	},
+	mask: {
+		display: true
+	}
 });

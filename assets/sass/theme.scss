@@ -21,7 +21,7 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 
 @import "./load-awesome.scss";
 @import "./clouds.scss";
-@import "./slideout.scss";
+@import "./sidebar.scss";
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -61,13 +61,16 @@ body {
     }
 }
 
-.navbar-brand {
-    min-width: 40px;
-    background-image: url(../images/logo_inverse.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: auto 100%;
-    padding-left: 50px;
+.navbar {
+    z-index: 3000; // to make it over sidebar mask
+    .navbar-brand {
+        min-width: 40px;
+        background-image: url(../images/logo_inverse.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: auto 100%;
+        padding-left: 50px;
+    }
 }
 
 select[name="locale"] {

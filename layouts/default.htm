@@ -20,19 +20,7 @@ description = "Default layout"
         ]|theme }}" rel="stylesheet">
     </head>
     <body data-spy="scroll">
-        
-        <!-- Sidebar -->
-        <nav id="sidebar" class="bg-inverse">
-            <header>
-                <h2>Menu</h2>
-            </header>
-            <div class="list-group">
-                <a href="" class="list-group-item">{{'Programmierung'|_}}</a>
-                <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="list-group-item">{{'Design'|_}}</a>
-                <a href="{{'blog'|page}}" class="list-group-item blog">Blog</a>
-            </div>
-        </nav>
-        
+               
         <!-- Nav -->
         <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
             <button class="navbar-toggler hidden-md-up" type="button">
@@ -53,22 +41,31 @@ description = "Default layout"
             </div>
         </nav>
         
-        <main id="panel">
-            
-            <!-- Content -->
-            <section id="layout-content">
-                {% page %}
-            </section>
-        </main>
+        <!-- http://dcdeiv.github.io/simpler-sidebar/ -->
+        <div id="sidebar">
+            <div id="sidebar-wrapper" class="sidebar-wrapper bg-inverse">
+                <div class="list-group">
+                    <a href="" class="list-group-item">{{'Programmierung'|_}}</a>
+                    <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="list-group-item">{{'Design'|_}}</a>
+                    <a href="{{'blog'|page}}" class="list-group-item blog">Blog</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
 
         <!-- Scripts -->
         <script src="{{ [
             'assets/vendor/jquery/dist/jquery.js',
+            'assets/vendor/jquery-ui/jquery-ui.js',
             'assets/vendor/tether/dist/js/tether.js',
             'assets/vendor/bootstrap/dist/js/bootstrap.js',
             'assets/vendor/vivus/dist/vivus.js',
             'assets/vendor/Snap.svg/dist/snap.svg.js',
-            'assets/vendor/slideout.js/dist/slideout.js',
+            'assets/vendor/simpler-sidebar/dist/jquery.simpler-sidebar.js',
             'assets/javascript/app.js',
         ]|theme }}"></script>
         {% framework extras %}

@@ -21,6 +21,8 @@
     "tether": "^1.1.1",
     "vivus": "~0.3.0",
     "Snap.svg": "^0.4.1",
-    "slideout.js": "^0.1.12"
+    "slideout.js": "^0.1.12",
+    "simpler-sidebar": "^1.4.9",
+    "jquery-ui": "jqueryui#^1.11.4"
   }
 }
