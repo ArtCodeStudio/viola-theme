@@ -26,7 +26,7 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     position: relative;
 }
 
@@ -98,6 +98,7 @@ select[name="locale"] {
                 background-position: center bottom;
                 background-repeat:repeat-x;
                 height: 500px;
+                overflow-x: hidden; // hide clouds for bad x scrolling                    
                 .foreground, .foreground_finger {
                     background-repeat: no-repeat;
                     position: absolute;

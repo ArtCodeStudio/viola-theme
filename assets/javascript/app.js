@@ -57,7 +57,7 @@ $('#sidebar').show();
 $('#sidebar').simplerSidebar({
 	opener: '.navbar-toggler',
 	animation: {
-		duration: 1000,
+		duration: 500,
 		easing: 'easeOutQuint'
 	},
 	sidebar: {
