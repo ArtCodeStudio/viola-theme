@@ -1,0 +1,25 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "default"
+description = "Viewing a single blog post"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+==
+<div id="blogposts" data-target="#blogposts">
+    <header>
+        <img class="img-fluid center-block blogposts-header" src="{{ 'assets/images/blog.svg' | theme }}"></img>
+    </header>
+    <div class="container m-t-3">
+        <div class="row">
+            <div class="col-lg-12">
+                {% component 'blogPost' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/blog.js' |theme }}"></script>
+{% endput %}

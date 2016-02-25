@@ -1,4 +1,6 @@
 description = "Default layout"
+
+[localePicker]
 ==
 <!DOCTYPE html>
 <html>
@@ -16,32 +18,6 @@ description = "Default layout"
         <link href="{{ [
             'assets/css/theme.css',
         ]|theme }}" rel="stylesheet">
-        <script>
-            /**
-             * Handling code which relies on jQuery before jQuery is loaded.
-             * 1. Defines `deferAfterjQueryLoaded` lazily, so you don't need to inject that into head.
-             * 2. Defines a setter for `window.$`. When jQuery loads, one of the last things it does is assign to the global `$` variable. This allows you to trigger a function when that happens.
-             * 3. Schedules the deferred functions to run as soon as possible after the jQuery script finishes (`setTimeout(..., 0);`).
-             * 4. Has the setter remove itself.
-             * For complete cleanliness you could have the scheduled function remove `deferAfterjQueryLoaded` as well.
-             * @see http://stackoverflow.com/questions/8298430/handling-code-which-relies-on-jquery-before-jquery-is-loaded
-             */
-            if ( ! window.deferAfterjQueryLoaded ) {
-                window.deferAfterjQueryLoaded = [];
-                Object.defineProperty(window, "$", {
-                    set: function(value) {
-                        window.setTimeout(function() {
-                            $.each(window.deferAfterjQueryLoaded, function(index, fn) {
-                                fn();
-                            });
-                        }, 0);
-                        Object.defineProperty(window, "$", { value: value });
-                    },
-
-                    configurable: true
-                });
-            }
-        </script>
     </head>
     <body data-spy="scroll">
         
@@ -51,8 +27,9 @@ description = "Default layout"
                 <h2>Menu</h2>
             </header>
             <div class="list-group">
-                <a href="#programming" class="list-group-item">{{'Programmierung'|_}}</a>
-                <a href="#design" class="list-group-item">{{'Design'|_}}</a>
+                <a href="" class="list-group-item">{{'Programmierung'|_}}</a>
+                <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="list-group-item">{{'Design'|_}}</a>
+                <a href="{{'blog'|page}}" class="list-group-item blog">Blog</a>
             </div>
         </nav>
         
@@ -64,8 +41,9 @@ description = "Default layout"
             <div class="container hidden-sm-down">
                 <a href="#programming" class="navbar-brand">JumpLink</a>
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="#programming" class="nav-link">{{'Programmierung'|_}}</a></li>
-                    <li class="nav-item"><a href="#design" class="nav-link">{{'Design'|_}}</a></li>
+                    <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#programming" class="nav-link">{{'Programmierung'|_}}</a></li>
+                    <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="nav-link">{{'Design'|_}}</a></li>
+                    <li class="nav-item"><a href="{{'blog'|page}}" class="nav-link blog">Blog</a></li>
                 </ul>
                 <form class="form-inline pull-xs-right">
                     {% component 'localePicker' %}

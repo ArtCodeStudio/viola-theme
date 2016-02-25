@@ -1,12 +1,24 @@
+// "Source Sans Pro"
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+// "Ubuntu"
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic);
+// Roboto
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700,700italic,500italic,500,400italic,300italic,100,100italic,300);
 
-$font-family-sans-serif:    "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// bootstrap variables
+// $link-color:                 $brand-primary;
+// $link-decoration:            none;
+// $link-hover-color:           darken($link-color, 15%);
+$link-hover-decoration:      none;
+$font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
 $gray-dark:                 #272822 !default;
-$apps-iframe-decrease:      1.8;
-$navbar-height:             54px;
 
 @import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// own variables
+$apps-iframe-decrease:      1.8;
+$navbar-height:             54px; // TODO get from bootstrap variables or calc this
+
 @import "./load-awesome.scss";
 @import "./clouds.scss";
 @import "./slideout.scss";
@@ -16,6 +28,37 @@ body {
 	-moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     position: relative;
+}
+
+:not(nav).bg-inverse {
+    a {
+        &:hover {
+            color: $navbar-dark-active-color;
+        }
+        color: $navbar-dark-color;
+    }
+}
+
+// javascript links
+[onclick] {
+    cursor: pointer;
+}
+
+// List group
+// black list-group-items
+.list-group-item {
+    &.active-bg-inverse {
+        &.active {
+            @extend .bg-inverse;
+            border-color: $gray-dark;
+            &:hover {
+                @extend .bg-inverse;
+            }
+        }
+        &:hover {
+            background-color: $gray-lighter;
+        }
+    }
 }
 
 .navbar-brand {
@@ -108,5 +151,17 @@ select[name="locale"] {
             padding-top: $navbar-height + 1;
             margin-top: -1px; // svg blitzen verhindern
         }
+    }
+}
+
+#blogposts {
+    header {
+        padding-top: $navbar-height;
+        img.blogposts-header {
+            width: 100%;
+        }
+    }
+    .card {
+
     }
 }

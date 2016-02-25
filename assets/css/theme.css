@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700,700italic,500italic,500,400italic,300italic,100,100italic,300);
 /*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -259,7 +260,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #272822;
@@ -313,7 +314,7 @@ a {
   text-decoration: none; }
   a:focus, a:hover {
     color: #014c8c;
-    text-decoration: underline; }
+    text-decoration: none; }
   a:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -2006,7 +2007,7 @@ fieldset[disabled] a.btn {
     border-color: transparent; }
   .btn-link:focus, .btn-link:hover {
     color: #014c8c;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent; }
   .btn-link:disabled:focus, .btn-link:disabled:hover {
     color: #818a91;
@@ -3742,7 +3743,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3821,7 +3822,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Source Sans Pro", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4263,7 +4264,7 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #c9302c; }
 
-.bg-inverse, .slideout-menu .list-group-item, select[name="locale"] {
+.bg-inverse, .slideout-menu .list-group-item, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"] {
   color: #eceeef;
   background-color: #272822; }
 
@@ -4880,7 +4881,10 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden; }
 
 .slideout-menu {
   position: fixed;
@@ -4915,6 +4919,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   position: relative; }
+
+:not(nav).bg-inverse a, .slideout-menu .list-group-item:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a {
+  color: rgba(255, 255, 255, 0.5); }
+  :not(nav).bg-inverse a:hover, .slideout-menu .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover {
+    color: white; }
+
+[onclick] {
+  cursor: pointer; }
+
+.list-group-item.active-bg-inverse.active {
+  border-color: #272822; }
+
+.list-group-item.active-bg-inverse:hover {
+  background-color: #eceeef; }
 
 .navbar-brand {
   min-width: 40px;
@@ -4986,3 +5004,8 @@ select[name="locale"] {
 .home #design header {
   padding-top: 55px;
   margin-top: -1px; }
+
+#blogposts header {
+  padding-top: 54px; }
+  #blogposts header img.blogposts-header {
+    width: 100%; }

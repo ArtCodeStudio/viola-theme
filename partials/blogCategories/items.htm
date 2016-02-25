@@ -1,0 +1,19 @@
+{% for category in categories %}
+    {% set postCount = category.post_count %}
+    <li class="list-group-item active-bg-inverse {% if category.slug == currentCategorySlug %}active{% endif %}" onclick="window.open('{{ category.url }}', '_self', ''); return false;">
+        {% if postCount %}
+            <span class="label label-default label-pill pull-xs-right">{{ postCount }}</span>
+            <span class="badge"></span>
+        {% endif %}
+        {{ category.name }}
+
+        {% if category.children %}
+            <ul>
+                {% partial __SELF__ ~ "::items"
+                    categories=category.children
+                    currentCategorySlug=currentCategorySlug
+                %}
+            </ul>
+        {% endif %}
+    </li>
+{% endfor %}
