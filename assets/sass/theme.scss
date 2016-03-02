@@ -9,7 +9,7 @@ $font-size-root:             16px; //default 16px
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 
 // font awesome variables
-$fa-font-path: '../vender/font-awesome/fonts';
+$fa-font-path: '../vendor/font-awesome/fonts';
 
 @import "../vendor/font-awesome/scss/font-awesome.scss";
 
@@ -76,7 +76,23 @@ select[name="locale"] {
     background-image: url(../images/select_inverse.png);
 }
 
-
+.fa {
+    &.fa-whatsapp {
+        color: #34af23;
+    }
+    &.fa-facebook-official {
+        color: #3b5998;
+    }
+    &.fa-google-plus {
+        color: #dd4b39;
+    }
+    &.fa-envelope {
+        color: white;
+    }
+    &.fa-mobile {
+        color: white;
+    }
+}
 
 .home {
     
@@ -151,6 +167,12 @@ select[name="locale"] {
             }
         }
         #ecommerce {
+            .description {
+                .bindings-image,  .markets-image, .erp-image, .custom-image {
+                    max-height: 300px;
+                }
+            }
+
             background-color: #b1e9f2;
             .svg-wrapper {
                 background-image: url(../images/ecommerce_background_spring.svg);
@@ -183,6 +205,22 @@ select[name="locale"] {
     }
 }
 
+#contact {
+    .contact-image {
+        max-height: 300px;
+    }
+    .contact-methods {
+        a {
+            height: 36px;
+            width: 36px;
+            .fa {
+                font-size: 36px;
+                height: 36px;
+            }
+        }
+    }
+}
+
 #imprint {
     .imprint-brand {
         max-height: 100px;
@@ -191,4 +229,3 @@ select[name="locale"] {
         margin-bottom: 0;
     }
 }
-

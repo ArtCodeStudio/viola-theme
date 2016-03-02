@@ -5,8 +5,46 @@
                 <div class="col-xs-12">
                     <h3 class="text-xs-center">{{'Kontaktiere Uns'|_}}</h3>
                 </div>
-                <div class="col-xs-12">
-                    <img src="{{ 'assets/images/contact.svg' | theme }}" class="m-y-3 img-fluid center-block" alt="Contact">
+                <div class="col-xs-12 col-md-6">
+                    <img src="{{ 'assets/images/contact.svg' | theme }}" class="m-y-3 img-fluid center-block contact-image" alt="Contact">
+                </div>
+                <!--TODO detect mobile phone and change href for browser / app-->
+                <div class="col-xs-12 col-md-6 contact-methods m-t-3">
+<!--                    <div class="col-xs-2">
+                        <a href="https://plus.google.com/b/100987634567342849347/100987634567342849347" target="_blank" title="Google+" data-toggle="tooltip" data-placement="bottom">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                        https://stackoverflow.com/questions/4810803/open-facebook-page-from-android-app
+                        <a href="fb://facewebmodal/f?href=https://www.facebook.com/jumplink.eu" title="Facebook"  data-toggle="tooltip" data-placement="bottom">
+                            <i class="fa fa-facebook-official"></i>
+                        </a>
+                    </div>-->
+                    <div class="col-xs-12 m-b-3">
+                        Kontaktiere uns über eine der folgenden Dienste oder benutze direkt das Formular.
+                        Wir freuen uns auf deinen Anruf oder deine Nachricht.
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="center-block" href="intent://send/4915254090189#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="WhatsApp" data-toggle="tooltip" data-placement="bottom">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="center-block" href="https://telegram.me/JumpLink" title="Telegram"  data-toggle="tooltip" data-placement="bottom">
+                            <img src="{{ 'assets/images/telegram_logo.svg' | theme }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="center-block" href="mailto:info@jumplink.eu" title="{{'E-Mail'|_}}" data-toggle="tooltip" data-placement="bottom">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="center-block" href="tel:+4915254090189" title="{{'Telefon'|_}}" data-toggle="tooltip" data-placement="bottom">
+                            <i class="fa fa-mobile"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

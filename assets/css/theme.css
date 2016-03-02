@@ -4569,8 +4569,8 @@ a.bg-danger:focus, a.bg-danger:hover {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../vender/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("../vender/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../vender/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../vender/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../vender/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../vender/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("../vendor/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("../vendor/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -7520,6 +7520,21 @@ select[name="locale"] {
   select[name="locale"]:hover {
     opacity: 0.75; }
 
+.fa.fa-whatsapp {
+  color: #34af23; }
+
+.fa.fa-facebook-official {
+  color: #3b5998; }
+
+.fa.fa-google-plus {
+  color: #dd4b39; }
+
+.fa.fa-envelope {
+  color: white; }
+
+.fa.fa-mobile {
+  color: white; }
+
 .home .description {
   background-color: #fff; }
 
@@ -7577,6 +7592,8 @@ select[name="locale"] {
 
 .home #programming #ecommerce {
   background-color: #b1e9f2; }
+  .home #programming #ecommerce .description .bindings-image, .home #programming #ecommerce .description .markets-image, .home #programming #ecommerce .description .erp-image, .home #programming #ecommerce .description .custom-image {
+    max-height: 300px; }
   .home #programming #ecommerce .svg-wrapper {
     background-image: url(../images/ecommerce_background_spring.svg);
     background-repeat: no-repeat;
@@ -7593,6 +7610,16 @@ select[name="locale"] {
   padding-top: 54px; }
   #blogposts header img.blogposts-header {
     width: 100%; }
+
+#contact .contact-image {
+  max-height: 300px; }
+
+#contact .contact-methods a {
+  height: 36px;
+  width: 36px; }
+  #contact .contact-methods a .fa {
+    font-size: 36px;
+    height: 36px; }
 
 #imprint .imprint-brand {
   max-height: 100px; }
