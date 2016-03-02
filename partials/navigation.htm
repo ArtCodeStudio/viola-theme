@@ -1,0 +1,34 @@
+<!-- Nav -->
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <button class="navbar-toggler hidden-md-up" type="button">
+        &#9776;
+    </button>
+    <div class="container hidden-sm-down">
+        <a href="#programming" class="navbar-brand">JumpLink</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#about" class="nav-link">{{'Über'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#programming" class="nav-link">{{'Programmierung'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="nav-link">{{'Design'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#contact" class="nav-link">{{'Kontakt'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="nav-link">{{'Impressum'|_}}</a></li>
+            <li class="nav-item"><a href="{{'blog'|page}}" class="nav-link blog">Blog</a></li>
+        </ul>
+        <form class="form-inline pull-xs-right">
+            {% component 'localePicker' %}
+        </form>
+        <!--<a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a>
+        <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'de'">German</a>-->
+    </div>
+</nav>
+
+<!-- http://dcdeiv.github.io/simpler-sidebar/ -->
+<div id="sidebar">
+    <div id="sidebar-wrapper" class="sidebar-wrapper bg-inverse">
+        <div class="list-group">
+            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#programming" class="list-group-item">{{'Programmierung'|_}}</a></li>
+            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="list-group-item">{{'Design'|_}}</a></li>
+            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#contact" class="list-group-item">{{'Kontakt'|_}}</a>
+            <a href="{{'blog'|page}}" class="list-group-item blog">Blog</a>
+        </div>
+    </div>
+</div>

@@ -20,38 +20,7 @@ description = "Default layout"
         ]|theme }}" rel="stylesheet">
     </head>
     <body data-spy="scroll">
-               
-        <!-- Nav -->
-        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
-            <button class="navbar-toggler hidden-md-up" type="button">
-                &#9776;
-            </button>
-            <div class="container hidden-sm-down">
-                <a href="#programming" class="navbar-brand">JumpLink</a>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#programming" class="nav-link">{{'Programmierung'|_}}</a></li>
-                    <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="nav-link">{{'Design'|_}}</a></li>
-                    <li class="nav-item"><a href="{{'blog'|page}}" class="nav-link blog">Blog</a></li>
-                </ul>
-                <form class="form-inline pull-xs-right">
-                    {% component 'localePicker' %}
-                </form>
-                <!--<a href="#" data-request="onSwitchLocale" data-request-data="locale: 'en'">English</a>
-                <a href="#" data-request="onSwitchLocale" data-request-data="locale: 'de'">German</a>-->
-            </div>
-        </nav>
-        
-        <!-- http://dcdeiv.github.io/simpler-sidebar/ -->
-        <div id="sidebar">
-            <div id="sidebar-wrapper" class="sidebar-wrapper bg-inverse">
-                <div class="list-group">
-                    <a href="" class="list-group-item">{{'Programmierung'|_}}</a>
-                    <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="list-group-item">{{'Design'|_}}</a>
-                    <a href="{{'blog'|page}}" class="list-group-item blog">Blog</a>
-                </div>
-            </div>
-        </div>
-        
+        {% partial 'navigation' %}
         <!-- Content -->
         <section id="layout-content">
             {% page %}
@@ -66,6 +35,9 @@ description = "Default layout"
             'assets/vendor/vivus/dist/vivus.js',
             'assets/vendor/Snap.svg/dist/snap.svg.js',
             'assets/vendor/simpler-sidebar/dist/jquery.simpler-sidebar.js',
+            'assets/vendor/Stickyfill/dist/stickyfill.js',
+            'assets/vendor/bootstrap-validator/dist/validator.js',
+            'assets/vendor/leaflet/dist/leaflet.js',
             'assets/javascript/app.js',
         ]|theme }}"></script>
         {% framework extras %}

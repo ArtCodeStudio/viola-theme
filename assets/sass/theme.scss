@@ -1,27 +1,29 @@
-// "Source Sans Pro"
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
-// "Ubuntu"
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic);
-// Roboto
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700,700italic,500italic,500,400italic,300italic,100,100italic,300);
-
 // bootstrap variables
-// $link-color:                 $brand-primary;
-// $link-decoration:            none;
-// $link-hover-color:           darken($link-color, 15%);
 $link-hover-decoration:      none;
-$font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "Ubuntu", "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
 $gray-dark:                 #272822 !default;
 
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root:             16px; //default 16px
+
 @import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// font awesome variables
+$fa-font-path: '../vender/font-awesome/fonts';
+
+@import "../vendor/font-awesome/scss/font-awesome.scss";
 
 // own variables
 $apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 
+@import "./fonts.scss";
 @import "./load-awesome.scss";
 @import "./clouds.scss";
+@import "./navbar.scss";
 @import "./sidebar.scss";
+@import "./sticky.scss";
+@import "./location.scss";
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -61,18 +63,6 @@ body {
     }
 }
 
-.navbar {
-    z-index: 3000; // to make it over sidebar mask
-    .navbar-brand {
-        min-width: 40px;
-        background-image: url(../images/logo_inverse.svg);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: auto 100%;
-        padding-left: 50px;
-    }
-}
-
 select[name="locale"] {
     @extend .c-select;
     @extend .bg-inverse;
@@ -86,19 +76,36 @@ select[name="locale"] {
     background-image: url(../images/select_inverse.png);
 }
 
-.home { 
-    #programming {
-        header {
-            padding-top: $navbar-height;
+
+
+.home {
+    
+    .description {
+        background-color: $body-bg;
+        .container {
+            @extend .p-y-2;
         }
+    }
+    
+    .jumplink-subtext {
+        font-weight: 300;
+    }
+    
+     // anker elements with padding with navbar height to avoid scroll position overlap
+    [data-target] {
+        padding-top: 54px;
+        margin-top: -54px;
+    }
+    
+    #programming {
         #apps {
-            background-color: #ffe7a5;
+            background-color: #b1e9f2;
+            overflow-x: hidden; // hide clouds for bad x scrolling
             .svg_apps_col {
                 background-image: url(../images/apps_background.svg);
                 background-position: center bottom;
                 background-repeat:repeat-x;
                 height: 500px;
-                overflow-x: hidden; // hide clouds for bad x scrolling                    
                 .foreground, .foreground_finger {
                     background-repeat: no-repeat;
                     position: absolute;
@@ -145,6 +152,12 @@ select[name="locale"] {
         }
         #ecommerce {
             background-color: #b1e9f2;
+            .svg-wrapper {
+                background-image: url(../images/ecommerce_background_spring.svg);
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                background-size: auto 100%;
+            }
             #street {
                 width: 100%;
             }
@@ -169,3 +182,13 @@ select[name="locale"] {
 
     }
 }
+
+#imprint {
+    .imprint-brand {
+        max-height: 100px;
+    }
+    dd {
+        margin-bottom: 0;
+    }
+}
+

@@ -1,4 +1,12 @@
 /**
+ * Enable tooltips everywhere
+ * @see http://v4-alpha.getbootstrap.com/components/tooltips/#example-enable-tooltips-everywhere
+ **/ 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+/**
  * Moving background-image on mousemove
  * @see http://codepen.io/chrisboon27/pen/rEDIC
  */

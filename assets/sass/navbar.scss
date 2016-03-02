@@ -1,0 +1,13 @@
+.navbar {
+    z-index: 3000; // to make it over sidebar mask
+    .navbar-brand {
+        min-width: 40px;
+        background-image: url(../images/logo_inverse.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: auto 100%;
+        padding-left: 50px;
+        opacity: 0;
+        transition: opacity 500ms ease-out;
+    }
+}
