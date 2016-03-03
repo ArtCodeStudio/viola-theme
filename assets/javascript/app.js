@@ -4,7 +4,11 @@
  **/ 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"][data-show="always"]').tooltip('show')
 })
+
+
+
 
 /**
  * Moving background-image on mousemove

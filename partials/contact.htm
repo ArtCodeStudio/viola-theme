@@ -26,23 +26,24 @@
                         Wir freuen uns auf deinen Anruf oder deine Nachricht.
                     </div>
                     <div class="col-xs-3">
-                        <a class="center-block" href="intent://send/4915254090189#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="WhatsApp" data-toggle="tooltip" data-placement="bottom">
-                            <i class="fa fa-whatsapp"></i>
+                        <a class="center-block" href="tel:+4915254090189" title="+49 152 54 09 01 89" id="phone" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+                            <i class="fa fa-mobile"></i>
                         </a>
                     </div>
                     <div class="col-xs-3">
-                        <a class="center-block" href="https://telegram.me/JumpLink" title="Telegram"  data-toggle="tooltip" data-placement="bottom">
+                        <a class="center-block" href="intent://send/4915254090189#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="WhatsApp" id="whatsapp" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+                            <!--<i class="fa fa-whatsapp"></i>-->
+                            <img src="{{ 'assets/images/whatsapp_logo.svg' | theme }}" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="center-block" href="https://telegram.me/JumpLink" title="Telegram" id="telegram" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
                             <img src="{{ 'assets/images/telegram_logo.svg' | theme }}" alt="">
                         </a>
                     </div>
                     <div class="col-xs-3">
-                        <a class="center-block" href="mailto:info@jumplink.eu" title="{{'E-Mail'|_}}" data-toggle="tooltip" data-placement="bottom">
+                        <a class="center-block" href="mailto:info@jumplink.eu" title="pascal@jumplink.eu" id="email" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
                             <i class="fa fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a class="center-block" href="tel:+4915254090189" title="{{'Telefon'|_}}" data-toggle="tooltip" data-placement="bottom">
-                            <i class="fa fa-mobile"></i>
                         </a>
                     </div>
                 </div>

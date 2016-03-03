@@ -28,5 +28,5 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var marker = L.marker([53.87249480720694, 8.698151707649231]).addTo(map);
 
-var control = new L.control.zoom({position: 'bottomright'});
-control.addTo(map);
+// var control = new L.control.zoom({position: 'bottomright'});
+// control.addTo(map);

@@ -7545,9 +7545,17 @@ select[name="locale"] {
   padding-top: 54px;
   margin-top: -54px; }
 
+.home #top[data-target] {
+  margin-top: 0; }
+
+.home #about .peace-image {
+  max-height: 300px; }
+
 .home #programming #apps {
   background-color: #b1e9f2;
   overflow-x: hidden; }
+  .home #programming #apps .appdesign-video, .home #programming #apps .crossplattform-image {
+    max-height: 300px; }
   .home #programming #apps .svg_apps_col {
     background-image: url(../images/apps_background.svg);
     background-position: center bottom;
@@ -7602,27 +7610,43 @@ select[name="locale"] {
   .home #programming #ecommerce #street {
     width: 100%; }
 
+.home #programming #web {
+  background-color: #b1e9f2; }
+  .home #programming #web .content-image, .home #programming #web .files-image {
+    max-height: 300px; }
+  .home #programming #web .svg-wrapper {
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px; }
+    .home #programming #web .svg-wrapper #webdevelopment {
+      width: 100%; }
+
 .home #design header {
   padding-top: 55px;
   margin-top: -1px; }
+
+.home #design .responsive-image, .home #design .corporate-image {
+  max-height: 200px; }
+
+.home #contact .contact-image {
+  max-height: 300px; }
+
+.home #contact .contact-methods a {
+  height: 36px;
+  width: 36px; }
+  .home #contact .contact-methods a .fa {
+    font-size: 36px;
+    height: 36px; }
+    .home #contact .contact-methods a .fa.fa-mobile {
+      padding-left: 10px; }
+
+.home #imprint .imprint-brand {
+  max-height: 100px; }
+
+.home #imprint dd {
+  margin-bottom: 0; }
 
 #blogposts header {
   padding-top: 54px; }
   #blogposts header img.blogposts-header {
     width: 100%; }
-
-#contact .contact-image {
-  max-height: 300px; }
-
-#contact .contact-methods a {
-  height: 36px;
-  width: 36px; }
-  #contact .contact-methods a .fa {
-    font-size: 36px;
-    height: 36px; }
-
-#imprint .imprint-brand {
-  max-height: 100px; }
-
-#imprint dd {
-  margin-bottom: 0; }

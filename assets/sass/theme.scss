@@ -113,10 +113,26 @@ select[name="locale"] {
         margin-top: -54px;
     }
     
+    #top {
+        &[data-target] {
+            margin-top: 0;
+        }
+    }
+    
+    #about {
+        .peace-image {
+            max-height: 300px;
+        }
+    }
+    
     #programming {
+        
         #apps {
             background-color: #b1e9f2;
             overflow-x: hidden; // hide clouds for bad x scrolling
+            .appdesign-video, .crossplattform-image {
+                max-height: 300px;
+            }
             .svg_apps_col {
                 background-image: url(../images/apps_background.svg);
                 background-position: center bottom;
@@ -166,6 +182,7 @@ select[name="locale"] {
                 }
             }
         }
+        
         #ecommerce {
             .description {
                 .bindings-image,  .markets-image, .erp-image, .custom-image {
@@ -184,11 +201,61 @@ select[name="locale"] {
                 width: 100%;
             }
         }
+        
+        #web {
+            background-color: #b1e9f2;
+            
+            .content-image, .files-image {
+                max-height: 300px;
+            }
+            
+            .svg-wrapper {
+                position: relative;
+                top: -150px;
+                margin-bottom: -150px;
+                #webdevelopment {
+                    width: 100%;
+                }
+            }
+        }
     }
+    
     #design {
         header {
             padding-top: $navbar-height + 1;
             margin-top: -1px; // svg blitzen verhindern
+        }
+        
+        .responsive-image, .corporate-image {
+            max-height: 200px;
+        }
+    }
+    
+    #contact {
+        .contact-image {
+            max-height: 300px;
+        }
+        .contact-methods {
+            a {
+                height: 36px;
+                width: 36px;
+                .fa {
+                    font-size: 36px;
+                    height: 36px;
+                    &.fa-mobile {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    #imprint {
+        .imprint-brand {
+            max-height: 100px;
+        }
+        dd {
+            margin-bottom: 0;
         }
     }
 }
@@ -202,30 +269,5 @@ select[name="locale"] {
     }
     .card {
 
-    }
-}
-
-#contact {
-    .contact-image {
-        max-height: 300px;
-    }
-    .contact-methods {
-        a {
-            height: 36px;
-            width: 36px;
-            .fa {
-                font-size: 36px;
-                height: 36px;
-            }
-        }
-    }
-}
-
-#imprint {
-    .imprint-brand {
-        max-height: 100px;
-    }
-    dd {
-        margin-bottom: 0;
     }
 }
