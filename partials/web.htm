@@ -15,12 +15,38 @@
                 <div class="col-xs-12 col-md-6 text-xs-center">
                     <h2>{{'Einfaches Bearbeiten'|_}}</h2>
                     <img src="{{ 'assets/images/content.gif' | theme }}" class="img-fluid center-block content-image m-y-3" alt="bindings">
-                    <p>{{'Bearbeite Texte direkt auf deiner Webseite, klicke einfach die Textstelle an die du bearbeiten willst und leg los, einfacher geht es nicht. Zusätzlich kannst du deine Inhalte auch im Administrations-Interface bearbeiten.'|_}}</p>
+                    <p>{% content 'web/content.md' %}</p>
                 </div>
                 <div class="col-xs-12 col-md-6 text-xs-center">
-                    <h2>{{'Dateimanager'|_}}</h2>
-                    <img src="{{ 'assets/images/file-management.png' | theme }}" class="img-fluid center-block files-image m-y-3" alt="markets">
-                    <p>{{'Verwallte deine Bilder, Videos und andere Dateien mit einem elegant in deine Webseite integriertem Dateimanager. Du kannst sogar Bilder direkt skalieren. Der Dateimanager ist einfach zu benutzen und erfordert wenig Einarbeitung.'|_}}</p>
+                    <h2>{{'Multimedia-Verwaltung'|_}}</h2>
+                    <img src="{{ 'assets/images/file-management.png' | theme }}" class="img-fluid center-block img-thumbnail files-image m-y-3" alt="markets">
+                    <p>{% content 'web/file_manager.md' %}</p>
+                </div>
+            </div>
+            <hr class="hidden-sm-down">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 text-xs-center">
+                    <h2>{{'Responsive Design'|_}}</h2>
+                    <img src="{{ 'assets/images/responsive_design.svg' | theme }}" class="img-fluid center-block m-y-3 responsive-image" alt="Responsive Design">
+                    <p>{% content 'web/responsive_design.md' %}</p>
+                </div>
+                <div class="col-xs-12 col-md-6 text-xs-center">
+                    <h2>{{'Nachhaltig'|_}}</h2>
+                    <img src="{{ 'assets/images/code.svg' | theme }}" class="img-fluid center-block m-y-3 code-image" alt="Responsive Design">
+                    <p>{% content 'web/persistent.md' %}</p>
+                </div>
+            </div>
+            <hr class="hidden-sm-down">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 text-xs-center">
+                    <h2>{{'Mehrsprachig'|_}}</h2>
+                    <img src="{{ 'assets/images/multilingual.svg' | theme }}" class="img-fluid center-block content-image m-y-3" alt="bindings">
+                    <p>{% content 'web/multilingual.md' %}</p>
+                </div>
+                <div class="col-xs-12 col-md-6 text-xs-center">
+                    <h2>{{'SEO'|_}} <small>Suchmaschinen-Optimierung</small></h2>
+                    <img src="{{ 'assets/images/seo.svg' | theme }}" class="img-fluid center-block files-image m-y-3" alt="markets">
+                    <p>{% content 'web/seo.md' %}</p>
                 </div>
             </div>
         </div>

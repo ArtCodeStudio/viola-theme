@@ -7,8 +7,17 @@ $(function () {
   $('[data-toggle="tooltip"][data-show="always"]').tooltip('show')
 })
 
-
-
+/**
+ * @see https://github.com/daneden/animate.css
+ */
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
 
 /**
  * Moving background-image on mousemove
@@ -81,3 +90,10 @@ $('#sidebar').simplerSidebar({
 		display: true
 	}
 });
+
+/**
+ * Leaflet
+ * @see http://leafletjs.com/
+ */
+// location
+L.Icon.Default.imagePath = '/themes/jumplink/assets/vendor/leaflet/dist/images/'

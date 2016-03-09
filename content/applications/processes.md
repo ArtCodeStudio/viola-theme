@@ -1,0 +1,1 @@
+So gut wie jede Routinearbeit kann automatisiert werden. Du musst ständig die selben Formulare ausfüllen? Du musst die selben Informationen an unterschiedlichen Stellen einpflegen? Odermusst regelmäßig Informationen aus unterschiedlichen Quellen zusammen führen? All das lässt sich ändern und somit deine Unternehmenprozesse erheblich optimieren.

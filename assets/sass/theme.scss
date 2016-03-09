@@ -17,6 +17,7 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 $apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 
+@import "./animate";
 @import "./fonts.scss";
 @import "./load-awesome.scss";
 @import "./clouds.scss";
@@ -102,12 +103,8 @@ select[name="locale"] {
             @extend .p-y-2;
         }
     }
-    
-    .jumplink-subtext {
-        font-weight: 300;
-    }
-    
-     // anker elements with padding with navbar height to avoid scroll position overlap
+        
+    // anker elements with padding with navbar height to avoid scroll position overlap
     [data-target] {
         padding-top: 54px;
         margin-top: -54px;
@@ -116,6 +113,59 @@ select[name="locale"] {
     #top {
         &[data-target] {
             margin-top: 0;
+        }
+        
+        #top-header-subtext-container {
+            position: absolute;
+            top: 6vw;
+            width: 100%;
+            .col-xs-4 {
+                // padding: 0;
+                &.left {
+                    @include media-breakpoint-down(xs) {
+                        padding-right: 0;
+                    }
+                }
+                &.middle {
+
+                }
+                &.right {
+                    @include media-breakpoint-down(xs) {
+                        padding-left: 0;
+                    }
+                }
+            } 
+            .jumplink-subtext {
+                font-weight: 300;
+                visibility: hidden;
+                font-size: 2.5vw;
+                @include media-breakpoint-up(xl) {
+                    font-size: 2vw;
+                }
+                @extend .p-y-3;
+                // textillate sentence
+                > span {
+                    // textillate word
+                    > span {
+                        // textillate char
+                        > span {
+                            transition: transform 100ms;
+                            &:hover {
+                                -webkit-transform: scale3d(1.5, 1.5, 1.5);
+                                transform: scale3d(1.5, 1.5, 1.5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+        svg {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            @extend .p-y-2;
         }
     }
     
@@ -205,7 +255,7 @@ select[name="locale"] {
         #web {
             background-color: #b1e9f2;
             
-            .content-image, .files-image {
+            .content-image, .files-image, .responsive-image, .code-image {
                 max-height: 300px;
             }
             
@@ -213,6 +263,10 @@ select[name="locale"] {
                 position: relative;
                 top: -150px;
                 margin-bottom: -150px;
+                @include media-breakpoint-down(sm) {
+                    top: -100px;
+                    margin-bottom: -100px;
+                }
                 #webdevelopment {
                     width: 100%;
                 }
@@ -226,7 +280,7 @@ select[name="locale"] {
             margin-top: -1px; // svg blitzen verhindern
         }
         
-        .responsive-image, .corporate-image {
+        .corporate-image {
             max-height: 200px;
         }
     }

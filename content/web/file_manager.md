@@ -1,0 +1,1 @@
+Verwallte deine Bilder, Videos und andere Dateien mit einem elegant in deine Webseite integriertem Dateimanager. Du kannst sogar Bilder direkt skalieren. Der Dateimanager ist einfach zu benutzen und erfordert wenig Einarbeitung.

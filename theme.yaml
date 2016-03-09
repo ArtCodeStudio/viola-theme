@@ -1,4 +1,13 @@
 name: JumpLink
-description: jumplink.eu theme.
+description: Theme made for www.jumplink.eu.
 author: Pascal Garber
-homepage: 'http://jumplink.eu'
+homepage: 'http://www.jumplink.eu'
+form:
+    fields:
+        site_name:
+            label: Site name
+            comment: The website name as it should appear on the front-end
+            default: JumpLink
+require:
+    - RainLab.Translate
+    - RainLab.Blog

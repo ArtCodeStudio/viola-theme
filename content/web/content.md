@@ -1,0 +1,1 @@
+Bearbeite Texte direkt auf deiner Webseite, klicke einfach die Textstelle an die du bearbeiten willst und leg los, einfacher geht es nicht. Zusätzlich kannst du deine Inhalte auch im Administrations-Interface bearbeiten.

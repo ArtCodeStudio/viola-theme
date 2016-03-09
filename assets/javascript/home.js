@@ -1,18 +1,40 @@
 movingImageOnMousemove("#apps", '#apps .foreground_finger', 50, 200, true, false, 100);
 
 // navbar brand fading effekt on scroll position under header
-$(window).scroll(function() {
-  var height = $('#programming header').height();
-  var position = $(window).scrollTop();
-  if(position > height) {
-      $('.navbar-brand').css('opacity', 1);
-  } else {
-      $('.navbar-brand').css('opacity', 0);
-  }
-});
+// $(window).scroll(function() {
+//   var height = $('#top').height();
+//   var position = $(window).scrollTop();
+//   if(position > height) {
+//       $('.navbar-brand').css('opacity', 1);
+//   } else {
+//       $('.navbar-brand').css('opacity', 0);
+//   }
+// });
 
-// location
-L.Icon.Default.imagePath = '/themes/jumplink/assets/vendor/leaflet/dist/images/'
+// top header animation
+new Vivus('header_svg', 
+    {
+        duration: 300,
+        type: 'delayed',
+    }, function() {
+
+    }
+);
+setTimeout(function(){
+    // draw subtext with textillate
+    $('.jumplink-subtext').textillate(
+        {
+            in: {
+                effect: 'fadeIn',
+                shuffle: true,
+                delay: 100,
+            }
+        }
+    );
+}, 2000);
+
+
+// leaflet
 
 var map = L.map('map', {
     zoomControl: false,
