@@ -1,7 +1,7 @@
 /**
  * Enable tooltips everywhere
  * @see http://v4-alpha.getbootstrap.com/components/tooltips/#example-enable-tooltips-everywhere
- **/ 
+ */ 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="tooltip"][data-show="always"]').tooltip('show')
@@ -11,13 +11,91 @@ $(function () {
  * @see https://github.com/daneden/animate.css
  */
 $.fn.extend({
-    animateCss: function (animationName) {
+    animateCss: function (animationName, cb) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         $(this).addClass('animated ' + animationName).one(animationEnd, function() {
             $(this).removeClass('animated ' + animationName);
+            $(this).addClass('animationDone');
+            if(typeof(cb) === 'function') {
+                cb();
+            }
+            
         });
     }
 });
+
+/**
+ * Special scroll events for jQuery
+ * @see http://james.padolsey.com/javascript/special-scroll-events-for-jquery/
+ */
+(function(){
+ 
+    var special = jQuery.event.special,
+        uid1 = 'D' + (+new Date()),
+        uid2 = 'D' + (+new Date() + 1);
+ 
+    special.scrollstart = {
+        setup: function() {
+ 
+            var timer,
+                handler =  function(evt) {
+ 
+                    var _self = this,
+                        _args = arguments;
+ 
+                    if (timer) {
+                        clearTimeout(timer);
+                    } else {
+                        evt.type = 'scrollstart';
+                        jQuery.event.dispatch.apply(_self, _args);
+                    }
+ 
+                    timer = setTimeout( function(){
+                        timer = null;
+                    }, special.scrollstop.latency);
+ 
+                };
+ 
+            jQuery(this).bind('scroll touchmove', handler).data(uid1, handler);
+ 
+        },
+        teardown: function(){
+            jQuery(this).unbind( 'scroll touchmove', jQuery(this).data(uid1) );
+        }
+    };
+ 
+    special.scrollstop = {
+        latency: 10, // default is 300
+        setup: function() {
+ 
+            var timer,
+                    handler = function(evt) {
+ 
+                    var _self = this,
+                        _args = arguments;
+ 
+                    if (timer) {
+                        clearTimeout(timer);
+                    }
+ 
+                    timer = setTimeout( function(){
+ 
+                        timer = null;
+                        evt.type = 'scrollstop';
+                        jQuery.event.dispatch.apply(_self, _args);
+ 
+                    }, special.scrollstop.latency);
+ 
+                };
+ 
+            jQuery(this).bind('scroll touchmove', handler).data(uid2, handler);
+ 
+        },
+        teardown: function() {
+            jQuery(this).unbind( 'scroll touchmove', jQuery(this).data(uid2) );
+        }
+    };
+})();
 
 /**
  * Moving background-image on mousemove
@@ -92,8 +170,47 @@ $('#sidebar').simplerSidebar({
 });
 
 /**
- * Leaflet
+ * Leaflet initial stuff
  * @see http://leafletjs.com/
  */
-// location
 L.Icon.Default.imagePath = '/themes/jumplink/assets/vendor/leaflet/dist/images/'
+
+
+/**
+ * Check if element is in viewport after scroll or resize, if it is, start animations
+ * @see https://github.com/patik/within-viewport
+ * @see https://github.com/daneden/animate.css
+ */
+$(function () {
+    
+    var fadeInLeftOnViewports = $('.fadeInLeftOnViewport');
+    var fadeInRightOnViewports = $('.fadeInRightOnViewport');
+    
+    var checkAnimations = function () {
+        
+        $.each(fadeInLeftOnViewports, function( index, value ) {
+            value = $(value);
+            if(value.find('img, video').is(':within-viewport')) {
+                if(!value.hasClass( "animationDone" )) {
+                    value.animateCss('fadeInLeft', function(){});
+                }
+                
+            }
+        });
+        
+        $.each(fadeInRightOnViewports, function( index, value ) {
+            value = $(value);
+            if(value.find('img, video').is(':within-viewport')) {
+                if(!value.hasClass( "animationDone" )) {
+                    value.animateCss('fadeInRight', function(){});
+                }
+                
+            }
+        });
+    }
+    
+    $(window).on('resize scrollstop scrollstart', function() {
+        checkAnimations();
+    });
+    checkAnimations();
+})

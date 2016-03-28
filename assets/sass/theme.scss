@@ -42,6 +42,20 @@ body {
     }
 }
 
+// hide svg pathes
+.hidden-pathes {
+    path {
+        stroke: transparent !important;
+    }
+}
+
+// white svg pathes
+.white-pathes {
+    path {
+        stroke: white !important;
+    }
+}
+
 // javascript links
 [onclick] {
     cursor: pointer;
@@ -94,9 +108,15 @@ select[name="locale"] {
         color: white;
     }
 }
+.fadeInLeftOnViewport, .fadeInRightOnViewport {
+    opacity: 0;
+    &.animationDone {
+        opacity: 1;
+    } 
+}
+
 
 .home {
-    
     .description {
         background-color: $body-bg;
         .container {
@@ -136,9 +156,14 @@ select[name="locale"] {
                 }
             } 
             .jumplink-subtext {
-                font-weight: 300;
-                visibility: hidden;
+                font-weight: 300; 
                 font-size: 2.5vw;
+                -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+                animation-duration: 3s;
+                opacity: 0;
+                &.animationDone {
+                    opacity: 1;
+                }
                 @include media-breakpoint-up(xl) {
                     font-size: 2vw;
                 }
@@ -161,7 +186,7 @@ select[name="locale"] {
         }
 
         
-        svg {
+        #header_svg {
             max-width: 100%;
             width: 100%;
             height: auto;
