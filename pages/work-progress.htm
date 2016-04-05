@@ -1,0 +1,99 @@
+title = "Work in progress"
+url = "/"
+layout = "info"
+is_hidden = 0
+==
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            {% partial 'logo_text_inverse.htm' %}
+        </div>
+    </div>
+</div>
+
+<div class="container p-t-3">
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="text-xs-center">{{'Diese Seite befindet sich derzeit noch im Aufbau, <br>aber du kannst gerne vorbei schauen oder anders Kontakt mit mir aufnehmen.'|_}}</p>
+        </div>
+    </div>
+</div>
+
+<div id="imprint" data-target="#imprint">
+    <div class="container p-t-3">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <dl class="text-truncate">
+                    <dt class="col-xs-4">Anschrift</dt>
+                    <dd class="col-xs-8"><address><strong>JumpLink</strong><br>Pascal Garber<br>Kasernenstraße 8<br>27472 Cuxhaven</address></dd>
+                </dl>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <dl class="text-truncate">
+                    <dt class="col-xs-4">{{'Öffnungszeiten'|_}}</dt>
+                    <dd class="col-xs-8"><br><br></dd>
+                    <dt class="col-xs-4">Mo. - Do.</dt>
+                    <dd class="col-xs-8">09:30 - 14:00<br>15:00 - 18:30</dd>
+                    <dt class="col-xs-4">Fr.</dt>
+                    <dd class="col-xs-8">09:30 - 14:00</dd>
+                    <dt class="col-xs-4">Sa. - So.</dt>
+                    <dd class="col-xs-8">Geschlossen</dd>
+                </dl>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <dl class="text-truncate">
+                    <dt class="col-xs-4">{{'Weitere Informationen'|_}}</dt>
+                    <dd class="col-xs-8"><br><br></dd>
+                    <dt class="col-xs-4">Telefon</dt>
+                    <dd class="col-xs-8"><a href="tel:+4915254090189">+49 152 54 09 01 89</a></dd>
+                    <dt class="col-xs-4">Fax</dt>
+                    <dd class="col-xs-8"><a href="fax:+494721664319">+49 4721­ 664319</a></dd>
+                    <dt class="col-xs-4">E-Mail</dt>
+                    <dd class="col-xs-8"><a href="mailto:info@jumplink.eu">info@jumplink.eu</a></dd>
+                    <dt class="col-xs-4">USt-IdNr.</dt>
+                    <dd class="col-xs-8">DE277453808</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container p-t-3">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <p class="text-xs-center">{{'Weitere Kontaktmöglichkeiten'|_}}</p>
+            <div class="contact-methods">
+                <div class="col-xs-3">
+                    <a href="https://plus.google.com/100987634567342849347/about" target="_blank" title="Google+" data-toggle="tooltip" data-placement="bottom">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a href="fb://facewebmodal/f?href=https://www.facebook.com/jumplink.eu" title="Facebook"  data-toggle="tooltip" data-placement="bottom">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a class="center-block" href="intent://send/4915254090189#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" title="WhatsApp" id="whatsapp" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+                        <img src="{{ 'assets/images/whatsapp_logo.svg' | theme }}" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-3">
+                    <a class="center-block" href="https://telegram.me/JumpLink" title="Telegram" id="telegram" data-toggle="tooltip" data-placement="bottom" data-trigger="hover">
+                        <img src="{{ 'assets/images/telegram_logo.svg' | theme }}" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+
+        </div>
+    </div>
+</div>
+
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/work-progress.js' |theme }}"></script>
+{% endput %}

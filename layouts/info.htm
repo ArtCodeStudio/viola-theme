@@ -1,4 +1,4 @@
-description = "Default layout"
+description = "Info layout"
 
 [localePicker]
 ==
@@ -17,13 +17,11 @@ description = "Default layout"
             'assets/css/theme.css',
         ]|theme }}" rel="stylesheet">
     </head>
-    <body id="{{ str_studly(this.page.title) }}" data-spy="scroll">
-        {% partial 'navigation' %}
-        <!-- Content -->
+    <body id="{{ str_studly(this.page.title) }}">
         <section id="layout-content">
             {% page %}
         </section>
-
+        
         <!-- Scripts -->
         <script src="{{ [
             'assets/vendor/within-viewport/withinviewport.js',
@@ -47,6 +45,6 @@ description = "Default layout"
         ]|theme }}"></script>
         {% framework extras %}
         {% scripts %}
-
+        
     </body>
 </html>

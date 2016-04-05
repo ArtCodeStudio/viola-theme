@@ -115,6 +115,9 @@ select[name="locale"] {
     } 
 }
 
+#WorkInProgress {
+    @extend .bg-inverse;
+}
 
 .home {
     .description {
@@ -129,213 +132,216 @@ select[name="locale"] {
         padding-top: 54px;
         margin-top: -54px;
     }
-    
-    #top {
-        &[data-target] {
-            margin-top: 0;
-        }
-        
-        #top-header-subtext-container {
-            position: absolute;
-            top: 6vw;
-            width: 100%;
-            .col-xs-4 {
-                // padding: 0;
-                &.left {
-                    @include media-breakpoint-down(xs) {
-                        padding-right: 0;
-                    }
-                }
-                &.middle {
+}
 
+#top {
+    position: relative;
+    &[data-target] {
+        margin-top: 0;
+    }
+    
+    #top-header-subtext-container {
+        position: absolute;
+        top: 6vw;
+        width: 100%;
+        .col-xs-4 {
+            // padding: 0;
+            &.left {
+                @include media-breakpoint-down(xs) {
+                    padding-right: 0;
                 }
-                &.right {
-                    @include media-breakpoint-down(xs) {
-                        padding-left: 0;
-                    }
+            }
+            &.middle {
+
+            }
+            &.right {
+                @include media-breakpoint-down(xs) {
+                    padding-left: 0;
                 }
-            } 
-            .jumplink-subtext {
-                font-weight: 300; 
-                font-size: 2.5vw;
-                -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
-                animation-duration: 3s;
-                opacity: 0;
-                &.animationDone {
-                    opacity: 1;
-                }
-                @include media-breakpoint-up(xl) {
-                    font-size: 2vw;
-                }
-                @extend .p-y-3;
-                // textillate sentence
+            }
+        } 
+        .jumplink-subtext {
+            font-weight: 300; 
+            font-size: 2.5vw;
+            -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+            animation-duration: 3s;
+            opacity: 0;
+            &.animationDone {
+                opacity: 1;
+            }
+            @include media-breakpoint-up(xl) {
+                font-size: 2vw;
+            }
+            @extend .p-y-3;
+            // textillate sentence
+            > span {
+                // textillate word
                 > span {
-                    // textillate word
+                    // textillate char
                     > span {
-                        // textillate char
-                        > span {
-                            transition: transform 100ms;
-                            &:hover {
-                                -webkit-transform: scale3d(1.5, 1.5, 1.5);
-                                transform: scale3d(1.5, 1.5, 1.5);
-                            }
+                        transition: transform 100ms;
+                        &:hover {
+                            -webkit-transform: scale3d(1.5, 1.5, 1.5);
+                            transform: scale3d(1.5, 1.5, 1.5);
                         }
                     }
                 }
             }
         }
-
-        
-        #header_svg {
-            max-width: 100%;
-            width: 100%;
-            height: auto;
-            @extend .p-y-2;
-        }
     }
+
     
-    #about {
-        .peace-image {
+    #header_svg {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        @extend .p-y-2;
+    }
+}
+
+#about {
+    .peace-image {
+        max-height: 300px;
+    }
+}
+
+#programming {
+    
+    #apps {
+        background-color: #b1e9f2;
+        overflow-x: hidden; // hide clouds for bad x scrolling
+        .appdesign-video, .crossplattform-image {
             max-height: 300px;
         }
-    }
-    
-    #programming {
-        
-        #apps {
-            background-color: #b1e9f2;
-            overflow-x: hidden; // hide clouds for bad x scrolling
-            .appdesign-video, .crossplattform-image {
-                max-height: 300px;
+        .svg_apps_col {
+            background-image: url(../images/apps_background.svg);
+            background-position: center bottom;
+            background-repeat:repeat-x;
+            height: 500px;
+            .foreground, .foreground_finger {
+                background-repeat: no-repeat;
+                position: absolute;
+                pointer-events: none;
             }
-            .svg_apps_col {
-                background-image: url(../images/apps_background.svg);
+            .foreground {
+                background-image: url(../images/apps_foreground.svg);
                 background-position: center bottom;
-                background-repeat:repeat-x;
                 height: 500px;
-                .foreground, .foreground_finger {
-                    background-repeat: no-repeat;
+                width: 100%;
+                z-index: 2;
+            }
+            .foreground_finger {
+                background-image: url(../images/apps_foreground_finger.svg);
+                background-position: center 200px; 
+                height: 500px;
+                width: 100%;
+                z-index: 3;
+            }
+            .framewrapper {
+                position: relative;
+                top: 16px; // TODO calc this?
+                height: 250px * $apps-iframe-decrease;
+                width: 160px * $apps-iframe-decrease;
+                -webkit-transform: scale(1 / $apps-iframe-decrease);
+                -moz-transform: scale(1 / $apps-iframe-decrease);
+                -ms-transform: scale(1 / $apps-iframe-decrease);
+                -o-transform: scale(1 / $apps-iframe-decrease);
+                transform: scale(1 / $apps-iframe-decrease);
+                background-color: white;
+                .la-square-jelly-box {
                     position: absolute;
-                    pointer-events: none;
+                    margin: 70% 45%;
                 }
-                .foreground {
-                    background-image: url(../images/apps_foreground.svg);
-                    background-position: center bottom;
-                    height: 500px;
-                    width: 100%;
-                    z-index: 2;
-                }
-                .foreground_finger {
-                    background-image: url(../images/apps_foreground_finger.svg);
-                    background-position: center 200px; 
-                    height: 500px;
-                    width: 100%;
-                    z-index: 3;
-                }
-                .framewrapper {
+                iframe {
                     position: relative;
-                    top: 16px; // TODO calc this?
-                    height: 250px * $apps-iframe-decrease;
-                    width: 160px * $apps-iframe-decrease;
-                    -webkit-transform: scale(1 / $apps-iframe-decrease);
-                    -moz-transform: scale(1 / $apps-iframe-decrease);
-                    -ms-transform: scale(1 / $apps-iframe-decrease);
-                    -o-transform: scale(1 / $apps-iframe-decrease);
-                    transform: scale(1 / $apps-iframe-decrease);
-                    background-color: white;
-                    .la-square-jelly-box {
-                        position: absolute;
-                        margin: 70% 45%;
-                    }
-                    iframe {
-                        position: relative;
-                        width: 100%;
-                        height: 100%; 
-                        border: none;
-                        z-index: 1;
-                    }
+                    width: 100%;
+                    height: 100%; 
+                    border: none;
+                    z-index: 1;
                 }
             }
         }
-        
-        #ecommerce {
-            .description {
-                .bindings-image,  .markets-image, .erp-image, .custom-image {
-                    max-height: 300px;
-                }
+    }
+    
+    #ecommerce {
+        .description {
+            .bindings-image,  .markets-image, .erp-image, .custom-image {
+                max-height: 300px;
             }
+        }
 
-            background-color: #b1e9f2;
-            .svg-wrapper {
-                background-image: url(../images/ecommerce_background_spring.svg);
-                background-repeat: no-repeat;
-                background-position: center bottom;
-                background-size: auto 100%;
+        background-color: #b1e9f2;
+        .svg-wrapper {
+            background-image: url(../images/ecommerce_background_spring.svg);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: auto 100%;
+        }
+        #street {
+            width: 100%;
+        }
+    }
+    
+    #web {
+        background-color: #b1e9f2;
+        
+        .content-image, .files-image, .responsive-image, .code-image {
+            max-height: 300px;
+        }
+        
+        .svg-wrapper {
+            position: relative;
+            top: -150px;
+            margin-bottom: -150px;
+            @include media-breakpoint-down(sm) {
+                top: -100px;
+                margin-bottom: -100px;
             }
-            #street {
+            #webdevelopment {
                 width: 100%;
             }
         }
-        
-        #web {
-            background-color: #b1e9f2;
-            
-            .content-image, .files-image, .responsive-image, .code-image {
-                max-height: 300px;
-            }
-            
-            .svg-wrapper {
-                position: relative;
-                top: -150px;
-                margin-bottom: -150px;
-                @include media-breakpoint-down(sm) {
-                    top: -100px;
-                    margin-bottom: -100px;
-                }
-                #webdevelopment {
-                    width: 100%;
-                }
-            }
-        }
     }
-    
-    #design {
-        header {
-            padding-top: $navbar-height + 1;
-            margin-top: -1px; // svg blitzen verhindern
-        }
-        
-        .corporate-image {
-            max-height: 200px;
-        }
-    }
-    
-    #contact {
-        .contact-image {
-            max-height: 300px;
-        }
-        .contact-methods {
-            a {
-                height: 36px;
-                width: 36px;
-                .fa {
-                    font-size: 36px;
-                    height: 36px;
-                    &.fa-mobile {
-                        padding-left: 10px;
-                    }
-                }
-            }
-        }
-    }
+}
 
-    #imprint {
-        .imprint-brand {
-            max-height: 100px;
+#design {
+    header {
+        padding-top: $navbar-height + 1;
+        margin-top: -1px; // svg blitzen verhindern
+    }
+    
+    .corporate-image {
+        max-height: 200px;
+    }
+}
+
+#contact {
+
+}
+
+.contact-image {
+    max-height: 300px;
+}
+.contact-methods {
+    a {
+        height: 36px;
+        width: 36px;
+        .fa {
+            font-size: 36px;
+            height: 36px;
+            &.fa-mobile {
+                padding-left: 10px;
+            }
         }
-        dd {
-            margin-bottom: 0;
-        }
+    }
+}
+
+#imprint {
+    .imprint-brand {
+        max-height: 100px;
+    }
+    dd {
+        margin-bottom: 0;
     }
 }
 
