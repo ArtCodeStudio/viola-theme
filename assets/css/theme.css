@@ -260,7 +260,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Ubuntu", "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #272822;
@@ -3743,7 +3743,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Ubuntu", "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -3822,7 +3822,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Ubuntu", "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4264,7 +4264,7 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #c9302c; }
 
-.bg-inverse, #sidebar .sidebar-wrapper .list-group-item, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"], #WorkInProgress {
+.bg-inverse, #sidebar .sidebar-wrapper .list-group-item, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"] {
   color: #eceeef;
   background-color: #272822; }
 
@@ -9006,54 +9006,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/ubuntu-font-family/Ubuntu-L.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Ubuntu"), url(../fonts/ubuntu-font-family/Ubuntu-R.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url(../fonts/ubuntu-font-family/Ubuntu-M.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url(../fonts/ubuntu-font-family/Ubuntu-B.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 300;
-  src: local("Ubuntu Light Italic"), local("Ubuntu-LightItalic"), url(../fonts/ubuntu-font-family/Ubuntu-LI.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 400;
-  src: local("Ubuntu Italic"), local("Ubuntu-Italic"), url(../fonts/ubuntu-font-family/Ubuntu-RI.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 500;
-  src: local("Ubuntu Medium Italic"), local("Ubuntu-MediumItalic"), url(../fonts/ubuntu-font-family/Ubuntu-MI.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 700;
-  src: local("Ubuntu Bold Italic"), local("Ubuntu-BoldItalic"), url(../fonts/ubuntu-font-family/Ubuntu-BI.ttf) format("truetype"); }
-
 /*!
  * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
  * Copyright 2015 Daniel Cardoso <@DanielCardoso>
@@ -9864,9 +9816,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
 
-:not(nav).bg-inverse a, #sidebar .sidebar-wrapper .list-group-item:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a, #WorkInProgress:not(nav) a {
+:not(nav).bg-inverse a, #sidebar .sidebar-wrapper .list-group-item:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a {
   color: rgba(255, 255, 255, 0.5); }
-  :not(nav).bg-inverse a:hover, #sidebar .sidebar-wrapper .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover, #WorkInProgress:not(nav) a:hover {
+  :not(nav).bg-inverse a:hover, #sidebar .sidebar-wrapper .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover {
     color: white; }
 
 .hidden-pathes path {

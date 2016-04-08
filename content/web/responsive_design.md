@@ -1,1 +1,0 @@
-Heutzutage gibt es nahezu alle erdenklichen Bildschirmgrößen, gerade im Konsumerbereich wird immer häufiger zum Smartphone oder Tablet gegriffen, du brauchst nicht für jede Geräteklasse ein eigenes Design. Ich entwickel dein Design so flexibel, dass es sich automatisch an alle Bildschirmgrößen anpasst und somit auf allen Geräten hübsch aussieht.

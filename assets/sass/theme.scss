@@ -1,6 +1,6 @@
 // bootstrap variables
 $link-hover-decoration:      none;
-$font-family-sans-serif:    "Ubuntu", "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
 $gray-dark:                 #272822 !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
@@ -29,7 +29,6 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    // overflow-x: hidden;
     position: relative;
 }
 
@@ -116,7 +115,7 @@ select[name="locale"] {
 }
 
 #WorkInProgress {
-    @extend .bg-inverse;
+
 }
 
 .home {

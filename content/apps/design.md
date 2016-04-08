@@ -1,1 +1,0 @@
-Deine App soll sich gut und geschmeidig anfühlen. Dezente Animationen, ein übersichtliches Layout und Anlehnung an die Designsprache der jeweiligen Plattformen sorgen für angenehmes und störungsfreies Bedienen deiner App. Gemeinsam mit meinen talentierten Design-Partner entwickeln wir für dich den letzten Feinschliff.

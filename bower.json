@@ -8,7 +8,7 @@
     "Pascal Garber <pascal@jumplink.eu>"
   ],
   "license": "MIT",
-  "homepage": "http://jumplink.eu",
+  "homepage": "http://www.jumplink.eu",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -25,7 +25,7 @@
     "simpler-sidebar": "^1.4.9",
     "jquery-ui": "jqueryui#^1.11.4",
     "Stickyfill": "^1.1.3",
-    "bootstrap-validator": "^0.9.0",
+    "bootstrap-validator": "^0.10.1",
     "leaflet": "^0.7.7",
     "font-awesome": "^4.5.0",
     "textillate": "^0.4.0",

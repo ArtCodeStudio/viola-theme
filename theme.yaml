@@ -1,13 +1,13 @@
-name: JumpLink
-description: Theme made for www.jumplink.eu.
+name: Viola
+description: Theme made for www.tierheilpraxis-garber.de
 author: Pascal Garber
-homepage: 'http://www.jumplink.eu'
+homepage: 'http://tierheilpraxis-garber.de'
 form:
     fields:
         site_name:
             label: Site name
             comment: The website name as it should appear on the front-end
-            default: JumpLink
+            default: Viola
 require:
     - RainLab.Translate
     - RainLab.Blog
