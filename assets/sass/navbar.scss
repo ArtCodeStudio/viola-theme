@@ -1,13 +1,52 @@
+$navbar-brand-height: 37px;
+$navbar-brand-width: 150px;
+
 .navbar {
     z-index: 3000; // to make it over sidebar mask
+    height: $navbar-height;
+    transition: height 500ms ease, background-color 500ms ease;
     .navbar-brand {
-        min-width: 40px;
-        background-image: url(../images/logo_inverse.svg);
+        min-width: $navbar-brand-width;
+        height: $navbar-brand-height;
+        
+        background-image: url(../images/thp-viola-garber-logo.png);
         background-repeat: no-repeat;
-        background-position: left center;
-        background-size: auto 100%;
+
+        background-position: center bottom;
+        background-size: 100% auto;
+        
         padding-left: 50px;
-        // opacity: 0;
-        transition: opacity 500ms ease-out;
+        transition: height 500ms ease;
+        
     }
+    .nav-link {
+        transition: padding 500ms ease;
+    }
+    &.bg-white {
+        border-bottom: 1px $gray-lighter solid;
+    }
+    &.fg-purple {
+        .navbar-nav .nav-link {
+            color: transparentize($purple, 0.3);
+            &:hover, &.active {
+                color: $purple;
+            }
+        }
+    }
+    &.navbar-big {
+        height: $navbar-height-big;
+        .navbar-brand {
+            height: $navbar-brand-height * 3;
+        }
+        .nav-link {
+            padding-top:    2.8rem;
+            padding-bottom: 2.8rem;
+        }
+    }
+}
+
+.navbar-sticky-bottom-element {
+  @extend .navbar-sticky-top;
+  bottom: 0;
+  top: initial;
 }

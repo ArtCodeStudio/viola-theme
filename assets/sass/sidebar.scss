@@ -6,9 +6,13 @@
         height: 100%;
         overflow: auto;
         .list-group-item {
-            @extend .bg-inverse;
             border: none;
             border-radius: 0;
+        }
+        &.fg-purple {
+            .list-group-item {
+                @extend .fg-purple;
+            }
         }
     }
 }

@@ -1,25 +1,17 @@
-<header id="top" class="bg-inverse p-b-3" data-target="#top">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 svg-wrapper">
-                {% partial 'header_svg.htm' %}
-            </div>
+<header id="top" data-target="#top">
+    <div id="carousel-top-header" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/horse.jpg'|theme }}');"></div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/cat.jpg'|theme }}');"></div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/dog.jpg'|theme }}');"></div>
         </div>
     </div>
-    
-    <div id="top-header-subtext-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-4 left">
-                    <h1 class="m-t-3 text-xs-center jumplink-subtext">{{'Leidenschaftlich'|_}}</h1>
-                </div>
-                <div class="col-xs-4 middle">
-                    <h1 class="m-t-3 text-xs-center jumplink-subtext">{{'Software'|_}}</h1>
-                </div>
-                <div class="col-xs-4 right">
-                    <h1 class="m-t-3 text-xs-center jumplink-subtext">{{'entwickeln'|_}}</h1>
-                </div>
-            </div>
-        </div>
-    </div>
+    <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#offer">
+        <i class="fa fa-chevron-circle-down"></i>
+    </a>
 </header>

@@ -1,7 +1,7 @@
 // bootstrap variables
 $link-hover-decoration:      none;
 $font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
-$gray-dark:                 #272822 !default;
+$purple:                    #6852ae !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             16px; //default 16px
@@ -16,6 +16,7 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 // own variables
 $apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
+$navbar-height-big:         130px;
 
 @import "./animate";
 @import "./fonts.scss";
@@ -25,6 +26,7 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 @import "./sidebar.scss";
 @import "./sticky.scss";
 @import "./location.scss";
+@import "./carousel.scss";
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -32,7 +34,42 @@ body {
     position: relative;
 }
 
-:not(nav).bg-inverse {
+.bg-purple {
+    background-color: $purple;
+}
+
+.bg-white-transparent {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-gray-lighter {
+    background-color: $gray-lighter;
+}
+
+.fg-purple {
+    color: $purple;
+}
+
+.icon-circle {
+    border-radius: 50%;
+    border: 1px $purple solid;
+    
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 78px;
+    margin: 0 auto 20px;
+    .fa {
+        color: $purple;
+        font-size: 30px;
+    }
+}
+
+:not(nav).bg-purple {
     a {
         &:hover {
             color: $navbar-dark-active-color;
@@ -41,19 +78,6 @@ body {
     }
 }
 
-// hide svg pathes
-.hidden-pathes {
-    path {
-        stroke: transparent !important;
-    }
-}
-
-// white svg pathes
-.white-pathes {
-    path {
-        stroke: white !important;
-    }
-}
 
 // javascript links
 [onclick] {
@@ -63,31 +87,10 @@ body {
 // List group
 // black list-group-items
 .list-group-item {
-    &.active-bg-inverse {
-        &.active {
-            @extend .bg-inverse;
-            border-color: $gray-dark;
-            &:hover {
-                @extend .bg-inverse;
-            }
-        }
-        &:hover {
-            background-color: $gray-lighter;
+    &.active-fg-purple {
+        &:hover , &.active {
         }
     }
-}
-
-select[name="locale"] {
-    @extend .c-select;
-    @extend .bg-inverse;
-    opacity: 0.5;
-    
-    &:hover {
-        opacity: 0.75;
-    }
-
-    border: none;
-    background-image: url(../images/select_inverse.png);
 }
 
 .fa {
@@ -107,6 +110,7 @@ select[name="locale"] {
         color: white;
     }
 }
+
 .fadeInLeftOnViewport, .fadeInRightOnViewport {
     opacity: 0;
     &.animationDone {
@@ -128,189 +132,26 @@ select[name="locale"] {
         
     // anker elements with padding with navbar height to avoid scroll position overlap
     [data-target] {
-        padding-top: 54px;
-        margin-top: -54px;
+        padding-top: $navbar-height;
+        margin-top: -$navbar-height;
     }
 }
-
+ 
 #top {
-    position: relative;
-    &[data-target] {
-        margin-top: 0;
-    }
-    
-    #top-header-subtext-container {
-        position: absolute;
-        top: 6vw;
+    .fa-chevron-circle-down {
+        color: white;
+        font-size: 40px;
+        margin-top: -100px;
+        text-align: center;
         width: 100%;
-        .col-xs-4 {
-            // padding: 0;
-            &.left {
-                @include media-breakpoint-down(xs) {
-                    padding-right: 0;
-                }
-            }
-            &.middle {
-
-            }
-            &.right {
-                @include media-breakpoint-down(xs) {
-                    padding-left: 0;
-                }
-            }
-        } 
-        .jumplink-subtext {
-            font-weight: 300; 
-            font-size: 2.5vw;
-            -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
-            animation-duration: 3s;
-            opacity: 0;
-            &.animationDone {
-                opacity: 1;
-            }
-            @include media-breakpoint-up(xl) {
-                font-size: 2vw;
-            }
-            @extend .p-y-3;
-            // textillate sentence
-            > span {
-                // textillate word
-                > span {
-                    // textillate char
-                    > span {
-                        transition: transform 100ms;
-                        &:hover {
-                            -webkit-transform: scale3d(1.5, 1.5, 1.5);
-                            transform: scale3d(1.5, 1.5, 1.5);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    
-    #header_svg {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        @extend .p-y-2;
+        position: relative;
+        top: -50px;
     }
 }
 
 #about {
     .peace-image {
         max-height: 300px;
-    }
-}
-
-#programming {
-    
-    #apps {
-        background-color: #b1e9f2;
-        overflow-x: hidden; // hide clouds for bad x scrolling
-        .appdesign-video, .crossplattform-image {
-            max-height: 300px;
-        }
-        .svg_apps_col {
-            background-image: url(../images/apps_background.svg);
-            background-position: center bottom;
-            background-repeat:repeat-x;
-            height: 500px;
-            .foreground, .foreground_finger {
-                background-repeat: no-repeat;
-                position: absolute;
-                pointer-events: none;
-            }
-            .foreground {
-                background-image: url(../images/apps_foreground.svg);
-                background-position: center bottom;
-                height: 500px;
-                width: 100%;
-                z-index: 2;
-            }
-            .foreground_finger {
-                background-image: url(../images/apps_foreground_finger.svg);
-                background-position: center 200px; 
-                height: 500px;
-                width: 100%;
-                z-index: 3;
-            }
-            .framewrapper {
-                position: relative;
-                top: 16px; // TODO calc this?
-                height: 250px * $apps-iframe-decrease;
-                width: 160px * $apps-iframe-decrease;
-                -webkit-transform: scale(1 / $apps-iframe-decrease);
-                -moz-transform: scale(1 / $apps-iframe-decrease);
-                -ms-transform: scale(1 / $apps-iframe-decrease);
-                -o-transform: scale(1 / $apps-iframe-decrease);
-                transform: scale(1 / $apps-iframe-decrease);
-                background-color: white;
-                .la-square-jelly-box {
-                    position: absolute;
-                    margin: 70% 45%;
-                }
-                iframe {
-                    position: relative;
-                    width: 100%;
-                    height: 100%; 
-                    border: none;
-                    z-index: 1;
-                }
-            }
-        }
-    }
-    
-    #ecommerce {
-        .description {
-            .bindings-image,  .markets-image, .erp-image, .custom-image {
-                max-height: 300px;
-            }
-        }
-
-        background-color: #b1e9f2;
-        .svg-wrapper {
-            background-image: url(../images/ecommerce_background_spring.svg);
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: auto 100%;
-        }
-        #street {
-            width: 100%;
-        }
-    }
-    
-    #web {
-        background-color: #b1e9f2;
-        
-        .content-image, .files-image, .responsive-image, .code-image {
-            max-height: 300px;
-        }
-        
-        .svg-wrapper {
-            position: relative;
-            top: -150px;
-            margin-bottom: -150px;
-            @include media-breakpoint-down(sm) {
-                top: -100px;
-                margin-bottom: -100px;
-            }
-            #webdevelopment {
-                width: 100%;
-            }
-        }
-    }
-}
-
-#design {
-    header {
-        padding-top: $navbar-height + 1;
-        margin-top: -1px; // svg blitzen verhindern
-    }
-    
-    .corporate-image {
-        max-height: 200px;
     }
 }
 
@@ -341,17 +182,5 @@ select[name="locale"] {
     }
     dd {
         margin-bottom: 0;
-    }
-}
-
-#blogposts {
-    header {
-        padding-top: $navbar-height;
-        img.blogposts-header {
-            width: 100%;
-        }
-    }
-    .card {
-
     }
 }

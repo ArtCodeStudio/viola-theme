@@ -5,7 +5,9 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="tooltip"][data-show="always"]').tooltip('show')
-})
+});
+
+
 
 /**
  * @see https://github.com/daneden/animate.css
@@ -65,7 +67,7 @@ $.fn.extend({
     };
  
     special.scrollstop = {
-        latency: 10, // default is 300
+        latency: 100, // default is 300
         setup: function() {
  
             var timer,
@@ -92,43 +94,10 @@ $.fn.extend({
  
         },
         teardown: function() {
-            jQuery(this).unbind( 'scroll touchmove', jQuery(this).data(uid2) );
+            jQuery(this).unbind('scroll touchmove', jQuery(this).data(uid2) );
         }
     };
 })();
-
-/**
- * Moving background-image on mousemove
- * @see http://codepen.io/chrisboon27/pen/rEDIC
- */
-var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffset, yOffset, centerX, centerY, movementStrength) {
-    var height = movementStrength / $(window).height();
-    var width = movementStrength / $(window).width();
-    
-    var move = function (pageX, pageY) {
-        pageX = pageX - ($(window).width() / 2);
-        pageY = pageY - ($(window).height() / 2);
-        var newvalueX = (width * pageX * -1) + xOffset;
-        var newvalueY = (height * pageY * -1) + yOffset;
-        if(centerX === true) {
-            newvalueX += $(mouseSelector).width() / 2;
-        }
-        if(centerY === true) {
-            newvalueY += $(mouseSelector).height() / 2;
-        }
-        $(backgroundSelector).css("background-position", newvalueX+"px "+newvalueY+"px");
-    }
-    // initial position
-    move(0, 0);
-    // reset position on windows resize
-    $( window ).resize(function() {
-        move(0, 0);
-    });
-    // move background on mousemove
-    $(mouseSelector).mousemove(function(e) {
-        move(e.pageX, e.pageY);
-    });
-};
 
 /**
  * Performs a smooth page scroll to an anchor on the same page.y
@@ -173,44 +142,4 @@ $('#sidebar').simplerSidebar({
  * Leaflet initial stuff
  * @see http://leafletjs.com/
  */
-L.Icon.Default.imagePath = '/themes/jumplink/assets/vendor/leaflet/dist/images/'
-
-
-/**
- * Check if element is in viewport after scroll or resize, if it is, start animations
- * @see https://github.com/patik/within-viewport
- * @see https://github.com/daneden/animate.css
- */
-$(function () {
-    
-    var fadeInLeftOnViewports = $('.fadeInLeftOnViewport');
-    var fadeInRightOnViewports = $('.fadeInRightOnViewport');
-    
-    var checkAnimations = function () {
-        
-        $.each(fadeInLeftOnViewports, function( index, value ) {
-            value = $(value);
-            if(value.find('img, video').is(':within-viewport')) {
-                if(!value.hasClass( "animationDone" )) {
-                    value.animateCss('fadeInLeft', function(){});
-                }
-                
-            }
-        });
-        
-        $.each(fadeInRightOnViewports, function( index, value ) {
-            value = $(value);
-            if(value.find('img, video').is(':within-viewport')) {
-                if(!value.hasClass( "animationDone" )) {
-                    value.animateCss('fadeInRight', function(){});
-                }
-                
-            }
-        });
-    }
-    
-    $(window).on('resize scrollstop scrollstart', function() {
-        checkAnimations();
-    });
-    checkAnimations();
-})
+L.Icon.Default.imagePath = '/themes/viola/assets/vendor/leaflet/dist/images/'
