@@ -7,8 +7,11 @@ is_hidden = 0
     {% partial 'top_header' %}
     {% partial 'navigation' %}
     {% partial 'offer' %}
+	{% partial 'services' %}
     {% partial 'contact' %}
-    {% partial 'location' %}
+	{% if this.theme.location_enabled %}
+		{% partial 'location' %}
+	{% endif %}
     {% partial 'imprint' %}
 </div>
 {% put scripts %}

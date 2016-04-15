@@ -28,10 +28,61 @@ $navbar-height-big:         130px;
 @import "./location.scss";
 @import "./carousel.scss";
 
+/**
+ * @see http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+ */
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+/**
+ * @see http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+ */
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+/**
+ * @see https://www.tjvantoll.com/2012/02/20/css3-color-animations/
+ */
+@include keyframes(color_change_purple) {
+	from { color: white; }
+	to { color: lighten($purple, 30%); }
+}
+
+
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $purple;
 }
 
 .bg-purple {
@@ -138,14 +189,22 @@ body {
 }
  
 #top {
-    .fa-chevron-circle-down {
-        color: white;
-        font-size: 40px;
-        margin-top: -100px;
+    .icon-circle {
+        border-radius: 50%;
+        border: none;
         text-align: center;
-        width: 100%;
+        width: 50px;
+        height: 50px;
+        line-height: 58px;
+        margin: 0 auto 20px;
+        top: -70px;
         position: relative;
-        top: -50px;
+        background-color: rgba(0,0,0,0.4);
+        .fa {
+            color: white;
+            font-size: 30px;
+            // @include animation('color_change_purple 3s infinite alternate');
+        }
     }
 }
 

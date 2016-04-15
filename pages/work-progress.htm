@@ -18,26 +18,7 @@ is_hidden = 0
         </div>
     </div>
 </div>
-
-<div id="imprint" data-target="#imprint">
-    <div class="container p-t-3">
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <dl class="text-truncate">
-                    <dt class="col-xs-4">Viola Garber</dt>
-                    <dd class="col-xs-8"><br></dd>
-                    <dt class="col-xs-4">Telefon</dt>
-                    <dd class="col-xs-8"><a href="tel:+4915254090189">0175 964 68 75</a></dd>
-                    <dt class="col-xs-4">E-Mail</dt>
-                    <dd class="col-xs-8"><a href="mailto:info@jumplink.eu">info@thp-garber.de</a></dd>
-                    <dt class="col-xs-4">Hausbesuche</dt>
-                    <dd class="col-xs-8">Termin nach Vereinbarung</dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-</div>
-
+{% partial 'imprint' %}
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/work-progress.js' |theme }}"></script>
 {% endput %}

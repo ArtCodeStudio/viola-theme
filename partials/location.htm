@@ -6,12 +6,12 @@
                 <div class="row">
                     <div class="col-xs-8">
                         <address>
-                            <strong>Tierheilpraxis<br>Viola Garber</strong>
-                            <br>Bei der Kirche 12<br> 27476 Cuxhaven
+                            <strong>{{ this.theme.location_name_line_1 }}<br>{{ this.theme.location_name_line_2 }}</strong>
+                            <br>{{ this.theme.location_address_line_1 }}<br>{{ this.theme.location_address_line_2 }}
                         </address>
                     </div>
                     <div class="col-xs-4">
-                            <a class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank", href="https://www.google.de/maps/place/Bei+der+Kirche+12,+27476+Cuxhaven/@53.8837,8.6716813,17z/data=!3m1!4b1!4m2!3m1!1s0x47b404f584b82c75:0x5ffd345530379b8a?hl=de">
+                            <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
                                 <img src="{{ 'assets/images/route.svg' | theme }}" alt="Routenplaner">
                             </a>
                     </div>

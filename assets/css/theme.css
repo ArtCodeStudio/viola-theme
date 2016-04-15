@@ -9358,6 +9358,16 @@ a.bg-danger:focus, a.bg-danger:hover {
   bottom: 0;
   top: initial; }
 
+@media (min-width: 0) and (max-width: 768px) {
+  #main-navbar.navbar .container {
+    float: right;
+    width: 100%;
+    margin-left: -100px;
+    display: flex;
+    padding: 0; }
+  #main-navbar.navbar .navbar-brand {
+    margin: 0 auto; } }
+
 #sidebar {
   display: none; }
   #sidebar .sidebar-wrapper {
@@ -9848,10 +9858,46 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-size: cover;
   background-attachment: fixed; }
 
+/**
+ * @see http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+ */
+/**
+ * @see http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+ */
+/**
+ * @see https://www.tjvantoll.com/2012/02/20/css3-color-animations/
+ */
+@-webkit-keyframes color_change_purple {
+  from {
+    color: white; }
+  to {
+    color: #c3badf; } }
+
+@-moz-keyframes color_change_purple {
+  from {
+    color: white; }
+  to {
+    color: #c3badf; } }
+
+@-o-keyframes color_change_purple {
+  from {
+    color: white; }
+  to {
+    color: #c3badf; } }
+
+@keyframes color_change_purple {
+  from {
+    color: white; }
+  to {
+    color: #c3badf; } }
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #6852ae; }
 
 .bg-purple {
   background-color: #6852ae; }
@@ -9915,14 +9961,20 @@ body {
   padding-top: 54px;
   margin-top: -54px; }
 
-#top .fa-chevron-circle-down {
-  color: white;
-  font-size: 40px;
-  margin-top: -100px;
+#top .icon-circle {
+  border-radius: 50%;
+  border: none;
   text-align: center;
-  width: 100%;
+  width: 50px;
+  height: 50px;
+  line-height: 58px;
+  margin: 0 auto 20px;
+  top: -70px;
   position: relative;
-  top: -50px; }
+  background-color: rgba(0, 0, 0, 0.4); }
+  #top .icon-circle .fa {
+    color: white;
+    font-size: 30px; }
 
 #about .peace-image {
   max-height: 300px; }

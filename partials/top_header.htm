@@ -11,7 +11,7 @@
             <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/dog.jpg'|theme }}');"></div>
         </div>
     </div>
-    <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#offer">
+    <a class="icon-circle center-block" href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#offer" data-toggle="tooltip" data-placement="top" title="Weiter">
         <i class="fa fa-chevron-circle-down"></i>
     </a>
 </header>

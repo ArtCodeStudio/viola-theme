@@ -1,22 +1,19 @@
 ==
 <div class="anchor-static-top-navbar" id="offer" data-target="#offer">
-    <div class="container p-t-3">
+    <div class="container p-y-3">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
-                <h2 class="m-b-3">Mein Angebot</h2>
+                <h2 class="m-b-3">{% content 'offer/offer_title.txt' %}</h2>
             </div>
             <div class="col-xs-12 col-md-6">
-                <div class="icon-circle">
-                    <i class="fa fa-ambulance"></i>
-                </div>
-                
-                {% content 'mobile.htm' %}
+                <img class="center-block p-b-2" src="{{'assets/images/icon-mobile-praxis.svg'|theme}}">
+                <h3 class="text-xs-center">{% content 'offer/mobile_title.txt' %}</h3>
+                {% content 'offer/mobile.htm' %}
             </div>
             <div class="col-xs-12 col-md-6">
-                <div class="icon-circle">
-                    <i class="fa fa-user-md"></i>
-                </div>
-                {% content 'medical_office.htm' %}
+                <img class="center-block p-b-2" src="{{'assets/images/icon-praxis.svg'|theme}}">
+                <h3 class="text-xs-center">{% content 'offer/medical_office_title.txt' %}</h3>
+                {% content 'offer/medical_office.htm' %}
             </div>
         </div>
     </div>

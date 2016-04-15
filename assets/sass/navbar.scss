@@ -50,3 +50,20 @@ $navbar-brand-width: 150px;
   bottom: 0;
   top: initial;
 }
+
+
+@media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, md)) {
+    
+    #main-navbar.navbar {
+        .container {
+            float: right;
+            width: 100%;
+            margin-left: -100px;
+            display: flex;
+            padding: 0;
+        }
+        .navbar-brand {
+            margin: 0 auto;
+        }
+    }
+}
