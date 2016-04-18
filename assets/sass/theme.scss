@@ -76,8 +76,8 @@ $navbar-height-big:         130px;
 
 
 body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     position: relative;
 }
 
@@ -185,10 +185,15 @@ h1, h2, h3, h4, h5, h6 {
     [data-target] {
         padding-top: $navbar-height;
         margin-top: -$navbar-height;
+        background-clip: content-box;
     }
 }
  
 #top {
+    //&[data-target] {
+    //    padding-top: $navbar-height;
+    //    margin-top: -$navbar-height - 16px;
+    //}
     .icon-circle {
         border-radius: 50%;
         border: none;
@@ -205,6 +210,13 @@ h1, h2, h3, h4, h5, h6 {
             font-size: 30px;
             // @include animation('color_change_purple 3s infinite alternate');
         }
+    }
+}
+
+#offer {
+    &[data-target] {
+        padding-top: $navbar-height;
+        margin-top: -$navbar-height - 16px;
     }
 }
 

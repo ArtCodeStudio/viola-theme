@@ -1,14 +1,24 @@
 <header id="top" data-target="#top">
     <div id="carousel-top-header" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/horse.jpg'|theme }}');"></div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/cat.jpg'|theme }}');"></div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/dog.jpg'|theme }}');"></div>
+		<div class="carousel-inner" role="listbox">
+		    <div class="carousel-item active">
+		        <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/dog.jpg'|theme }}');"></div>
+				<div class="carousel-caption">
+					<h1><b>Klassische Homöopathie + Naturheilverfahren</b></h1>
+				</div>
+		    </div>
+		    <div class="carousel-item">
+		        <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/horse.jpg'|theme }}');"></div>
+				<div class="carousel-caption">
+					<!--<h1 class="display-3"><b>Klassische Homöopathie + Naturheilverfahren</b></h1>-->
+				</div>
+		    </div>
+		    <div class="carousel-item">
+		        <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/cat.jpg'|theme }}');"></div>
+				<div class="carousel-caption">
+					<!--<h1 class="display-3"><b>Klassische Homöopathie + Naturheilverfahren</b></h1>-->
+				</div>
+		    </div>
         </div>
     </div>
     <a class="icon-circle center-block" href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#offer" data-toggle="tooltip" data-placement="top" title="Weiter">

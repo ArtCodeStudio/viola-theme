@@ -1,10 +1,4 @@
-#carousel-top-header {
-    height: 100vh;
-    width: 100%;
-}
-
 .carousel-image-background {
-    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -12,5 +6,46 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
+}
+
+#carousel-top-header {
+    height: 100vh;
+    width: 100%;
+    .carousel-image-background {
+        height: 100vh;
+        background-attachment: fixed;
+    }
+    .carousel-caption {
+        // background-color: rgba(255, 255, 255, 0.5);
+        // bottom: 0;
+        bottom: 180px; 
+        // left: 0;
+        // right: 0;
+        // width: 100%;
+        // padding-bottom: 70px;
+        h1 {
+            color: white;
+            // text-shadow: none;
+            font-size: 30px;
+            @include media-breakpoint-up(md) {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+
+
+#slideshow2 {
+    height: 300px;
+    width: 100%;
+    .carousel-image-background {
+        height: 300px;
+        // opacity: 0.4;
+        // background-attachment: fixed;
+    }
+    .carousel-caption {
+        // background-color: rgba(255, 255, 255, 0.8);
+        bottom: 0;
+    }
 }

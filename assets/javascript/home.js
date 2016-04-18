@@ -6,7 +6,8 @@ $('#navigation_link').attr("href", window.theme.locationLink)
 
 var map = L.map('map', {
     zoomControl: false,
-    attributionControl: true
+    attributionControl: true,
+    scrollWheelZoom: false,
 }).setView([window.theme.locationLongitude, window.theme.locationLatitude], window.theme.locationZoom);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
