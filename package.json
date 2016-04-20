@@ -7,12 +7,15 @@
     "preinstall": "bower install",
     "postinstall": "npm run build",
     "sass": "node_modules/.bin/node-sass assets/sass/theme.scss assets/css/theme.css",
-    "build": "npm run sass",
+    "autoprefixer": "node_modules/.bin/postcss --use autoprefixer assets/css/theme.css -d assets/css/",
+    "build": "npm run sass && npm run autoprefixer",
     "watch": "npm run sass -- -w"
   },
   "author": "Pascal Garber <pascal.jumplink.eu>",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^3.4.2"
+    "autoprefixer": "^6.3.6",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1"
   }
 }
