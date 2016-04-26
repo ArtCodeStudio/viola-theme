@@ -9318,21 +9318,17 @@ a.bg-danger:focus, a.bg-danger:hover {
     transition: all 500ms ease; }
   .navbar .nav-link {
     -webkit-transition: padding 500ms ease;
-    transition: padding 500ms ease; }
+    transition: padding 500ms ease;
+    padding-top: .150rem;
+    padding-bottom: .150rem; }
   .navbar.bg-white {
     border-bottom: 1px #eceeef solid; }
   .navbar.fg-purple .navbar-nav .nav-link, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link {
     color: rgba(104, 82, 174, 0.7); }
     .navbar.fg-purple .navbar-nav .nav-link:hover, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link:hover, .navbar.fg-purple .navbar-nav .nav-link.active, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link.active {
       color: #6852ae; }
-  .navbar.navbar-big {
-    height: 130px; }
-    .navbar.navbar-big .navbar-brand {
-      opacity: 0;
-      height: 111px; }
-    .navbar.navbar-big .nav-link {
-      padding-top: 2.8rem;
-      padding-bottom: 2.8rem; }
+  .navbar.navbar-big .navbar-brand {
+    opacity: 0; }
 
 .navbar-sticky-bottom-element {
   bottom: 0;
@@ -9827,7 +9823,6 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-size: cover; }
 
 .white-caption {
-  background-color: white;
   color: black;
   text-shadow: none; }
 
@@ -9840,7 +9835,7 @@ a.bg-danger:focus, a.bg-danger:hover {
       height: 100vh;
       background-attachment: fixed; }
     #carousel-top-header .carousel-item .carousel-caption {
-      bottom: 150px; }
+      bottom: 80px; }
       #carousel-top-header .carousel-item .carousel-caption h1 {
         color: white;
         font-size: 30px; }
@@ -9886,7 +9881,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
   color: #6852ae; }
 
 .display-4 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400; }
 
 .bg-purple {

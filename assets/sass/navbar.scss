@@ -1,6 +1,7 @@
 $navbar-brand-height: 37px;
 $navbar-brand-width: 150px;
 
+
 .navbar {
     z-index: 3000; // to make it over sidebar mask
     height: $navbar-height;
@@ -22,6 +23,8 @@ $navbar-brand-width: 150px;
     }
     .nav-link {
         transition: padding 500ms ease;
+        padding-top: .150rem;
+        padding-bottom: .150rem;
     }
     &.bg-white {
         border-bottom: 1px $gray-lighter solid;
@@ -35,14 +38,14 @@ $navbar-brand-width: 150px;
         }
     }
     &.navbar-big {
-        height: $navbar-height-big;
+        // height: $navbar-height-big;
         .navbar-brand {
             opacity: 0;
-            height: $navbar-brand-height * 3;
+            // height: $navbar-brand-height * 3;
         }
         .nav-link {
-            padding-top:    2.8rem;
-            padding-bottom: 2.8rem;
+            // padding-top:    2.8rem;
+            // padding-bottom: 2.8rem;
         }
     }
 }
