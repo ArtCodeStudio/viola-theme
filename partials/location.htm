@@ -1,3 +1,4 @@
+==
 <div id="location" data-target="#location">
     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
         <div class="">
@@ -6,8 +7,18 @@
                 <div class="row">
                     <div class="col-xs-8">
                         <address>
-                            <strong>{{ this.theme.location_name_line_1 }}<br>{{ this.theme.location_name_line_2 }}</strong>
-                            <br>{{ this.theme.location_address_line_1 }}<br>{{ this.theme.location_address_line_2 }}
+                            <strong>
+                                {{ this.theme.location_name_line_1 }}
+                                {% if this.theme.location_name_line_2 %}
+                                    <br>{{ this.theme.location_name_line_2 }}
+                                {% endif %}
+                            </strong>
+                            {% if this.theme.location_address_line_1 %}
+                                <br>{{ this.theme.location_address_line_1 }}
+                            {% endif %}
+                            {% if this.theme.location_address_line_2 %}
+                                <br>{{ this.theme.location_address_line_2 }}
+                            {% endif %}
                         </address>
                     </div>
                     <div class="col-xs-4">

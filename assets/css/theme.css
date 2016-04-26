@@ -256,7 +256,7 @@ html {
   width: device-width; }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -4321,7 +4321,7 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #c9302c; }
 
-.bg-inverse {
+.bg-inverse, .bg-inverse h1, .bg-inverse h2, .bg-inverse h3, .bg-inverse h4, .bg-inverse h5, .bg-inverse h6, .bg-inverse .display-1, .bg-inverse .display-2, .bg-inverse .display-3, .bg-inverse .display-4, .bg-inverse a {
   color: #eceeef;
   background-color: #373a3c; }
 
@@ -9303,8 +9303,9 @@ a.bg-danger:focus, a.bg-danger:hover {
 .navbar {
   z-index: 3000;
   height: 54px;
-  -webkit-transition: height 500ms ease, background-color 500ms ease;
-  transition: height 500ms ease, background-color 500ms ease; }
+  opacity: 1;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease; }
   .navbar .navbar-brand {
     min-width: 150px;
     height: 37px;
@@ -9313,8 +9314,8 @@ a.bg-danger:focus, a.bg-danger:hover {
     background-position: center bottom;
     background-size: 100% auto;
     padding-left: 50px;
-    -webkit-transition: height 500ms ease;
-    transition: height 500ms ease; }
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease; }
   .navbar .nav-link {
     -webkit-transition: padding 500ms ease;
     transition: padding 500ms ease; }
@@ -9327,6 +9328,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .navbar.navbar-big {
     height: 130px; }
     .navbar.navbar-big .navbar-brand {
+      opacity: 0;
       height: 111px; }
     .navbar.navbar-big .nav-link {
       padding-top: 2.8rem;
@@ -9824,20 +9826,27 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-position: center center;
   background-size: cover; }
 
+.white-caption {
+  background-color: white;
+  color: black;
+  text-shadow: none; }
+
 #carousel-top-header {
   height: 100vh;
   width: 100%; }
-  #carousel-top-header .carousel-image-background {
-    height: 100vh;
-    background-attachment: fixed; }
-  #carousel-top-header .carousel-caption {
-    bottom: 180px; }
-    #carousel-top-header .carousel-caption h1 {
-      color: white;
-      font-size: 30px; }
-      @media (min-width: 768px) {
-        #carousel-top-header .carousel-caption h1 {
-          font-size: 50px; } }
+  #carousel-top-header .carousel-item {
+    height: 100vh; }
+    #carousel-top-header .carousel-item .carousel-image-background {
+      height: 100vh;
+      background-attachment: fixed; }
+    #carousel-top-header .carousel-item .carousel-caption {
+      bottom: 150px; }
+      #carousel-top-header .carousel-item .carousel-caption h1 {
+        color: white;
+        font-size: 30px; }
+        @media (min-width: 768px) {
+          #carousel-top-header .carousel-item .carousel-caption h1 {
+            font-size: 50px; } }
 
 #slideshow2 {
   height: 300px;
@@ -9873,8 +9882,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
   color: #6852ae; }
+
+.display-4 {
+  font-size: 2.2rem;
+  font-weight: 400; }
 
 .bg-purple {
   background-color: #6852ae; }
@@ -9888,8 +9901,29 @@ h1, h2, h3, h4, h5, h6 {
 .bg-gray-lighter {
   background-color: #eceeef; }
 
+.bg-gray-light {
+  background-color: #818a91; }
+
+.bg-gray {
+  background-color: #55595c; }
+
 .fg-purple, #sidebar .sidebar-wrapper.fg-purple .list-group-item {
   color: #6852ae; }
+
+.fg-gray-lighter {
+  color: #eceeef; }
+  .fg-gray-lighter h1, .fg-gray-lighter h2, .fg-gray-lighter h3, .fg-gray-lighter h4, .fg-gray-lighter h5, .fg-gray-lighter h6, .fg-gray-lighter .display-1, .fg-gray-lighter .display-2, .fg-gray-lighter .display-3, .fg-gray-lighter .display-4, .fg-gray-lighter a {
+    color: #eceeef; }
+
+.fg-gray-light {
+  color: #818a91; }
+  .fg-gray-light h1, .fg-gray-light h2, .fg-gray-light h3, .fg-gray-light h4, .fg-gray-light h5, .fg-gray-light h6, .fg-gray-light .display-1, .fg-gray-light .display-2, .fg-gray-light .display-3, .fg-gray-light .display-4, .fg-gray-light a {
+    color: #818a91; }
+
+.fg-gray {
+  color: #55595c; }
+  .fg-gray h1, .fg-gray h2, .fg-gray h3, .fg-gray h4, .fg-gray h5, .fg-gray h6, .fg-gray .display-1, .fg-gray .display-2, .fg-gray .display-3, .fg-gray .display-4, .fg-gray a {
+    color: #55595c; }
 
 .icon-circle {
   border-radius: 50%;

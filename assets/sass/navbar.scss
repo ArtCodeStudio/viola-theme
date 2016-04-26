@@ -4,7 +4,8 @@ $navbar-brand-width: 150px;
 .navbar {
     z-index: 3000; // to make it over sidebar mask
     height: $navbar-height;
-    transition: height 500ms ease, background-color 500ms ease;
+    opacity: 1;
+    transition: all 500ms ease;
     .navbar-brand {
         min-width: $navbar-brand-width;
         height: $navbar-brand-height;
@@ -16,7 +17,7 @@ $navbar-brand-width: 150px;
         background-size: 100% auto;
         
         padding-left: 50px;
-        transition: height 500ms ease;
+        transition: all 500ms ease;
         
     }
     .nav-link {
@@ -36,6 +37,7 @@ $navbar-brand-width: 150px;
     &.navbar-big {
         height: $navbar-height-big;
         .navbar-brand {
+            opacity: 0;
             height: $navbar-brand-height * 3;
         }
         .nav-link {

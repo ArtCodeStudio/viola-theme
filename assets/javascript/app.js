@@ -137,9 +137,3 @@ $('#sidebar').simplerSidebar({
 		display: true
 	}
 });
-
-/**
- * Leaflet initial stuff
- * @see http://leafletjs.com/
- */
-L.Icon.Default.imagePath = '/themes/viola/assets/vendor/leaflet/dist/images/'

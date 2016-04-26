@@ -4,7 +4,7 @@ $font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Roboto", Helve
 $purple:                    #6852ae !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             16px; //default 16px
+$font-size-root:             18px; //default 16px
 
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 
@@ -14,7 +14,6 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 @import "../vendor/font-awesome/scss/font-awesome.scss";
 
 // own variables
-$apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 $navbar-height-big:         130px;
 
@@ -81,8 +80,13 @@ body {
     position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     color: $purple;
+}
+
+.display-4 {
+    font-size: 2.2rem;
+    font-weight: 400;
 }
 
 .bg-purple {
@@ -101,9 +105,46 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $gray-lighter;
 }
 
+.bg-gray-light {
+    background-color: $gray-light;
+}
+
+
+.bg-gray {
+    background-color: $gray;
+}
+
 .fg-purple {
     color: $purple;
 }
+
+.fg-gray-lighter {
+    color: $gray-lighter;
+    h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, a {
+        color: $gray-lighter;
+    }
+}
+
+.fg-gray-light {
+    color: $gray-light;
+    h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, a {
+        color: $gray-light;
+    }
+}
+
+.fg-gray {
+    color: $gray;
+    h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, a {
+        color: $gray;
+    }
+}
+
+.bg-inverse {
+    h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, a {
+        @extend .bg-inverse;
+    }
+} 
+
 
 .icon-circle {
     border-radius: 50%;

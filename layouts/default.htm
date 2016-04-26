@@ -17,34 +17,33 @@ description = "Default layout"
     </head>
     <body id="{{ str_studly(this.page.title) }}" data-spy="scroll">
         
-        <!-- Content -->
+        {# Content #}
         <section id="layout-content">
             {% page %}
         </section>
 
-		<!-- Theme variables -->
-		<script>
-			window.theme = {
-				siteName: "{{ this.theme.site_name }}",
-				companyName: "{{ this.theme.company_name }}",
-				phoneNumber: "{{ this.theme.phone_number }}",
-				emailAddress: "{{ this.theme.email_address }}",
-				locationEnabled: "{{ this.theme.location_enabled }}",
-				locationName: "{{ this.theme.location_name }}",
-				locationAddressLine1: "{{ this.theme.location_address_line_1 }}",
-				locationAddressLine2: "{{ this.theme.location_address_line_2 }}",
-				locationMapboxAccessToken: "{{ this.theme.location_mapbox_accessToken }}",
-				locationMapboxId: "{{ this.theme.location_mapbox_id }}",
-				locationMaxZoom: Number("{{ this.theme.location_max_zoom }}"),
-				locationLongitude: Number("{{ this.theme.location_longitude }}"),
-				locationLatitude: Number("{{ this.theme.location_latitude }}"),
-				locationZoom: Number("{{ this.theme.location_zoom }}"),
-				locationLink: "{{ this.theme.location_navigation_link }}",
-			};
+        {# Theme variables #}
+        <script>
+            window.theme = {
+                siteName: "{{ this.theme.site_name }}",
+                companyName: "{{ this.theme.company_name }}",
+                phoneNumber: "{{ this.theme.phone_number }}",
+                emailAddress: "{{ this.theme.email_address }}",
+                locationEnabled: "{{ this.theme.location_enabled }}",
+                locationName: "{{ this.theme.location_name }}",
+                locationAddressLine1: "{{ this.theme.location_address_line_1 }}",
+                locationAddressLine2: "{{ this.theme.location_address_line_2 }}",
+                locationMapboxAccessToken: "{{ this.theme.location_mapbox_accessToken }}",
+                locationMapboxId: "{{ this.theme.location_mapbox_id }}",
+                locationMaxZoom: Number("{{ this.theme.location_max_zoom }}"),
+                locationLongitude: Number("{{ this.theme.location_longitude }}"),
+                locationLatitude: Number("{{ this.theme.location_latitude }}"),
+                locationZoom: Number("{{ this.theme.location_zoom }}"),
+                locationLink: "{{ this.theme.location_navigation_link }}",
+            };
+        </script>
 
-		</script>
-
-        <!-- Scripts -->
+        {# Scripts #}
         <script src="{{ [
             'assets/vendor/within-viewport/withinviewport.js',
             'assets/vendor/jquery/dist/jquery.js',
@@ -66,6 +65,10 @@ description = "Default layout"
             'assets/javascript/app.js',
         ]|theme }}"></script>
         {% framework extras %}
+        {# More theme variables #}
+        <script>
+            L.Icon.Default.imagePath = "/themes/{{this.theme.dirname}}/assets/vendor/leaflet/dist/images/";
+        </script>
         {% scripts %}
 
     </body>

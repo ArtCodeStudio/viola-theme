@@ -1,23 +1,48 @@
+==
 <div id="imprint" data-target="#imprint">
+    <div class="container-fluid fg-gray-light p-y-1">
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <div class="display-4">Klassische Homöopathie + Naturheilverfahren</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-gray-lighter p-y-1">
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <div class="display-4">Hausbesuch nach Vereinbarung</div>
+            </div>
+        </div>
+    </div>
     <div class="container p-y-3">
         <div class="row">
             <div class="col-xs-12 col-md-4">
-                <dl class="text-truncate">
-                    <dt class="col-xs-4">{{ this.theme.company_name }}</dt>
-                    <dd class="col-xs-8"><br></dd>
-                    <dt class="col-xs-4">Telefon</dt>
-                    <dd class="col-xs-8"><a href="tel:{{ str_camel(this.theme.phone_number) }}">{{ this.theme.phone_number }}</a></dd>
-                    <dt class="col-xs-4">E-Mail</dt>
-                    <dd class="col-xs-8"><a href="mailto:{{ this.theme.email_address }}">{{ this.theme.email_address }}</a></dd>
-                    <dt class="col-xs-4">Termin</dt>
-                    <dd class="col-xs-8">Nach Vereinbarung</dd>
-                </dl>
+                <strong><h5>Kontakt</h5></strong>
+                <div class="fg-gray-light">
+                    <strong>{{ this.theme.company_name }}</strong>
+                    <br><a href="tel:{{ str_camel(this.theme.phone_number) }}">{{ this.theme.phone_number }}</a>
+                    <br><a href="mailto:{{ this.theme.email_address }}">{{ this.theme.email_address }}</a>
+                </div>
             </div>
             <div class="col-xs-12 col-md-4">
-                <img class="center-block img-fluid" style="max-height: 120px;" src="{{'assets/images/fnt-logo.jpg'|theme}}">
+                <strong><h5>Impressum</h5></strong>
             </div>
             <div class="col-xs-12 col-md-4">
-                <img class="center-block img-fluid" style="max-height: 120px;" src="{{'assets/images/Tierheilpraktiker-300x300.png'|theme}}">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="center-block img-fluid" style="max-height: 120px;" src="{{'assets/images/Tierheilpraktiker-300x300.png'|theme}}">
+                    </div>
+                    <div class="col-xs-6">
+                        <img class="center-block img-fluid" style="max-height: 120px;" src="{{'assets/images/fnt-logo.jpg'|theme}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-gray">
+        <div class="row">
+            <div class="col-xs-12 text-xs-center bg-inverse p-y-1">
+                Diese Webpräsenz wurde ermöglicht durch <strong><a href="//jumplink.eu">JumpLink</a></strong>
             </div>
         </div>
     </div>
