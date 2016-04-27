@@ -1,3 +1,6 @@
+[viewBag]
+snippetCode = "location"
+snippetName = "location"
 ==
 <div id="location" data-target="#location">
     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
@@ -32,3 +35,6 @@
     </div>
     <div id="map"></div>
 </div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/partials/location.js' |theme }}"></script>
+{% endput %}

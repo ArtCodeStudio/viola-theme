@@ -98,3 +98,5 @@ form:
                 tab: Location
                 comment: Location navigation link, e.g. to Google Maps
                 default: https://www.google.de/maps/place/Bei+der+Kirche+12,+27476+Cuxhaven/@53.8837,8.6716813,17z/data=!3m1!4b1!4m2!3m1!1s0x47b404f584b82c75:0x5ffd345530379b8a?hl=de
+require:
+    - RainLab.Pages

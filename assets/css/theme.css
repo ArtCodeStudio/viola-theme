@@ -10002,8 +10002,6 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     .contact-methods a .fa.fa-mobile {
       padding-left: 10px; }
 
-#imprint .imprint-brand {
-  max-height: 100px; }
-
-#imprint dd {
-  margin-bottom: 0; }
+#imprint .subtext {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem; }

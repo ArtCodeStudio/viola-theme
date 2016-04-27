@@ -1,0 +1,15 @@
+[viewBag]
+==
+<div class="{{ class }}">
+    {% for item in items %}
+        <a class="{{ itemClass }} {{ item.viewBag.cssClass }} {{ item.items ? 'dropdown' : '' }}" {% if item.items %}data-toggle="dropdown"{% endif %} href="{{ item.url }}#{{ item.viewBag.cssClass }}">
+            {{ item.title }}
+            {% if item.items %}
+                <span class="caret"></span>
+            {% endif %}
+        </a>
+        {% if item.items %}
+            {% partial 'menu-items' items=item.items class='dropdown-menu' %}
+        {% endif %}
+    {% endfor %}
+</div>

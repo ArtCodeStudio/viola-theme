@@ -1,4 +1,6 @@
 description = "Default layout"
+
+[staticPage]
 ==
 <!DOCTYPE html>
 <html>
@@ -19,6 +21,7 @@ description = "Default layout"
         
         {# Content #}
         <section id="layout-content">
+            {% partial 'navigation' %}
             {% page %}
         </section>
 
