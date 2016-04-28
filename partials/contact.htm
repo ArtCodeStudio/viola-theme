@@ -1,6 +1,10 @@
 [viewBag]
 snippetCode = "contact"
 snippetName = "contact"
+snippetProperties[headertext][title] = "Header Text"
+snippetProperties[headertext][type] = "string"
+snippetProperties[headertext][default] = "Kontakt"
+snippetProperties[headertext][options][] = ""
 ==
 <div class="bg-gray-lighter" id="contact" data-target="#contact">
     <header class="p-y-3">
@@ -8,7 +12,7 @@ snippetName = "contact"
             <div class="row">
                 <div class="col-xs-12">
                     <img class="center-block p-b-2" src="{{'assets/images/icons/contact.svg'|theme}}">
-                    <h3 class="text-xs-center">{% content 'contact_title.txt' %}</h3>
+                    <h1 class="text-xs-center">{{headertext}}</h1>
                     <div class="m-b-3">
                         {% content 'contact.htm' %}
                     </div>

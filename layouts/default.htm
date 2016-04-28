@@ -25,27 +25,6 @@ description = "Default layout"
             {% page %}
         </section>
 
-        {# Theme variables #}
-        <script>
-            window.theme = {
-                siteName: "{{ this.theme.site_name }}",
-                companyName: "{{ this.theme.company_name }}",
-                phoneNumber: "{{ this.theme.phone_number }}",
-                emailAddress: "{{ this.theme.email_address }}",
-                locationEnabled: "{{ this.theme.location_enabled }}",
-                locationName: "{{ this.theme.location_name }}",
-                locationAddressLine1: "{{ this.theme.location_address_line_1 }}",
-                locationAddressLine2: "{{ this.theme.location_address_line_2 }}",
-                locationMapboxAccessToken: "{{ this.theme.location_mapbox_accessToken }}",
-                locationMapboxId: "{{ this.theme.location_mapbox_id }}",
-                locationMaxZoom: Number("{{ this.theme.location_max_zoom }}"),
-                locationLongitude: Number("{{ this.theme.location_longitude }}"),
-                locationLatitude: Number("{{ this.theme.location_latitude }}"),
-                locationZoom: Number("{{ this.theme.location_zoom }}"),
-                locationLink: "{{ this.theme.location_navigation_link }}",
-            };
-        </script>
-
         {# Scripts #}
         <script src="{{ [
             'assets/vendor/within-viewport/withinviewport.js',

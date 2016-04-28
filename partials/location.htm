@@ -1,6 +1,50 @@
 [viewBag]
 snippetCode = "location"
 snippetName = "location"
+snippetProperties[nameLine1][title] = "Location name line 1"
+snippetProperties[nameLine1][type] = "string"
+snippetProperties[nameLine1][default] = "Tierheilpraxis"
+snippetProperties[nameLine1][options][] = ""
+snippetProperties[nameLine2][title] = "Location name line 2"
+snippetProperties[nameLine2][type] = "string"
+snippetProperties[nameLine2][default] = "Viola Garber"
+snippetProperties[nameLine2][options][] = ""
+snippetProperties[addressLine1][title] = "Address line 1"
+snippetProperties[addressLine1][type] = "string"
+snippetProperties[addressLine1][default] = "Bei der Kirche 12"
+snippetProperties[addressLine1][options][] = ""
+snippetProperties[addressLine2][title] = "Address line 2"
+snippetProperties[addressLine2][type] = "string"
+snippetProperties[addressLine2][default] = "27476 Cuxhaven"
+snippetProperties[addressLine2][options][] = ""
+snippetProperties[mapboxAccessToken][title] = "Mapbox access token"
+snippetProperties[mapboxAccessToken][type] = "string"
+snippetProperties[mapboxAccessToken][default] = "pk.eyJ1IjoianVtcGxpbmsiLCJhIjoiY2lsODd0MGx0MDAyYXdzbHoxNWRzendxZyJ9.6HrdtEXX7n5DhJMNW8PEWA"
+snippetProperties[mapboxAccessToken][options][] = ""
+snippetProperties[mapboxId][title] = "Mapbox ID"
+snippetProperties[mapboxId][type] = "string"
+snippetProperties[mapboxId][default] = "jumplink.p9j2ob03"
+snippetProperties[mapboxId][options][] = ""
+snippetProperties[maxZoom][title] = "Max zoom"
+snippetProperties[maxZoom][type] = "string"
+snippetProperties[maxZoom][default] = 18
+snippetProperties[maxZoom][options][] = ""
+snippetProperties[longitude][title] = "Longitude"
+snippetProperties[longitude][type] = "string"
+snippetProperties[longitude][default] = 53.88373
+snippetProperties[longitude][options][] = ""
+snippetProperties[latitude][title] = "Latitude"
+snippetProperties[latitude][type] = "string"
+snippetProperties[latitude][default] = 8.67392
+snippetProperties[latitude][options][] = ""
+snippetProperties[zoom][title] = "Zoom"
+snippetProperties[zoom][type] = "string"
+snippetProperties[zoom][default] = 15
+snippetProperties[zoom][options][] = ""
+snippetProperties[navigationHref][title] = "Navigation URL"
+snippetProperties[navigationHref][type] = "string"
+snippetProperties[navigationHref][default] = "https://www.google.de/maps/place/Bei+der+Kirche+12,+27476+Cuxhaven/@53.8837,8.6716813,17z/data=!3m1!4b1!4m2!3m1!1s0x47b404f584b82c75:0x5ffd345530379b8a?hl=de"
+snippetProperties[navigationHref][options][] = ""
 ==
 <div id="location" data-target="#location">
     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
@@ -11,23 +55,23 @@ snippetName = "location"
                     <div class="col-xs-8">
                         <address>
                             <strong>
-                                {{ this.theme.location_name_line_1 }}
-                                {% if this.theme.location_name_line_2 %}
-                                    <br>{{ this.theme.location_name_line_2 }}
+                                {{ nameLine1 }}
+                                {% if nameLine2 %}
+                                    <br>{{ nameLine2 }}
                                 {% endif %}
                             </strong>
-                            {% if this.theme.location_address_line_1 %}
-                                <br>{{ this.theme.location_address_line_1 }}
+                            {% if addressLine1 %}
+                                <br>{{ addressLine1 }}
                             {% endif %}
-                            {% if this.theme.location_address_line_2 %}
-                                <br>{{ this.theme.location_address_line_2 }}
+                            {% if addressLine2 %}
+                                <br>{{ addressLine2 }}
                             {% endif %}
                         </address>
                     </div>
                     <div class="col-xs-4">
-                            <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
-                                <img src="{{ 'assets/images/route.svg' | theme }}" alt="Routenplaner">
-                            </a>
+                        <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
+                            <img src="{{ 'assets/images/route.svg' | theme }}" alt="Routenplaner">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -35,6 +79,18 @@ snippetName = "location"
     </div>
     <div id="map"></div>
 </div>
+<script>
+    if(typeof(window.theme) === 'undefined') {
+        window.theme = {};
+    }
+    window.theme.locationMapboxAccessToken = "{{ mapboxAccessToken }}";
+    window.theme.locationMapboxId = "{{ mapboxId }}";
+    window.theme.locationMaxZoom = Number("{{ maxZoom }}");
+    window.theme.locationLongitude = Number("{{ longitude }}");
+    window.theme.locationLatitude = Number("{{ latitude }}");
+    window.theme.locationZoom = Number("{{ zoom }}");
+    window.theme.locationLink = "{{ navigationHref }}";
+</script>
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/partials/location.js' |theme }}"></script>
 {% endput %}

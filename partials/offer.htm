@@ -1,21 +1,33 @@
 [viewBag]
 snippetCode = "offer"
 snippetName = "offer"
+snippetProperties[mobiletitle][title] = "Mobile Title"
+snippetProperties[mobiletitle][type] = "string"
+snippetProperties[mobiletitle][default] = "Mobile Praxis"
+snippetProperties[mobiletitle][options][] = ""
+snippetProperties[medicalofficetitle][title] = "Medical Office Title"
+snippetProperties[medicalofficetitle][type] = "string"
+snippetProperties[medicalofficetitle][default] = "Praxis"
+snippetProperties[medicalofficetitle][options][] = ""
+snippetProperties[headertext][title] = "Header Text"
+snippetProperties[headertext][type] = "string"
+snippetProperties[headertext][default] = "Angebot"
+snippetProperties[headertext][options][] = ""
 ==
 <div id="offer" data-target="#offer">
     <div class="container text-xs-center p-y-3">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
-                <h2 class="m-b-3">{% content 'offer/offer_title.txt' %}</h2>
+                <h1 class="m-b-3">{{headertext}}</h1>
             </div>
             <div class="col-xs-12 col-md-6">
                 <img class="center-block p-b-2" src="{{'assets/images/icons/icon-mobile-praxis.svg'|theme}}">
-                <h3 class="text-xs-center">{% content 'offer/mobile_title.txt' %}</h3>
+                <h2 class="text-xs-center">{{mobiletitle}}</h2>
                 {% content 'offer/mobile.htm' %}
             </div>
             <div class="col-xs-12 col-md-6">
                 <img class="center-block p-b-2" src="{{'assets/images/icons/icon-praxis.svg'|theme}}">
-                <h3 class="text-xs-center">{% content 'offer/medical_office_title.txt' %}</h3>
+                <h2 class="text-xs-center">{{medicalofficetitle}}</h2>
                 {% content 'offer/medical_office.htm' %}
             </div>
         </div>

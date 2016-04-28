@@ -1,19 +1,27 @@
 [viewBag]
 snippetCode = "imprint"
 snippetName = "imprint"
+snippetProperties[infotext1][title] = "Info Text 1"
+snippetProperties[infotext1][type] = "string"
+snippetProperties[infotext1][default] = "Klassische Homöopathie + Naturheilverfahren"
+snippetProperties[infotext1][options][] = ""
+snippetProperties[infotext2][title] = "Info Text 2"
+snippetProperties[infotext2][type] = "string"
+snippetProperties[infotext2][default] = "Hausbesuch nach Vereinbarung"
+snippetProperties[infotext2][options][] = ""
 ==
 <div id="imprint" data-target="#imprint">
     <div class="container-fluid fg-gray-light subtext">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
-                <div class="display-4">Klassische Homöopathie + Naturheilverfahren</div>
+                <div class="display-4">{{infotext1}}</div>
             </div>
         </div>
     </div>
     <div class="container-fluid bg-gray-lighter subtext">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
-                <div class="display-4">Hausbesuch nach Vereinbarung</div>
+                <div class="display-4">{{infotext2}}</div>
             </div>
         </div>
     </div>
