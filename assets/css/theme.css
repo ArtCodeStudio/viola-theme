@@ -9327,8 +9327,6 @@ a.bg-danger:focus, a.bg-danger:hover {
     color: rgba(104, 82, 174, 0.7); }
     .navbar.fg-purple .navbar-nav .nav-link:hover, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link:hover, .navbar.fg-purple .navbar-nav .nav-link.active, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link.active {
       color: #6852ae; }
-  .navbar.navbar-big .navbar-brand {
-    opacity: 0; }
 
 .navbar-sticky-bottom-element {
   bottom: 0;
@@ -9836,12 +9834,6 @@ a.bg-danger:focus, a.bg-danger:hover {
       background-attachment: fixed; }
     #carousel-top-header .carousel-item .carousel-caption {
       bottom: 80px; }
-      #carousel-top-header .carousel-item .carousel-caption h1 {
-        color: white;
-        font-size: 30px; }
-        @media (min-width: 768px) {
-          #carousel-top-header .carousel-item .carousel-caption h1 {
-            font-size: 50px; } }
 
 #slideshow2 {
   height: 300px;

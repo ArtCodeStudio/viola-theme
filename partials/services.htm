@@ -1,40 +1,20 @@
 [viewBag]
 snippetCode = "services"
 snippetName = "services"
+
+[slideshow]
+slideshow = 2
+numberOfSlide = 5
 ==
 <div class="bg-gray-lighter" id="services" data-target="#services">
     <div class="container text-xs-center p-y-3">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
                 <h2 class="m-b-1">{% content 'services/services_title.txt' %}</h2>
-		        <p>{% content 'services/block1.htm' %}</p>
+                <p>{% content 'services/block1.htm' %}</p>
             </div>
             <div class="col-xs-12">
-                <div id="slideshow2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/slideshow2/homeopathy.jpg'|theme }}');"></div>
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/slideshow2/lemon.jpg'|theme }}');"></div>
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/slideshow2/acupuncture.jpg'|theme }}');"></div>
-                            <div class="carousel-caption">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/slideshow2/chamomile.jpg'|theme }}');"></div>
-                            <div class="carousel-caption">
-                                <h1></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% partial 'slideshow' slideshow=slideshow.slideshow id='slideshow2' %}
             </div>
 
             <div class="col-xs-12 col-md-4 p-t-2">

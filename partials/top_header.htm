@@ -1,33 +1,13 @@
 [viewBag]
 snippetCode = "header"
 snippetName = "header"
+
+[slideshow]
+slideshow = 1
+numberOfSlide = 5
 ==
 <header id="top" data-target="#top">
-    <div id="carousel-top-header" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img class="img-fluid center-block" src="{{ 'assets/images/logo/thp-viola-garber-logo.png'|theme }}" style="padding: 150px 50px 0px 50px;">
-                <div class="carousel-caption white-caption">
-                    {% partial 'welcome' %}
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/dog.jpg'|theme }}');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/horse.jpg'|theme }}');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="carousel-image-background" style="background-image: url('{{ 'assets/images/header/cat.jpg'|theme }}');"></div>
-                <div class="carousel-caption">
-                </div>
-            </div>
-        </div>
-    </div>
+    {% partial 'slideshow' slideshow=slideshow.slideshow id='carousel-top-header' %}
     <a class="icon-circle center-block" href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#offer" data-toggle="tooltip" data-placement="top" title="Weiter">
         <i class="fa fa-chevron-circle-down"></i>
     </a>
