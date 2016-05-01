@@ -9821,6 +9821,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   background-size: cover; }
 
 .white-caption {
+  background-color: white;
   color: black;
   text-shadow: none; }
 
