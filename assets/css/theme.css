@@ -9329,6 +9329,8 @@ a.bg-danger:focus, a.bg-danger:hover {
     color: rgba(104, 82, 174, 0.7); }
     .navbar.fg-purple .navbar-nav .nav-link:hover, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link:hover, .navbar.fg-purple .navbar-nav .nav-link.active, #sidebar .sidebar-wrapper.fg-purple .navbar.list-group-item .navbar-nav .nav-link.active {
       color: #6852ae; }
+  .navbar.navbar-big .navbar-brand {
+    opacity: 0; }
 
 .navbar-sticky-bottom-element {
   bottom: 0;
@@ -9836,7 +9838,10 @@ a.bg-danger:focus, a.bg-danger:hover {
       height: 100vh;
       background-attachment: fixed; }
     #carousel-top-header .carousel-item .carousel-caption {
-      bottom: 80px; }
+      padding-bottom: 80px;
+      bottom: 0;
+      right: 0;
+      left: 0; }
 
 #slideshow2 {
   height: 300px;
@@ -9978,12 +9983,12 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     color: white;
     font-size: 30px; }
 
-#offer[data-target] {
-  padding-top: 54px;
-  margin-top: -70px; }
-
 #about .peace-image {
   max-height: 300px; }
+
+#about[data-target] {
+  padding-top: 54px;
+  margin-top: -70px; }
 
 .contact-image {
   max-height: 300px; }

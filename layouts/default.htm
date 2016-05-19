@@ -30,23 +30,19 @@ description = "Default layout"
             'assets/vendor/within-viewport/withinviewport.js',
             'assets/vendor/jquery/dist/jquery.js',
             'assets/vendor/within-viewport/jquery.withinviewport.js',
-            'assets/vendor/svg/jquery.svg.js',
-            'assets/vendor/jquery-ui/jquery-ui.js',
             'assets/vendor/tether/dist/js/tether.js',
             'assets/vendor/bootstrap/dist/js/bootstrap.js',
-            'assets/vendor/vivus/dist/vivus.js',
-            'assets/vendor/Snap.svg/dist/snap.svg.js',
             'assets/vendor/simpler-sidebar/dist/jquery.simpler-sidebar.js',
             'assets/vendor/Stickyfill/dist/stickyfill.js',
             'assets/vendor/bootstrap-validator/dist/validator.js',
             'assets/vendor/leaflet/dist/leaflet.js',
-            'assets/vendor/letteringjs/jquery.lettering.js',
-            'assets/vendor/textillate/jquery.textillate.js',
-            'assets/vendor/vivus/dist/vivus.js',
             
             'assets/javascript/app.js',
         ]|theme }}"></script>
+        
+        {% framework %}
         {% framework extras %}
+        
         {# More theme variables #}
         <script>
             L.Icon.Default.imagePath = "/themes/{{this.theme.dirname}}/assets/vendor/leaflet/dist/images/";

@@ -45,52 +45,58 @@ snippetProperties[navigationHref][title] = "Navigation URL"
 snippetProperties[navigationHref][type] = "string"
 snippetProperties[navigationHref][default] = "https://www.google.de/maps/place/Bei+der+Kirche+12,+27476+Cuxhaven/@53.8837,8.6716813,17z/data=!3m1!4b1!4m2!3m1!1s0x47b404f584b82c75:0x5ffd345530379b8a?hl=de"
 snippetProperties[navigationHref][options][] = ""
+snippetProperties[active][title] = "Active"
+snippetProperties[active][type] = "checkbox"
+snippetProperties[active][default] = "true"
+snippetProperties[active][options][] = ""
 ==
-<div id="location" data-target="#location">
-    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
-        <div class="">
-            <h6 class="card-title">Anfahrt</h6>
-            <div class="card-text">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <address>
-                            <strong>
-                                {{ nameLine1 }}
-                                {% if nameLine2 %}
-                                    <br>{{ nameLine2 }}
+{% if active %}
+    <div id="location" data-target="#location">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
+            <div class="">
+                <h6 class="card-title">Anfahrt</h6>
+                <div class="card-text">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <address>
+                                <strong>
+                                    {{ nameLine1 }}
+                                    {% if nameLine2 %}
+                                        <br>{{ nameLine2 }}
+                                    {% endif %}
+                                </strong>
+                                {% if addressLine1 %}
+                                    <br>{{ addressLine1 }}
                                 {% endif %}
-                            </strong>
-                            {% if addressLine1 %}
-                                <br>{{ addressLine1 }}
-                            {% endif %}
-                            {% if addressLine2 %}
-                                <br>{{ addressLine2 }}
-                            {% endif %}
-                        </address>
-                    </div>
-                    <div class="col-xs-4">
-                        <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
-                            <img src="{{ 'assets/images/route.svg' | theme }}" alt="Routenplaner">
-                        </a>
+                                {% if addressLine2 %}
+                                    <br>{{ addressLine2 }}
+                                {% endif %}
+                            </address>
+                        </div>
+                        <div class="col-xs-4">
+                            <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
+                                <img src="{{ 'assets/images/route.svg' | theme }}" alt="Routenplaner">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-       </div>
+           </div>
+        </div>
+        <div id="map"></div>
     </div>
-    <div id="map"></div>
-</div>
-<script>
-    if(typeof(window.theme) === 'undefined') {
-        window.theme = {};
-    }
-    window.theme.locationMapboxAccessToken = "{{ mapboxAccessToken }}";
-    window.theme.locationMapboxId = "{{ mapboxId }}";
-    window.theme.locationMaxZoom = Number("{{ maxZoom }}");
-    window.theme.locationLongitude = Number("{{ longitude }}");
-    window.theme.locationLatitude = Number("{{ latitude }}");
-    window.theme.locationZoom = Number("{{ zoom }}");
-    window.theme.locationLink = "{{ navigationHref }}";
-</script>
-{% put scripts %}
-    <script type="text/javascript" src="{{ 'assets/javascript/partials/location.js' |theme }}"></script>
-{% endput %}
+    <script>
+        if(typeof(window.theme) === 'undefined') {
+            window.theme = {};
+        }
+        window.theme.locationMapboxAccessToken = "{{ mapboxAccessToken }}";
+        window.theme.locationMapboxId = "{{ mapboxId }}";
+        window.theme.locationMaxZoom = Number("{{ maxZoom }}");
+        window.theme.locationLongitude = Number("{{ longitude }}");
+        window.theme.locationLatitude = Number("{{ latitude }}");
+        window.theme.locationZoom = Number("{{ zoom }}");
+        window.theme.locationLink = "{{ navigationHref }}";
+    </script>
+    {% put scripts %}
+        <script type="text/javascript" src="{{ 'assets/javascript/partials/location.js' |theme }}"></script>
+    {% endput %}
+{% endif %}

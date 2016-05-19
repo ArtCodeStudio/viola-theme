@@ -1,44 +1,52 @@
 name: main
 items:
     -
-        title: Angebot
-        nesting: '0'
-        type: static-page
-        code: offer
-        reference: test
-        replace: '0'
-        viewBag:
-            isHidden: '0'
-            cssClass: offer
-            isExternal: '0'
-    -
-        title: Behandlung
-        nesting: '0'
-        type: static-page
-        code: services
-        reference: test
-        replace: '0'
-        viewBag:
-            isHidden: '0'
-            cssClass: services
-            isExternal: '0'
-    -
         title: Über
         nesting: '0'
         type: static-page
+        url: ''
         code: about
         reference: test
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: about
             isExternal: '0'
     -
+        title: Behandlung
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: services
+        reference: test
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: services
+            isExternal: '0'
+    -
+        title: Angebot
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: offer
+        reference: test
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: offer
+            isExternal: '0'
+    -
         title: Kontakt
         nesting: '0'
         type: static-page
+        url: ''
         code: contact
         reference: test
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'

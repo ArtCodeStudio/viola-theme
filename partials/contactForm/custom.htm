@@ -1,0 +1,29 @@
+[viewBag]
+==
+<div class="confirm-container">
+    <!--This will contain the confirmation when the email is successfully sent-->
+</div>
+<form class="flexiContactForm" role="form"
+      data-request="{{ __SELF__ }}::onMailSent"
+      data-request-update="'{{ __SELF__ }}::confirm': '.confirm-container'">
+    <div class="form-groups">
+        <div class="form-group">
+            <input type="text" class="form-control form-control-success" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control form-control-warning" id="email" placeholder="E-Mail">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control form-control-danger" id="regard" placeholder="Betreff">
+        </div>
+        <fieldset class="form-group">
+            <textarea class="form-control" id="message" rows="6" placeholder="Deine Nachricht an mich"></textarea>
+        </fieldset>
+        {% if __SELF__.enableCaptcha %}
+            <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="{{ __SELF__.siteKey }}"></div>
+            </div>
+        {% endif %}
+        <button type="submit" class="btn pull-xs-right">Absenden</button>
+    </div>
+</form>

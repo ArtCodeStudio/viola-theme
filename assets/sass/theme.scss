@@ -254,16 +254,13 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     }
 }
 
-#offer {
-    &[data-target] {
-        padding-top: $navbar-height;
-        margin-top: -$navbar-height - 16px;
-    }
-}
-
 #about {
     .peace-image {
         max-height: 300px;
+    }
+    &[data-target] {
+        padding-top: $navbar-height;
+        margin-top: -$navbar-height - 16px;
     }
 }
 

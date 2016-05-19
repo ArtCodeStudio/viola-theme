@@ -10,7 +10,11 @@ snippetProperties[headertext][options][] = ""
     <div class="container text-xs-center p-y-3">
         <div class="row">
             <div class="col-xs-12">
-                <img class="center-block p-b-2" src="{{'assets/images/about.jpg'|theme}}">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4 p-b-2">
+                        <img class="img-fluid img-thumbnail center-block" src="{{'assets/images/about.jpg'|theme}}" alt="me">
+                    </div>
+                </div>
                 <h2 class="text-xs-center">{{headertext}}</h2>
                 {% content 'about/about.htm' %}
             </div>
