@@ -2,6 +2,39 @@ description = "Default layout"
 
 [staticPage]
 ==
+<?php
+// TODO wird diese funktion zweimal aufgerufen?
+function onMailSent()
+{
+    
+    $vars = [
+        'name' => post('name'),
+        'email' => post('email'),
+        'regard' => post('regard'),
+        'sendermessage' => post('message'),
+    ];
+    
+    $buildOwnerMessage = function ($message) use ($vars) {
+        // TODO use email and name from backend or theme settings
+        $message->to('info@thp-garber.de', 'Viola Garber');
+        $message->subject($vars['regard']);
+    };
+    
+    $buildSenderMessage = function ($message) use ($vars) {
+        $message->to($vars['email'], $vars['name']);
+    };
+
+    // mail to site owner
+    Mail::send('viola::contact-notification', $vars, $buildOwnerMessage);
+    
+    // mail to contact sender
+    Mail::send('viola::contact', $vars, $buildSenderMessage);
+    
+    // TODO catch errors
+    $this['result'] = "Nachricht abgeschickt";
+}
+?>
+==
 <!DOCTYPE html>
 <html>
     <head>

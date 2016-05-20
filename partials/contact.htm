@@ -5,10 +5,6 @@ snippetProperties[headertext][title] = "Header Text"
 snippetProperties[headertext][type] = "string"
 snippetProperties[headertext][default] = "Kontakt"
 snippetProperties[headertext][options][] = ""
-
-[contactForm]
-injectBootstrapAssets = 0
-injectMainScript = 1
 ==
 <div class="bg-gray-lighter" id="contact" data-target="#contact">
     <header class="p-y-3">
@@ -22,7 +18,7 @@ injectMainScript = 1
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-md-pull-6">
-                    {% partial 'contactForm/custom.htm' %}
+                    {% partial 'contactForm/default' %}
                 </div>
             </div>
         </div>
