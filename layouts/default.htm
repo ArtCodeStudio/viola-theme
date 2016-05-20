@@ -17,7 +17,7 @@ function onMailSent()
     $buildOwnerMessage = function ($message) use ($vars) {
         // TODO use email and name from backend or theme settings
         $message->to('info@thp-garber.de', 'Viola Garber');
-        $message->subject($vars['regard']);
+        $message->subject("Neue Anfrage von ".$vars['name'].": ".$vars['regard']);
     };
     
     $buildSenderMessage = function ($message) use ($vars) {
