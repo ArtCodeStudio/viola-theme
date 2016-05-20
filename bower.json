@@ -24,6 +24,7 @@
     "font-awesome": "^4.5.0",
     "within-viewport": "^1.0.0",
     "simpler-sidebar": "^1.4.11",
-    "tether": "^1.3.2"
+    "tether": "^1.3.2",
+    "jquery-ui": "jqueryui#^1.11.4"
   }
 }
