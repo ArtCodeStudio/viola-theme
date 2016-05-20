@@ -12,16 +12,16 @@
       data-request-update="'contactForm/confirm': '.confirm-container'">
     <div class="form-groups">
         <div class="form-group">
-            <input type="text" class="form-control form-control-success" name="name" placeholder="Name">
+            <input type="text" class="form-control form-control-success" name="name" required placeholder="Name">
         </div>
         <div class="form-group">
-            <input type="email" class="form-control form-control-warning" name="email" placeholder="E-Mail">
+            <input type="email" class="form-control form-control-warning" name="email" required placeholder="E-Mail">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control form-control-danger" name="regard" placeholder="Betreff">
+            <input type="text" class="form-control form-control-danger" name="regard" required placeholder="Betreff">
         </div>
         <fieldset class="form-group">
-            <textarea class="form-control" name="message" rows="6" placeholder="Deine Nachricht an mich"></textarea>
+            <textarea class="form-control" name="message" rows="6" required placeholder="Deine Nachricht an mich"></textarea>
         </fieldset>
         {% if __SELF__.enableCaptcha %}
             <div class="form-group">
