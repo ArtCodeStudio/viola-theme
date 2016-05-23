@@ -6,7 +6,11 @@
             {% for i, slide in slideshow['slides'] %}
                 {% if slide.image.path %}
                     <div class='carousel-item{% if loop.first %} active{% endif %}'>
-                        <div class="carousel-image-background" style="background-image: url('{{ slide.image.path }}');" alt='{{ slide.image.title }}'></div>
+                        {% if slide.link %}
+                            <a class="carousel-image-background" style="background-image: url('{{ slide.image.path }}');" alt='{{ slide.image.title }}' href='{{ slide.link }}' target='_blank'></a>
+                        {% else %}
+                            <div class="carousel-image-background" style="background-image: url('{{ slide.image.path }}');" alt='{{ slide.image.title }}'></div>
+                        {% endif %}
                         {% if slide.title or slide.description or slide.link %}
                             <div class="carousel-caption clearfix white-caption">
                                 {% if slide.title %}<h4 class='carousel-caption-title'>{{ slide.title }}</h4>{% endif %}

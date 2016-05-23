@@ -11,10 +11,10 @@ $navbar-brand-width: 150px;
         min-width: $navbar-brand-width;
         height: $navbar-brand-height;
         
-        background-image: url(../images/logo/thp-viola-garber-logo-shadow.svg);
+        background-image: url(../images/logo/logo.svg);
         background-repeat: no-repeat;
 
-        background-position: center bottom;
+        background-position: center center;
         background-size: 100% auto;
         
         padding-left: 50px;
@@ -41,14 +41,8 @@ $navbar-brand-width: 150px;
         }
     }
     &.navbar-big {
-        // height: $navbar-height-big;
         .navbar-brand {
-            opacity: 0;
-            // height: $navbar-brand-height * 3;
-        }
-        .nav-link {
-            // padding-top:    2.8rem;
-            // padding-bottom: 2.8rem;
+            // opacity: 0;
         }
     }
 }
