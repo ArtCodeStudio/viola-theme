@@ -1,6 +1,6 @@
 [viewBag]
 ==
-{% if slideshow['slides'] %}
+{% if slideshow and slideshow['slides'] %}
     <div id="{{id}}" class="carousel slide" data-ride="carousel" data-interval='3500'>
         <div class="carousel-inner" role="listbox">
             {% for i, slide in slideshow['slides'] %}

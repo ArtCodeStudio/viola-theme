@@ -19,7 +19,7 @@ snippetProperties[headertextblock3][default] = "Akupunktur"
 snippetProperties[headertextblock3][options][] = ""
 
 [slideshow]
-slideshow = 2
+slideshow = 1
 numberOfSlide = 5
 ==
 <div class="bg-gray-lighter" id="services" data-target="#services">
@@ -30,7 +30,9 @@ numberOfSlide = 5
                 <p>{% content 'services/description.htm' %}</p>
             </div>
             <div class="col-xs-12">
-                {% partial 'slideshow' slideshow=slideshow.slideshow id='slideshow2' %}
+                {% if slideshow and slideshow.slideshow %}
+                    {% partial 'slideshow' slideshow=slideshow.slideshow id='slideshow2' %}
+                {% endif  %}
             </div>
 
             <div class="col-xs-12 col-md-4 p-t-2">

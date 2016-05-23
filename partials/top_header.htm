@@ -3,12 +3,14 @@ snippetCode = "header"
 snippetName = "header"
 
 [slideshow]
-slideshow = 1
+slideshow = 2
 numberOfSlide = 5
 ==
 <header id="top" data-target="#top">
-    {% partial 'slideshow' slideshow=slideshow.slideshow id='carousel-top-header' %}
-    <a class="icon-circle center-block" href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#about" data-toggle="tooltip" data-placement="top" title="Weiter">
-        <i class="fa fa-chevron-circle-down"></i>
-    </a>
+    {% if slideshow and slideshow.slideshow %}
+        {% partial 'slideshow' slideshow=slideshow.slideshow id='carousel-top-header' %}
+        <a class="icon-circle center-block" href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#about" data-toggle="tooltip" data-placement="top" title="Weiter">
+            <i class="fa fa-chevron-circle-down"></i>
+        </a>
+    {% endif %}
 </header>

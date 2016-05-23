@@ -105,6 +105,10 @@ assets/vendor/leaflet/*
 assets/vendor/leaflet/dist/*
 !assets/vendor/leaflet/dist/leaflet.js
 
+!assets/vendor/font-awesome/
+assets/vendor/font-awesome/*
+!assets/vendor/font-awesome/fonts/
+
 # Optional npm cache directory
 .npm
 
