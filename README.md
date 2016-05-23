@@ -1,6 +1,8 @@
 # Viola Theme
 Beautiful One Page October Theme for Medical Professionals.
 
+![Theme Preview](assets/images/theme-preview.png)
+
 ## Features
 
 * One Page Design
