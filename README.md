@@ -9,3 +9,8 @@ Beautiful One Page October Theme for Medical Professionals.
 * Almost full customizable using the [Static Pages Plugin](https://octobercms.com/plugin/rainlab-pages)
 * Customizable slideshows using a [Slideshow Plugin](https://octobercms.com/plugin/flosch-slideshow)
 * Builtin Contact Form
+
+## Install
+
+* Create to Slideshows in the backends `Slideshow` section.
+* Select one of the Slideshow for each Slidehsow Components in partials/services.htm and partials/top_header.htm in the backends CMS section.
