@@ -25,7 +25,85 @@ build/Release
 
 # Dependency directory
 node_modules/
-assets/vendor/
+
+# https://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+!assets/vendor/
+
+assets/vendor/*
+!assets/vendor/within-viewport/
+
+assets/vendor/within-viewport/*
+!assets/vendor/within-viewport/withinviewport.js
+!assets/vendor/within-viewport/jquery.withinviewport.js
+
+!assets/vendor/jquery/
+assets/vendor/jquery/*
+!assets/vendor/jquery/dist/
+
+assets/vendor/jquery/dist/*
+!assets/vendor/jquery/dist/jquery.js
+
+!assets/vendor/jquery-ui/
+assets/vendor/jquery-ui/*
+!assets/vendor/jquery-ui/jquery-ui.js
+
+!assets/vendor/within-viewport/
+assets/vendor/within-viewport/*
+!assets/vendor/within-viewport/jquery.withinviewport.js
+
+!assets/vendor/tether/
+assets/vendor/tether/*
+!assets/vendor/tether/dist/
+
+!assets/vendor/tether/dist/
+assets/vendor/tether/dist/*
+!assets/vendor/tether/dist/js
+
+!assets/vendor/tether/dist/js/*
+assets/vendor/tether/dist/js/*
+!assets/vendor/tether/dist/js/tether.js
+
+!assets/vendor/bootstrap/
+assets/vendor/bootstrap/*
+!assets/vendor/bootstrap/dist/
+
+assets/vendor/bootstrap/dist/*
+!assets/vendor/bootstrap/dist/js/
+
+assets/vendor/bootstrap/dist/js/*
+!assets/vendor/bootstrap/dist/js/bootstrap.js
+
+!assets/vendor/simpler-sidebar/
+assets/vendor/simpler-sidebar/*
+!assets/vendor/simpler-sidebar/dist/
+
+!assets/vendor/simpler-sidebar/dist/
+assets/vendor/simpler-sidebar/dist/*
+!assets/vendor/simpler-sidebar/dist/jquery.simpler-sidebar.js
+
+!assets/vendor/Stickyfill/
+assets/vendor/Stickyfill/*
+!assets/vendor/Stickyfill/dist/
+
+!assets/vendor/Stickyfill/dist/
+assets/vendor/Stickyfill/dist/*
+!assets/vendor/Stickyfill/dist/stickyfill.js
+
+!assets/vendor/bootstrap-validator/
+assets/vendor/bootstrap-validator/*
+!assets/vendor/bootstrap-validator/dist/
+
+!assets/vendor/bootstrap-validator/dist/
+assets/vendor/bootstrap-validator/dist/*
+!assets/vendor/bootstrap-validator/dist/validator.js
+
+!assets/vendor/leaflet/
+assets/vendor/leaflet/*
+!assets/vendor/leaflet/dist/
+
+!assets/vendor/leaflet/dist/
+assets/vendor/leaflet/dist/*
+!assets/vendor/leaflet/dist/leaflet.js
 
 # Optional npm cache directory
 .npm
@@ -38,3 +116,4 @@ assets/vendor/
 
 # Server Stuff
 nohup.out
+
