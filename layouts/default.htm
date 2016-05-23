@@ -13,7 +13,6 @@ function onMailSent()
         'regard' => post('regard'),
         'sendermessage' => post('message'),
     ];
-    
     $buildOwnerMessage = function ($message) use ($vars) {
         // TODO use email and name from backend or theme settings
         $message->to('info@thp-garber.de', 'Viola Garber');
@@ -27,8 +26,8 @@ function onMailSent()
     // mail to site owner
     Mail::send('viola::contact-notification', $vars, $buildOwnerMessage);
     
-    // mail to contact sender
-    Mail::send('viola::contact', $vars, $buildSenderMessage);
+    // mail to contact sender uncommit this oka
+    // Mail::send('viola::contact', $vars, $buildSenderMessage);
     
     // TODO catch errors
     $this['result'] = "Nachricht abgeschickt";
@@ -43,6 +42,8 @@ function onMailSent()
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="Pascal Garber">
+        <meta http-equiv="language" content="deutsch, de">
+        <meta name="Keywords" content="Viola,Garber,Tierheilpraxis,Tierheilpraktikerin,Cuxhaven,Klassische Homöopathie,Homöopathie,Phytotherapie,Akupunktur,Praxis,Hausbesuch,Naturheilverfahren">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         {% styles %}
