@@ -34,22 +34,25 @@ numberOfSlide = 5
                     {% partial 'slideshow' slideshow=slideshow.slideshow id='slideshow2' %}
                 {% endif  %}
             </div>
-
-            <div class="col-xs-12 col-md-4 p-t-2">
-                <img class="center-block p-b-2" src="{{'assets/images/icons/service_block_01.svg'|theme}}">
-                <h3 class="text-xs-center">{{headertextblock1}}</h3>
-                {% content 'services/block1.htm' %}
-            </div>
-            <div class="col-xs-12 col-md-4 p-t-2">
-                <img class="center-block p-b-2" src="{{'assets/images/icons/service_block_02.svg'|theme}}">
-                <h3 class="text-xs-center">{{headertextblock2}}</h3>
-                {% content 'services/block2.htm' %}
-            </div>
-            <div class="col-xs-12 col-md-4 p-t-2">
-                <img class="center-block p-b-2" src="{{'assets/images/icons/service_block_03.svg'|theme}}">
-                <h3 class="text-xs-center">{{headertextblock3}}</h3>
-                {% content 'services/block3.htm' %}
-            </div>
+            
+            {% for i in 1..3 %}
+                <div class="col-xs-12 col-md-4 p-t-2">
+                    {% set icon = 'assets/images/icons/' ~ this.theme.color ~ '/service_block_0' ~ i ~ '.svg' %}
+                    <img class="center-block p-b-2" src="{{ icon |theme }}">
+                    
+                    {% if i == 1 %}
+                        <h3 class="text-xs-center">{{ headertextblock1 }}</h3>
+                    {% elseif i == 2 %}
+                        <h3 class="text-xs-center">{{ headertextblock2 }}</h3>
+                    {% elseif i == 3 %}
+                        <h3 class="text-xs-center">{{ headertextblock3 }}</h3>
+                    {% endif %}
+                    
+                    {% set content = 'services/block' ~ i ~ '.htm' %}
+                    {% content content %}
+                </div>
+            {% endfor %}
+            
         </div>
     </div>
 </div>

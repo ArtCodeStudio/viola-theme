@@ -1,29 +1,40 @@
 name: Viola
-description: Theme made for www.tierheilpraxis-garber.de
+description: One Page October Theme for Medical Professionals
 author: Pascal Garber
 homepage: 'http://www.jumplink.eu'
 form:
     fields:
+        color:
+            label: Color scheme
+            type: dropdown
+            comment: Choose the color schema you like
+            options:
+                blue: Blue
+                purple: Purple
+                orange: Orange
+                red: Red
+                green: Green
+            default: blue
         site_name:
             label: Site name
             type: text
             comment: The website name as it should appear on the front-end
-            default: Tierheilpraktikerin Viola Garber
+            default: Healthy Teeth
         company_name:
             label: Company name
             type: text
             comment: Company name of your site
-            default: Tierheilpraktikerin Viola Garber
+            default: Healthy Teeth
         phone_number:
             label: phone
             type: text
             comment: Phone number
-            default: +49 175 964 68 75
+            default: +01 101 01 01 01 01 
         email_address:
             label: email
             type: text
             comment: E-mail address
-            default: info@thp-garber.de
+            default: info@domain.ltd
 require:
     - RainLab.Pages
     - Flosch.Slideshow

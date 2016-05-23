@@ -11,7 +11,7 @@ $navbar-brand-width: 150px;
         min-width: $navbar-brand-width;
         height: $navbar-brand-height;
         
-        background-image: url(../images/logo/logo.svg);
+        background-image: url(../images/logo/#{$color-dirname}/logo.svg);
         background-repeat: no-repeat;
 
         background-position: center center;

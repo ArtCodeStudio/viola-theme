@@ -3,19 +3,19 @@ snippetCode = "location"
 snippetName = "location"
 snippetProperties[nameLine1][title] = "Location name line 1"
 snippetProperties[nameLine1][type] = "string"
-snippetProperties[nameLine1][default] = "Tierheilpraxis"
+snippetProperties[nameLine1][default] = "Healthy Teeth"
 snippetProperties[nameLine1][options][] = ""
 snippetProperties[nameLine2][title] = "Location name line 2"
 snippetProperties[nameLine2][type] = "string"
-snippetProperties[nameLine2][default] = "Viola Garber"
+snippetProperties[nameLine2][default] = ""
 snippetProperties[nameLine2][options][] = ""
 snippetProperties[addressLine1][title] = "Address line 1"
 snippetProperties[addressLine1][type] = "string"
-snippetProperties[addressLine1][default] = "Bei der Kirche 12"
+snippetProperties[addressLine1][default] = "Landungsbrücke 2"
 snippetProperties[addressLine1][options][] = ""
 snippetProperties[addressLine2][title] = "Address line 2"
 snippetProperties[addressLine2][type] = "string"
-snippetProperties[addressLine2][default] = "27476 Cuxhaven"
+snippetProperties[addressLine2][default] = "27498 Helgoland"
 snippetProperties[addressLine2][options][] = ""
 snippetProperties[mapboxAccessToken][title] = "Mapbox access token"
 snippetProperties[mapboxAccessToken][type] = "string"
@@ -31,11 +31,11 @@ snippetProperties[maxZoom][default] = 18
 snippetProperties[maxZoom][options][] = ""
 snippetProperties[longitude][title] = "Longitude"
 snippetProperties[longitude][type] = "string"
-snippetProperties[longitude][default] = 53.88373
+snippetProperties[longitude][default] = 54.1808953
 snippetProperties[longitude][options][] = ""
 snippetProperties[latitude][title] = "Latitude"
 snippetProperties[latitude][type] = "string"
-snippetProperties[latitude][default] = 8.67392
+snippetProperties[latitude][default] = 7.8900084
 snippetProperties[latitude][options][] = ""
 snippetProperties[zoom][title] = "Zoom"
 snippetProperties[zoom][type] = "string"
@@ -43,7 +43,7 @@ snippetProperties[zoom][default] = 15
 snippetProperties[zoom][options][] = ""
 snippetProperties[navigationHref][title] = "Navigation URL"
 snippetProperties[navigationHref][type] = "string"
-snippetProperties[navigationHref][default] = "https://www.google.de/maps/place/Bei+der+Kirche+12,+27476+Cuxhaven/@53.8837,8.6716813,17z/data=!3m1!4b1!4m2!3m1!1s0x47b404f584b82c75:0x5ffd345530379b8a?hl=de"
+snippetProperties[navigationHref][default] = "https://goo.gl/maps/TksjPVL7UG22"
 snippetProperties[navigationHref][options][] = ""
 snippetProperties[active][title] = "Active"
 snippetProperties[active][type] = "checkbox"
@@ -75,7 +75,8 @@ snippetProperties[active][options][] = ""
                         </div>
                         <div class="col-xs-4">
                             <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
-                                <img src="{{ 'assets/images/route.svg' | theme }}" alt="Routenplaner">
+                                {% set icon = 'assets/images/icons/' ~ this.theme.color ~ '/route.svg' %}
+                                <img src="{{ icon | theme }}" alt="Route">
                             </a>
                         </div>
                     </div>

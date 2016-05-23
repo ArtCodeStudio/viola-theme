@@ -6,12 +6,13 @@
   "scripts": {
     "preinstall": "bower install",
     "postinstall": "npm run build",
-    "sass-purple": "node_modules/.bin/node-sass assets/sass/theme.scss assets/css/theme-purple.css",
+    "sass-purple": "node_modules/.bin/node-sass assets/sass/theme-purple.scss assets/css/theme-purple.css",
     "sass-blue": "node_modules/.bin/node-sass assets/sass/theme-blue.scss assets/css/theme-blue.css",
-    "sass-yellow": "node_modules/.bin/node-sass assets/sass/theme-yellow.scss assets/css/theme-yellow.css",
+    "sass-orange": "node_modules/.bin/node-sass assets/sass/theme-orange.scss assets/css/theme-orange.css",
+    "sass-red": "node_modules/.bin/node-sass assets/sass/theme-red.scss assets/css/theme-red.css",
     "sass-green": "node_modules/.bin/node-sass assets/sass/theme-green.scss assets/css/theme-green.css",
     "autoprefixer": "node_modules/.bin/postcss --use autoprefixer assets/css/*.css -d assets/css/",
-    "build": "npm run sass-purple && npm run sass-blue && npm run sass-yellow && npm run sass-green && npm run autoprefixer",
+    "build": "npm run sass-purple && npm run sass-blue && npm run sass-orange && npm run sass-red && npm run sass-green && npm run autoprefixer",
     "watch": "npm run sass -- -w"
   },
   "author": "Pascal Garber <pascal.jumplink.eu>",
