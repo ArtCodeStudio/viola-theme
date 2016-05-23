@@ -1,7 +1,6 @@
 // bootstrap variables
 $link-hover-decoration:      none;
 $font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
-$purple:                    #6852ae !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             18px; //default 16px
@@ -19,8 +18,6 @@ $navbar-height-big:         130px;
 
 @import "./animate";
 @import "./fonts.scss";
-@import "./load-awesome.scss";
-@import "./clouds.scss";
 @import "./navbar.scss";
 @import "./sidebar.scss";
 @import "./sticky.scss";
@@ -68,9 +65,9 @@ $navbar-height-big:         130px;
 /**
  * @see https://www.tjvantoll.com/2012/02/20/css3-color-animations/
  */
-@include keyframes(color_change_purple) {
+@include keyframes(color_change_brand-primary) {
 	from { color: white; }
-	to { color: lighten($purple, 30%); }
+	to { color: lighten($brand-primary, 30%); }
 }
 
 
@@ -81,7 +78,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
-    color: $purple;
+    color: $brand-primary;
 }
 
 .display-4 {
@@ -89,8 +86,8 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     font-weight: 400;
 }
 
-.bg-purple {
-    background-color: $purple;
+.bg-brand-primary {
+    background-color: $brand-primary;
 }
 
 .bg-white-transparent {
@@ -114,8 +111,8 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     background-color: $gray;
 }
 
-.fg-purple {
-    color: $purple;
+.fg-primary {
+    color: $brand-primary;
 }
 
 .fg-gray-lighter {
@@ -148,7 +145,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
 
 .icon-circle {
     border-radius: 50%;
-    border: 1px $purple solid;
+    border: 1px $brand-primary solid;
     
     text-align: center;
     width: 70px;
@@ -156,12 +153,12 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     line-height: 78px;
     margin: 0 auto 20px;
     .fa {
-        color: $purple;
+        color: $brand-primary;
         font-size: 30px;
     }
 }
 
-:not(nav).bg-purple {
+:not(nav).bg-brand-primary {
     a {
         &:hover {
             color: $navbar-dark-active-color;
@@ -179,7 +176,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
 // List group
 // black list-group-items
 .list-group-item {
-    &.active-fg-purple {
+    &.active-fg-brand-primary {
         &:hover , &.active {
         }
     }
@@ -249,7 +246,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
         .fa {
             color: white;
             font-size: 30px;
-            // @include animation('color_change_purple 3s infinite alternate');
+            // @include animation('color_change_brand-primary 3s infinite alternate');
         }
     }
 }

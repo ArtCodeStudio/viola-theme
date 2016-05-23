@@ -9,9 +9,9 @@
             border: none;
             border-radius: 0;
         }
-        &.fg-purple {
+        &.fg-primary {
             .list-group-item {
-                @extend .fg-purple;
+                @extend .fg-primary;
             }
         }
     }

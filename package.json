@@ -6,9 +6,12 @@
   "scripts": {
     "preinstall": "bower install",
     "postinstall": "npm run build",
-    "sass": "node_modules/.bin/node-sass assets/sass/theme.scss assets/css/theme.css",
-    "autoprefixer": "node_modules/.bin/postcss --use autoprefixer assets/css/theme.css -d assets/css/",
-    "build": "npm run sass && npm run autoprefixer",
+    "sass-purple": "node_modules/.bin/node-sass assets/sass/theme.scss assets/css/theme-purple.css",
+    "sass-blue": "node_modules/.bin/node-sass assets/sass/theme-blue.scss assets/css/theme-blue.css",
+    "sass-yellow": "node_modules/.bin/node-sass assets/sass/theme-yellow.scss assets/css/theme-yellow.css",
+    "sass-green": "node_modules/.bin/node-sass assets/sass/theme-green.scss assets/css/theme-green.css",
+    "autoprefixer": "node_modules/.bin/postcss --use autoprefixer assets/css/*.css -d assets/css/",
+    "build": "npm run sass-purple && npm run sass-blue && npm run sass-yellow && npm run sass-green && npm run autoprefixer",
     "watch": "npm run sass -- -w"
   },
   "author": "Pascal Garber <pascal.jumplink.eu>",

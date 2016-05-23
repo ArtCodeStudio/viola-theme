@@ -3,12 +3,28 @@ snippetCode = "imprint"
 snippetName = "imprint"
 snippetProperties[infotext1][title] = "Info Text 1"
 snippetProperties[infotext1][type] = "string"
-snippetProperties[infotext1][default] = "Klassische Homöopathie + Naturheilverfahren"
+snippetProperties[infotext1][default] = "Suspendisse imperdiet a purus."
 snippetProperties[infotext1][options][] = ""
 snippetProperties[infotext2][title] = "Info Text 2"
 snippetProperties[infotext2][type] = "string"
-snippetProperties[infotext2][default] = "Hausbesuch nach Vereinbarung"
+snippetProperties[infotext2][default] = "Cras laoreet fermentum magna."
 snippetProperties[infotext2][options][] = ""
+snippetProperties[headertitle][title] = "Header Title"
+snippetProperties[headertitle][type] = "string"
+snippetProperties[headertitle][default] = "Imprint"
+snippetProperties[headertitle][options][] = ""
+snippetProperties[copyright][title] = "Copyright"
+snippetProperties[copyright][type] = "string"
+snippetProperties[copyright][default] = "This theme comes from JumpLink"
+snippetProperties[copyright][options][] = ""
+snippetProperties[copyrighturl][title] = "Copyright Url"
+snippetProperties[copyrighturl][type] = "string"
+snippetProperties[copyrighturl][default] = "//www.jumplink.eu"
+snippetProperties[copyrighturl][options][] = ""
+snippetProperties[showcopyright][title] = "Show Copyright"
+snippetProperties[showcopyright][type] = "checkbox"
+snippetProperties[showcopyright][default] = "false"
+snippetProperties[showcopyright][options][] = ""
 ==
 <div id="imprint" data-target="#imprint">
     <div class="container-fluid fg-gray-light subtext">
@@ -28,7 +44,7 @@ snippetProperties[infotext2][options][] = ""
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 text-xs-center text-md-left p-y-3">
-                <strong><h5>Impressum</h5></strong>
+                <strong><h5>{{headertitle}}</h5></strong>
                 <div class="fg-gray-light">
                     <strong>{{ this.theme.company_name }}</strong>
                     <br><a href="tel:{{ str_camel(this.theme.phone_number) }}">{{ this.theme.phone_number }}</a>
@@ -48,11 +64,13 @@ snippetProperties[infotext2][options][] = ""
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-gray">
-        <div class="row">
-            <div class="col-xs-12 text-xs-center bg-inverse p-y-1">
-                Diese Webpräsenz wurde ermöglicht durch <strong><a href="//jumplink.eu">JumpLink</a></strong>
+    {% if showcopyright == true %}
+        <div class="container-fluid bg-gray">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center bg-inverse p-y-1">
+                    <a href="{{copyrighturl}}">{{copyright}}</a>
+                </div>
             </div>
         </div>
-    </div>
+    {% endif %}
 </div>

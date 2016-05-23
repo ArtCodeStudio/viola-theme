@@ -27,16 +27,16 @@ $navbar-brand-width: 150px;
         padding-bottom: .150rem;
     }
     &.bg-white {
-        border-bottom: 1px $purple solid;
+        border-bottom: 1px $brand-primary solid;
     }
     &.bg-white-transparent {
         border-bottom: 1px transparent solid;
     }
-    &.fg-purple {
+    &.fg-primary {
         .navbar-nav .nav-link {
-            color: transparentize($purple, 0.3);
+            color: transparentize($brand-primary, 0.3);
             &:hover, &.active {
-                color: $purple;
+                color: $brand-primary;
             }
         }
     }
