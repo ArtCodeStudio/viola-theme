@@ -1,52 +1,44 @@
 name: main
 items:
     -
-        title: Über
+        title: About
         nesting: '0'
         type: static-page
-        url: ''
         code: about
-        reference: test
-        cmsPage: ''
+        reference: home
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: about
             isExternal: '0'
     -
-        title: Behandlung
+        title: Service
         nesting: '0'
         type: static-page
-        url: ''
         code: services
-        reference: test
-        cmsPage: ''
+        reference: home
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: services
             isExternal: '0'
     -
-        title: Angebot
+        title: Offer
         nesting: '0'
         type: static-page
-        url: ''
         code: offer
-        reference: test
-        cmsPage: ''
+        reference: home
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: offer
             isExternal: '0'
     -
-        title: Kontakt
+        title: Contact
         nesting: '0'
         type: static-page
-        url: ''
         code: contact
-        reference: test
-        cmsPage: ''
+        reference: home
         replace: '0'
         viewBag:
             isHidden: '0'
