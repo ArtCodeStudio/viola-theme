@@ -1,6 +1,7 @@
 {
-    "name": "jumplink/viola-theme",
-    "description": "Beautiful One Page October Theme for Medical Professionals",
+    "name": "JumpLinkNetwork/viola-theme",
+    "version": 1.0.0,
+    "description": "One Page October Theme for Medical Professionals",
     "type": "october-theme",
     "require": {
         "php": ">=5.4",
