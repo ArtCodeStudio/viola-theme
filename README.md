@@ -18,8 +18,8 @@ A productive example of this theme can be found [here](thp-garber.de).
 
 ## Install
 
-* Create to Slideshows in the backends `Slideshow` section.
-* Select one of the Slideshow for each Slidehsow Components in partials/services.htm and partials/top_header.htm in the backends CMS section.
+* Create two Slideshows in the backends `Slideshow` section.
+* Select one of the Slideshow for each Slidehsow Components in `partials/services.htm` and `partials/top_header.htm` in the backends CMS section.
 
 ## Develop
 
