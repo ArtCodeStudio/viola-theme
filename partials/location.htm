@@ -78,9 +78,9 @@ snippetProperties[title][options][] = ""
                             </address>
                         </div>
                         <div class="col-xs-4 col-md-4 col-lg-4 col-xl-4">
-                            <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
+                            <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="{{ title }}", target="_blank">
                                 {% set icon = 'assets/images/icons/' ~ this.theme.color ~ '/route.svg' %}
-                                <img src="{{ icon | theme }}" alt="Route">
+                                <img src="{{ icon | theme }}" alt="{{ title }}">
                             </a>
                         </div>
                     </div>
