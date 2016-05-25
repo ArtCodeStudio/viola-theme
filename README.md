@@ -18,6 +18,7 @@ A productive example of this theme can be found [here](http://www.thp-garber.de)
 
 ## Install
 
+* Install this Theme in the same way you would install any other october theme
 * Create two Slideshows in the backends `Slideshow` section.
 * Select one of the Slideshow for each Slidehsow Components in `partials/services.htm` and `partials/top_header.htm` in the backends CMS section.
 * Create a new mail template with the code `viola::contact-notification` for the email you get if a visitors use your contact form, the available template variables are:
