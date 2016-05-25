@@ -4,33 +4,34 @@ description = "Default layout"
 ==
 <?php
 // TODO wird diese funktion zweimal aufgerufen?
-function onMailSent()
-{
+function onMailSent() {
     
-    $vars = [
+    
+    
+    $formVars = [
+        'receivermail' => post('receivermail'),
+        'receivername' => post('receivername'),
+        'succeesstext' => post('succeesstext'),
+        'receiverregard' => post('receiverregard'),
         'name' => post('name'),
         'email' => post('email'),
         'regard' => post('regard'),
         'sendermessage' => post('message'),
     ];
-    $buildOwnerMessage = function ($message) use ($vars) {
-        // TODO use email and name from backend or theme settings
-        $message->to('info@thp-garber.de', 'Viola Garber');
-        $message->subject("Neue Anfrage von ".$vars['name'].": ".$vars['regard']);
-    };
     
-    $buildSenderMessage = function ($message) use ($vars) {
-        $message->to($vars['email'], $vars['name']);
+    $formVars['receiverregard'] = str_replace("{{name}}", $formVars['name'], $formVars['receiverregard']);
+    $formVars['receiverregard'] = str_replace("{{regard}}", $formVars['regard'], $formVars['receiverregard']);
+    
+    $buildOwnerMessage = function ($message) use ($formVars) {
+        // TODO use email and name from backend or theme settings
+        $message->to($formVars['receivermail'], $formVars['receivername']);
+        $message->subject($formVars['receiverregard']);
     };
 
     // mail to site owner
-    Mail::send('viola::contact-notification', $vars, $buildOwnerMessage);
-    
-    // mail to contact sender uncommit this oka
-    // Mail::send('viola::contact', $vars, $buildSenderMessage);
-    
-    // TODO catch errors
-    $this['result'] = "Nachricht abgeschickt";
+    Mail::send('viola::contact-notification', $formVars, $buildOwnerMessage);
+      
+    $this['result'] = $formVars['succeesstext'];
 }
 ?>
 ==

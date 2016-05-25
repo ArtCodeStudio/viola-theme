@@ -1,13 +1,14 @@
 name: Viola
-description: One Page October Theme for Medical Professionals
-author: Pascal Garber
+description: 'One Page October Theme for Medical Professionals'
+author: 'Pascal Garber'
 homepage: 'http://www.jumplink.eu'
+code: Viola
 form:
     fields:
         color:
-            label: Color scheme
+            label: 'Color scheme'
             type: dropdown
-            comment: Choose the color schema you like
+            comment: 'Choose the color schema you like'
             options:
                 blue: Blue
                 purple: Purple
@@ -16,25 +17,34 @@ form:
                 green: Green
             default: blue
         site_name:
-            label: Site name
+            label: 'Site name'
             type: text
-            comment: The website name as it should appear on the front-end
-            default: Healthy Teeth
+            comment: 'The website name as it should appear on the front-end'
+            default: 'Healthy Teeth'
         company_name:
-            label: Company name
+            label: 'Company name'
             type: text
-            comment: Company name of your site
-            default: Healthy Teeth
+            comment: 'Company name of your site'
+            default: 'Healthy Teeth'
         phone_number:
-            label: phone
+            label: Phone
             type: text
-            comment: Phone number
-            default: +01 101 01 01 01 01 
+            comment: 'Phone number'
+            default: '+01 101 01 01 01 01'
         email_address:
-            label: email
+            label: Email
             type: text
-            comment: E-mail address
+            comment: 'Email address'
             default: info@domain.ltd
+        contact_succeess_text:
+            label: 'Contact form success text'
+            type: text
+            default: 'Sent message successfully'
+        contact_regard:
+            label: 'Contact form success text'
+            type: text
+            comment: 'The regard for your contact requests'
+            default: 'New request from {{name}}: {{regard}}'
 require:
     - RainLab.Pages
     - Flosch.Slideshow
