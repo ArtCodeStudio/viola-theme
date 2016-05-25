@@ -29,13 +29,13 @@ A productive example of this theme can be found [here](http://www.thp-garber.de)
 An mail tempate could look like
 
 ```
-Neue Anfrage:
+New request:
 
 Name: {{name}}
-Absender: {{email}}
-Betreff: {{regard}}
+Sender: {{email}}
+Subject: {{regard}}
 
-Nachricht: {{sendermessage}}
+Message: {{sendermessage}}
 ```
 
 ## Develop
