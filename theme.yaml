@@ -34,17 +34,24 @@ form:
         email_address:
             label: Email
             type: text
-            comment: 'Email address'
+            comment: 'Email address for contact form and imprint'
             default: info@domain.ltd
-        contact_succeess_text:
-            label: 'Contact form success text'
-            type: text
-            default: 'Sent message successfully'
-        contact_regard:
-            label: 'Contact form success text'
-            type: text
-            comment: 'The regard for your contact requests'
-            default: 'New request from {{name}}: {{regard}}'
+    tabs:
+        fields:
+            contact_succeess_text:
+                label: 'Contact form success text'
+                type: text
+                default: 'Sent message successfully'
+            contact_regard:
+                label: 'Contact form success text'
+                type: text
+                comment: 'The regard for your contact requests'
+                default: 'New request from {{name}}: {{regard}}'
+            mail_template:
+                label: 'Mail Template'
+                type: text
+                comment: 'The template code you want to use'
+                default: 'viola::contact-notification'
 require:
     - RainLab.Pages
     - Flosch.Slideshow

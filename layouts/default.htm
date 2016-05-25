@@ -6,13 +6,12 @@ description = "Default layout"
 // TODO wird diese funktion zweimal aufgerufen?
 function onMailSent() {
     
-    
-    
     $formVars = [
         'receivermail' => post('receivermail'),
         'receivername' => post('receivername'),
         'succeesstext' => post('succeesstext'),
         'receiverregard' => post('receiverregard'),
+        'mailtemplate' => post('mailtemplate'),
         'name' => post('name'),
         'email' => post('email'),
         'regard' => post('regard'),
@@ -29,7 +28,7 @@ function onMailSent() {
     };
 
     // mail to site owner
-    Mail::send('viola::contact-notification', $formVars, $buildOwnerMessage);
+    Mail::send($formVars['mailtemplate'], $formVars, $buildOwnerMessage);
       
     $this['result'] = $formVars['succeesstext'];
 }
