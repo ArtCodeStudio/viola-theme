@@ -1,7 +1,7 @@
 # Viola Theme
 One Page October Theme for Medical Professionals.
 
-A productive example of this theme can be found [here](thp-garber.de).
+A productive example of this theme can be found [here](http://www.thp-garber.de).
 
 ![Theme Preview](assets/images/theme-preview.png)
 
@@ -20,6 +20,23 @@ A productive example of this theme can be found [here](thp-garber.de).
 
 * Create two Slideshows in the backends `Slideshow` section.
 * Select one of the Slideshow for each Slidehsow Components in `partials/services.htm` and `partials/top_header.htm` in the backends CMS section.
+* Create a new mail template with the code `viola::contact-notification` for the email you get if a visitors use your contact form, the available template variables are:
+ * `name` - Content of the name field the questioner did
+ * `email` - Content of the email field the questioner did
+ * `regard` - Content of the regard field the questioner did
+ * `sendermessage` - Content of the message field the questioner did
+
+An mail tempate could look like
+
+```
+Neue Anfrage:
+
+Name: {{name}}
+Absender: {{email}}
+Betreff: {{regard}}
+
+Nachricht: {{sendermessage}}
+```
 
 ## Develop
 
