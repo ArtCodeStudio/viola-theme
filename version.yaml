@@ -1,1 +1,4 @@
 1.0.0: First Version
+1.0.1:
+    - Bugfixes
+    - Use email from theme settings for contact form notification
