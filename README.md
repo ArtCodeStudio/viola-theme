@@ -20,13 +20,13 @@ One Page October Theme for Medical Professionals. There is a [demo](http://healt
 * Create two Slideshows in the backends `Slideshow` section.
 * Select one of the Slideshow for each Slidehsow Components in `partials/services.htm` and `partials/top_header.htm` in the backends CMS section.
 * Setup your email address in the theme settings (this mail is used to send you contact form notifications).
-* Create a new mail template with the code `viola::contact-notification` for the email you get if a visitors use your contact form, the available template variables are:
+* Create a new mail template with the code `viola::contact-notification` for the email you get if a visitor uses your contact form, the available template variables are:
  * `name` - Content of the name field the questioner did
  * `email` - Content of the email field the questioner did
  * `regard` - Content of the regard field the questioner did
  * `sendermessage` - Content of the message field the questioner did
 
-An mail template could look like
+Such a mail template could look like
 
 ```
 New request:
@@ -40,12 +40,12 @@ Message: {{sendermessage}}
 
 ## Develop
 
-To change core stuff of the Theme you need to install the dependencies with `bower` and `npm`:
+In order to change core stuff of the Theme you need to install the dependencies with `bower` and `npm`:
 
 ```
 bower install --force
 ```
-You need to ```--force```  the  bower install to overwrite the vendor files enclosed in this repository.
+(You need to ```--force```  the  bower install to overwrite the vendor files enclosed in this repository.)
 
 
 ```
@@ -53,7 +53,7 @@ npm install
 ```
 
 ### Styles
-The styles are written in sass and compiled to css, if you want to change the style you need to do this this in the sass files and to recompile the css.
+The styles are written in sass and compiled to css, if you want to change the style you need to do this in the sass files and to recompile the css.
 
 You can recompile the styles with `npm run build`.
 
