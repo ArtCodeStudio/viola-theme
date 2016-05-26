@@ -2,6 +2,7 @@ name: Viola
 description: 'One Page October Theme for Medical Professionals'
 author: 'Pascal Garber'
 homepage: 'http://www.jumplink.eu'
+license: 'MIT'
 code: Viola
 form:
     fields:
@@ -15,7 +16,7 @@ form:
                 orange: Orange
                 red: Red
                 green: Green
-            default: blue
+            default: 'blue'
         site_name:
             label: 'Site name'
             type: text

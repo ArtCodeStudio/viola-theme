@@ -47,7 +47,11 @@ function onMailSent() {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         {% styles %}
-        {% set style = 'assets/css/theme-' ~ this.theme.color ~ '.css' %}
+        {% if this.theme.color %}
+            {% set style = 'assets/css/theme-' ~ this.theme.color ~ '.css' %}
+        {% else %}
+            {% set style = 'assets/css/theme-blue.css' %}
+        {% endif %}
         <link href="{{ [style,]|theme }}" rel="stylesheet">
     </head>
     <body id="{{ str_studly(this.page.title) }}" data-spy="scroll">
