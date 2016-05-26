@@ -1,6 +1,5 @@
 # Viola Theme
-One Page October Theme for Medical Professionals.
-A productive example of this theme can be found [here](http://www.thp-garber.de).
+One Page October Theme for Medical Professionals. There is a [demo](http://healthyteeth.jumplink.eu/) and a customized [productive]((http://www.thp-garber.de)) example of this theme.
 
 ![Theme Preview](assets/images/theme-preview.png)
 
