@@ -30,8 +30,13 @@ node_modules/
 !assets/vendor/
 
 assets/vendor/*
-!assets/vendor/within-viewport/
 
+!assets/vendor/sass-autoprefixer/
+assets/vendor/sass-autoprefixer/*
+!assets/vendor/sass-autoprefixer/scss/
+
+
+!assets/vendor/within-viewport/
 assets/vendor/within-viewport/*
 !assets/vendor/within-viewport/withinviewport.js
 !assets/vendor/within-viewport/jquery.withinviewport.js
