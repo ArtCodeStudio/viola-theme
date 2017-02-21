@@ -12593,7 +12593,8 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
   margin: 0 auto 20px;
   top: -70px;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block; }
   #top .icon-circle .fa {
     color: white;
     font-size: 30px; }

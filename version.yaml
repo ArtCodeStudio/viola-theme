@@ -5,3 +5,8 @@
 1.0.2:
     - Fix multiple contact form request bug
     - Check if color setting is set
+2.0.0:
+    - Upgrade Bootstrap to v4.0.0-alpha.6
+    - All Bootstrap 4 Variables full customizable in the theme settings
+    - Use scss files directly
+    - Use placeholder slides if none has been established

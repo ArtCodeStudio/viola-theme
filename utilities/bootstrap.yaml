@@ -4,466 +4,466 @@ form:
             bs4-colors:
                 label: Colors
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-white:
                 type: colorpicker
                 label: white
                 default: '#fff'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: white
             bs4-black:
                 type: colorpicker
                 label: black
                 default: '#000'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: black
             bs4-red:
                 type: colorpicker
                 label: red
                 default: '#d9534f'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: red
             bs4-orange:
                 type: colorpicker
                 label: orange
                 default: '#f0ad4e'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: orange
             bs4-yellow:
                 type: colorpicker
                 label: yellow
                 default: '#ffd500'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: yellow
             bs4-green:
                 type: colorpicker
                 label: green
                 default: '#5cb85c'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: green
             bs4-blue:
                 type: colorpicker
                 label: blue
                 default: '#0275d8'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: blue
             bs4-teal:
                 type: colorpicker
                 label: teal
                 default: '#5bc0de'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: teal
             bs4-pink:
                 type: colorpicker
                 label: pink
                 default: '#ff5b77'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pink
             bs4-purple:
                 type: colorpicker
                 label: purple
                 default: '#613d7c'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: purple
             bs4-gray-dark:
                 type: colorpicker
                 label: gray-dark
                 default: '#292b2c'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: gray-dark
             bs4-gray:
                 type: colorpicker
                 label: gray
                 default: '#464a4c'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: gray
             bs4-gray-light:
                 type: colorpicker
                 label: gray-light
                 default: '#636c72'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: gray-light
             bs4-gray-lighter:
                 type: colorpicker
                 label: gray-lighter
                 default: '#eceeef'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: gray-lighter
             bs4-gray-lightest:
                 type: colorpicker
                 label: gray-lightest
                 default: '#f7f7f9'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: gray-lightest
             bs4-brand-primary:
                 type: text
                 label: brand-primary
                 default: $blue
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: brand-primary
             bs4-brand-success:
                 type: text
                 label: brand-success
                 default: $green
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: brand-success
             bs4-brand-info:
                 type: text
                 label: brand-info
                 default: $teal
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: brand-info
             bs4-brand-warning:
                 type: text
                 label: brand-warning
                 default: $orange
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: brand-warning
             bs4-brand-danger:
                 type: text
                 label: brand-danger
                 default: $red
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: brand-danger
             bs4-brand-inverse:
                 type: text
                 label: brand-inverse
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: brand-inverse
             bs4-options:
                 label: Options
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-enable-rounded:
                 type: checkbox
                 label: enable-rounded
                 default: true
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-rounded
             bs4-enable-shadows:
                 type: checkbox
                 label: enable-shadows
                 default: false
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-shadows
             bs4-enable-gradients:
                 type: checkbox
                 label: enable-gradients
                 default: false
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-gradients
             bs4-enable-transitions:
                 type: checkbox
                 label: enable-transitions
                 default: true
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-transitions
             bs4-enable-hover-media-query:
                 type: checkbox
                 label: enable-hover-media-query
                 default: false
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-hover-media-query
             bs4-enable-grid-classes:
                 type: checkbox
                 label: enable-grid-classes
                 default: true
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-grid-classes
             bs4-enable-print-styles:
                 type: checkbox
                 label: enable-print-styles
                 default: true
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: enable-print-styles
             bs4-spacing:
                 label: Spacing
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-spacer:
                 type: text
                 label: spacer
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacer
             bs4-spacer-x:
                 type: text
                 label: spacer-x
                 default: $spacer
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacer-x
             bs4-spacer-y:
                 type: text
                 label: spacer-y
                 default: $spacer
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacer-y
             bs4-spacers-x-0:
                 type: number
                 label: spacers-x-0
                 default: 0
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-x-0
             bs4-spacers-y-0:
                 type: number
                 label: spacers-y-0
                 default: 0
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-y-0
             bs4-spacers-x-1:
                 type: text
                 label: spacers-x-1
                 default: $spacer-x * .25
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-x-1
             bs4-spacers-y-1:
                 type: text
                 label: spacers-y-1
                 default: $spacer-y * .25
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-y-1
             bs4-spacers-x-2:
                 type: text
                 label: spacers-x-2
                 default: ($spacer-x * .5)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-x-2
             bs4-spacers-y-2:
                 type: text
                 label: spacers-y-2
                 default: ($spacer-y * .5)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-y-2
             bs4-spacers-x-3:
                 type: text
                 label: spacers-x-3
                 default: ($spacer-x)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-x-3
             bs4-spacers-y-3:
                 type: text
                 label: spacers-y-3
                 default: ($spacer-y)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-y-3
             bs4-spacers-x-4:
                 type: text
                 label: spacers-x-4
                 default: ($spacer-x * 1.5)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-x-4
             bs4-spacers-y-4:
                 type: text
                 label: spacers-y-4
                 default: ($spacer-y * 1.5)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-y-4
             bs4-spacers-x-5:
                 type: text
                 label: spacers-x-5
                 default: ($spacer-x * 3)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-x-5
             bs4-spacers-y-5:
                 type: text
                 label: spacers-y-5
                 default: ($spacer-y * 3)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: spacers-y-5
             bs4-border-width:
                 type: text
                 label: border-width
                 default: 1px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: border-width
             bs4-body:
                 label: Body
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-body-bg:
                 type: text
                 label: body-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: body-bg
             bs4-body-color:
                 type: text
                 label: body-color
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: body-color
             bs4-inverse-bg:
                 type: text
                 label: inverse-bg
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: inverse-bg
             bs4-inverse-color:
                 type: text
                 label: inverse-color
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: inverse-color
             bs4-links:
                 label: Links
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-link-color:
                 type: text
                 label: link-color
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: link-color
             bs4-link-decoration:
                 type: text
                 label: link-decoration
                 default: none
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: link-decoration
             bs4-link-hover-color:
                 type: text
                 label: link-hover-color
                 default: 'darken($link-color, 15%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: link-hover-color
             bs4-link-hover-decoration:
                 type: text
                 label: link-hover-decoration
                 default: underline
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: link-hover-decoration
             bs4-grid_breakpoints:
                 label: Grid Breakpoints
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-grid-breakpoints-xs:
                 type: number
                 label: grid-breakpoints-xs
                 default: 0
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-breakpoints-xs
             bs4-grid-breakpoints-sm:
                 type: text
                 label: grid-breakpoints-sm
                 default: 576px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-breakpoints-sm
             bs4-grid-breakpoints-md:
                 type: text
                 label: grid-breakpoints-md
                 default: 768px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-breakpoints-md
             bs4-grid-breakpoints-lg:
                 type: text
                 label: grid-breakpoints-lg
                 default: 992px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-breakpoints-lg
             bs4-grid-breakpoints-xl:
                 type: text
                 label: grid-breakpoints-xl
                 default: 1200px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-breakpoints-xl
             bs4-grid_containers:
                 label: Grid Containers
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-container-max-widths-xs:
                 type: text
                 label: container-max-widths-xs
                 default: 'null'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: container-max-widths-xs
             bs4-container-max-widths-sm:
                 type: text
                 label: container-max-widths-sm
                 default: 540px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: container-max-widths-sm
             bs4-container-max-widths-md:
                 type: text
                 label: container-max-widths-md
                 default: 720px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: container-max-widths-md
             bs4-container-max-widths-lg:
                 type: text
                 label: container-max-widths-lg
                 default: 960px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: container-max-widths-lg
             bs4-container-max-widths-xl:
                 type: text
                 label: container-max-widths-xl
                 default: 1140px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: container-max-widths-xl
             bs4-grid_columns:
                 label: Grid Columns
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-grid-columns:
                 type: text
                 label: grid-columns
                 default: '12'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-columns
             bs4-grid-gutter-width-base:
                 type: text
                 label: grid-gutter-width-base
                 default: 30px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-gutter-width-base
             bs4-grid-gutter-widths-xs:
                 type: text
                 label: grid-gutter-widths-xs
                 default: $grid-gutter-width-base
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-gutter-widths-xs
             bs4-grid-gutter-widths-sm:
                 type: text
                 label: grid-gutter-widths-sm
                 default: $grid-gutter-width-base
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-gutter-widths-sm
             bs4-grid-gutter-widths-md:
                 type: text
                 label: grid-gutter-widths-md
                 default: $grid-gutter-width-base
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-gutter-widths-md
             bs4-grid-gutter-widths-lg:
                 type: text
                 label: grid-gutter-widths-lg
                 default: $grid-gutter-width-base
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-gutter-widths-lg
             bs4-grid-gutter-widths-xl:
                 type: text
                 label: grid-gutter-widths-xl
                 default: $grid-gutter-width-base
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: grid-gutter-widths-xl
             bs4-typography:
                 label: Typography
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-font-family-sans-serif:
                 type: text
                 label: font-family-sans-serif
                 default: >-
                     -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
                     Roboto, "Helvetica Neue", Arial, sans-serif
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-family-sans-serif
             bs4-font-family-serif:
                 type: text
                 label: font-family-serif
                 default: 'Georgia, "Times New Roman", Times, serif'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-family-serif
             bs4-font-family-monospace:
                 type: text
@@ -471,19 +471,19 @@ form:
                 default: >-
                     Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
                     monospace
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-family-monospace
             bs4-font-family-base:
                 type: text
                 label: font-family-base
                 default: $font-family-sans-serif
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-family-base
             bs4-font-size-root:
                 type: text
                 label: font-size-root
                 default: 16px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: >
                     Pixel value used to responsively scale all typography.
                     Applied to the `<html>` element.
@@ -492,689 +492,689 @@ form:
                 type: text
                 label: font-size-base
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-base
             bs4-font-size-lg:
                 type: text
                 label: font-size-lg
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-lg
             bs4-font-size-sm:
                 type: text
                 label: font-size-sm
                 default: .875rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-sm
             bs4-font-size-xs:
                 type: text
                 label: font-size-xs
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-xs
             bs4-font-weight-normal:
                 type: text
                 label: font-weight-normal
                 default: normal
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-weight-normal
             bs4-font-weight-bold:
                 type: text
                 label: font-weight-bold
                 default: bold
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-weight-bold
             bs4-font-weight-base:
                 type: text
                 label: font-weight-base
                 default: $font-weight-normal
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-weight-base
             bs4-line-height-base:
                 type: text
                 label: line-height-base
                 default: '1.5'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: line-height-base
             bs4-font-size-h1:
                 type: text
                 label: font-size-h1
                 default: 2.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-h1
             bs4-font-size-h2:
                 type: text
                 label: font-size-h2
                 default: 2rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-h2
             bs4-font-size-h3:
                 type: text
                 label: font-size-h3
                 default: 1.75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-h3
             bs4-font-size-h4:
                 type: text
                 label: font-size-h4
                 default: 1.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-h4
             bs4-font-size-h5:
                 type: text
                 label: font-size-h5
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-h5
             bs4-font-size-h6:
                 type: text
                 label: font-size-h6
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: font-size-h6
             bs4-headings-margin-bottom:
                 type: text
                 label: headings-margin-bottom
                 default: ($spacer / 2)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: headings-margin-bottom
             bs4-headings-font-family:
                 type: text
                 label: headings-font-family
                 default: inherit
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: headings-font-family
             bs4-headings-font-weight:
                 type: text
                 label: headings-font-weight
                 default: '500'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: headings-font-weight
             bs4-headings-line-height:
                 type: text
                 label: headings-line-height
                 default: '1.1'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: headings-line-height
             bs4-headings-color:
                 type: text
                 label: headings-color
                 default: inherit
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: headings-color
             bs4-display1-size:
                 type: text
                 label: display1-size
                 default: 6rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display1-size
             bs4-display2-size:
                 type: text
                 label: display2-size
                 default: 5.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display2-size
             bs4-display3-size:
                 type: text
                 label: display3-size
                 default: 4.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display3-size
             bs4-display4-size:
                 type: text
                 label: display4-size
                 default: 3.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display4-size
             bs4-display1-weight:
                 type: text
                 label: display1-weight
                 default: '300'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display1-weight
             bs4-display2-weight:
                 type: text
                 label: display2-weight
                 default: '300'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display2-weight
             bs4-display3-weight:
                 type: text
                 label: display3-weight
                 default: '300'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display3-weight
             bs4-display4-weight:
                 type: text
                 label: display4-weight
                 default: '300'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display4-weight
             bs4-display-line-height:
                 type: text
                 label: display-line-height
                 default: $headings-line-height
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: display-line-height
             bs4-lead-font-size:
                 type: text
                 label: lead-font-size
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: lead-font-size
             bs4-lead-font-weight:
                 type: text
                 label: lead-font-weight
                 default: '300'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: lead-font-weight
             bs4-small-font-size:
                 type: text
                 label: small-font-size
                 default: 80%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: small-font-size
             bs4-text-muted:
                 type: text
                 label: text-muted
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: text-muted
             bs4-abbr-border-color:
                 type: text
                 label: abbr-border-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: abbr-border-color
             bs4-blockquote-small-color:
                 type: text
                 label: blockquote-small-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: blockquote-small-color
             bs4-blockquote-font-size:
                 type: text
                 label: blockquote-font-size
                 default: ($font-size-base * 1.25)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: blockquote-font-size
             bs4-blockquote-border-color:
                 type: text
                 label: blockquote-border-color
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: blockquote-border-color
             bs4-blockquote-border-width:
                 type: text
                 label: blockquote-border-width
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: blockquote-border-width
             bs4-hr-border-color:
                 type: text
                 label: hr-border-color
                 default: 'rgba($black,.1)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: hr-border-color
             bs4-hr-border-width:
                 type: text
                 label: hr-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: hr-border-width
             bs4-mark-padding:
                 type: text
                 label: mark-padding
                 default: .2em
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: mark-padding
             bs4-dt-font-weight:
                 type: text
                 label: dt-font-weight
                 default: $font-weight-bold
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dt-font-weight
             bs4-kbd-box-shadow:
                 type: text
                 label: kbd-box-shadow
                 default: 'inset 0 -.1rem 0 rgba($black,.25)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: kbd-box-shadow
             bs4-nested-kbd-font-weight:
                 type: text
                 label: nested-kbd-font-weight
                 default: $font-weight-bold
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nested-kbd-font-weight
             bs4-list-inline-padding:
                 type: text
                 label: list-inline-padding
                 default: 5px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-inline-padding
             bs4-components:
                 label: Components
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-line-height-lg:
                 type: text
                 label: line-height-lg
                 default: (4 / 3)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: line-height-lg
             bs4-line-height-sm:
                 type: text
                 label: line-height-sm
                 default: '1.5'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: line-height-sm
             bs4-border-radius:
                 type: text
                 label: border-radius
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: border-radius
             bs4-border-radius-lg:
                 type: text
                 label: border-radius-lg
                 default: .3rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: border-radius-lg
             bs4-border-radius-sm:
                 type: text
                 label: border-radius-sm
                 default: .2rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: border-radius-sm
             bs4-component-active-color:
                 type: text
                 label: component-active-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: component-active-color
             bs4-component-active-bg:
                 type: text
                 label: component-active-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: component-active-bg
             bs4-caret-width:
                 type: text
                 label: caret-width
                 default: .3em
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: caret-width
             bs4-caret-width-lg:
                 type: text
                 label: caret-width-lg
                 default: $caret-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: caret-width-lg
             bs4-transition-base:
                 type: text
                 label: transition-base
                 default: all .2s ease-in-out
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: transition-base
             bs4-transition-fade:
                 type: text
                 label: transition-fade
                 default: opacity .15s linear
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: transition-fade
             bs4-transition-collapse:
                 type: text
                 label: transition-collapse
                 default: height .35s ease
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: transition-collapse
             bs4-tables:
                 label: Tables
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-table-cell-padding:
                 type: text
                 label: table-cell-padding
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-cell-padding
             bs4-table-sm-cell-padding:
                 type: text
                 label: table-sm-cell-padding
                 default: .3rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-sm-cell-padding
             bs4-table-bg:
                 type: text
                 label: table-bg
                 default: transparent
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-bg
             bs4-table-inverse-bg:
                 type: text
                 label: table-inverse-bg
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-inverse-bg
             bs4-table-inverse-color:
                 type: text
                 label: table-inverse-color
                 default: $body-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-inverse-color
             bs4-table-bg-accent:
                 type: text
                 label: table-bg-accent
                 default: 'rgba($black,.05)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-bg-accent
             bs4-table-bg-hover:
                 type: text
                 label: table-bg-hover
                 default: 'rgba($black,.075)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-bg-hover
             bs4-table-bg-active:
                 type: text
                 label: table-bg-active
                 default: $table-bg-hover
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-bg-active
             bs4-table-head-bg:
                 type: text
                 label: table-head-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-head-bg
             bs4-table-head-color:
                 type: text
                 label: table-head-color
                 default: $gray
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-head-color
             bs4-table-border-width:
                 type: text
                 label: table-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-border-width
             bs4-table-border-color:
                 type: text
                 label: table-border-color
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: table-border-color
             bs4-buttons:
                 label: Buttons
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-btn-padding-x:
                 type: text
                 label: btn-padding-x
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-padding-x
             bs4-btn-padding-y:
                 type: text
                 label: btn-padding-y
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-padding-y
             bs4-btn-line-height:
                 type: text
                 label: btn-line-height
                 default: '1.25'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-line-height
             bs4-btn-font-weight:
                 type: text
                 label: btn-font-weight
                 default: $font-weight-normal
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-font-weight
             bs4-btn-box-shadow:
                 type: text
                 label: btn-box-shadow
                 default: 'inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-box-shadow
             bs4-btn-focus-box-shadow:
                 type: text
                 label: btn-focus-box-shadow
                 default: '0 0 0 2px rgba($brand-primary, .25)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-focus-box-shadow
             bs4-btn-active-box-shadow:
                 type: text
                 label: btn-active-box-shadow
                 default: 'inset 0 3px 5px rgba($black,.125)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-active-box-shadow
             bs4-btn-primary-color:
                 type: text
                 label: btn-primary-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-primary-color
             bs4-btn-primary-bg:
                 type: text
                 label: btn-primary-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-primary-bg
             bs4-btn-primary-border:
                 type: text
                 label: btn-primary-border
                 default: $btn-primary-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-primary-border
             bs4-btn-secondary-color:
                 type: text
                 label: btn-secondary-color
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-secondary-color
             bs4-btn-secondary-bg:
                 type: text
                 label: btn-secondary-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-secondary-bg
             bs4-btn-secondary-border:
                 type: text
                 label: btn-secondary-border
                 default: '#ccc'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-secondary-border
             bs4-btn-info-color:
                 type: text
                 label: btn-info-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-info-color
             bs4-btn-info-bg:
                 type: text
                 label: btn-info-bg
                 default: $brand-info
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-info-bg
             bs4-btn-info-border:
                 type: text
                 label: btn-info-border
                 default: $btn-info-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-info-border
             bs4-btn-success-color:
                 type: text
                 label: btn-success-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-success-color
             bs4-btn-success-bg:
                 type: text
                 label: btn-success-bg
                 default: $brand-success
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-success-bg
             bs4-btn-success-border:
                 type: text
                 label: btn-success-border
                 default: $btn-success-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-success-border
             bs4-btn-warning-color:
                 type: text
                 label: btn-warning-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-warning-color
             bs4-btn-warning-bg:
                 type: text
                 label: btn-warning-bg
                 default: $brand-warning
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-warning-bg
             bs4-btn-warning-border:
                 type: text
                 label: btn-warning-border
                 default: $btn-warning-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-warning-border
             bs4-btn-danger-color:
                 type: text
                 label: btn-danger-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-danger-color
             bs4-btn-danger-bg:
                 type: text
                 label: btn-danger-bg
                 default: $brand-danger
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-danger-bg
             bs4-btn-danger-border:
                 type: text
                 label: btn-danger-border
                 default: $btn-danger-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-danger-border
             bs4-btn-link-disabled-color:
                 type: text
                 label: btn-link-disabled-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-link-disabled-color
             bs4-btn-padding-x-sm:
                 type: text
                 label: btn-padding-x-sm
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-padding-x-sm
             bs4-btn-padding-y-sm:
                 type: text
                 label: btn-padding-y-sm
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-padding-y-sm
             bs4-btn-padding-x-lg:
                 type: text
                 label: btn-padding-x-lg
                 default: 1.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-padding-x-lg
             bs4-btn-padding-y-lg:
                 type: text
                 label: btn-padding-y-lg
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-padding-y-lg
             bs4-btn-block-spacing-y:
                 type: text
                 label: btn-block-spacing-y
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-block-spacing-y
             bs4-btn-toolbar-margin:
                 type: text
                 label: btn-toolbar-margin
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-toolbar-margin
             bs4-btn-border-radius:
                 type: text
                 label: btn-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-border-radius
             bs4-btn-border-radius-lg:
                 type: text
                 label: btn-border-radius-lg
                 default: $border-radius-lg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-border-radius-lg
             bs4-btn-border-radius-sm:
                 type: text
                 label: btn-border-radius-sm
                 default: $border-radius-sm
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-border-radius-sm
             bs4-btn-transition:
                 type: text
                 label: btn-transition
                 default: all .2s ease-in-out
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: btn-transition
             bs4-forms:
                 label: Forms
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-input-padding-x:
                 type: text
                 label: input-padding-x
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-padding-x
             bs4-input-padding-y:
                 type: text
                 label: input-padding-y
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-padding-y
             bs4-input-line-height:
                 type: text
                 label: input-line-height
                 default: '1.25'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-line-height
             bs4-input-bg:
                 type: text
                 label: input-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-bg
             bs4-input-bg-disabled:
                 type: text
                 label: input-bg-disabled
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-bg-disabled
             bs4-input-color:
                 type: text
                 label: input-color
                 default: $gray
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-color
             bs4-input-border-color:
                 type: text
                 label: input-border-color
                 default: 'rgba($black,.15)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-border-color
             bs4-input-btn-border-width:
                 type: text
                 label: input-btn-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: |
                     For form controls and buttons
                 assetVar: input-btn-border-width
@@ -1182,79 +1182,79 @@ form:
                 type: text
                 label: input-box-shadow
                 default: 'inset 0 1px 1px rgba($black,.075)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-box-shadow
             bs4-input-border-radius:
                 type: text
                 label: input-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-border-radius
             bs4-input-border-radius-lg:
                 type: text
                 label: input-border-radius-lg
                 default: $border-radius-lg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-border-radius-lg
             bs4-input-border-radius-sm:
                 type: text
                 label: input-border-radius-sm
                 default: $border-radius-sm
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-border-radius-sm
             bs4-input-bg-focus:
                 type: text
                 label: input-bg-focus
                 default: $input-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-bg-focus
             bs4-input-border-focus:
                 type: text
                 label: input-border-focus
                 default: 'lighten($brand-primary, 25%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-border-focus
             bs4-input-box-shadow-focus:
                 type: text
                 label: input-box-shadow-focus
                 default: '$input-box-shadow, rgba($input-border-focus, .6)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-box-shadow-focus
             bs4-input-color-focus:
                 type: text
                 label: input-color-focus
                 default: $input-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-color-focus
             bs4-input-color-placeholder:
                 type: text
                 label: input-color-placeholder
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-color-placeholder
             bs4-input-padding-x-sm:
                 type: text
                 label: input-padding-x-sm
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-padding-x-sm
             bs4-input-padding-y-sm:
                 type: text
                 label: input-padding-y-sm
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-padding-y-sm
             bs4-input-padding-x-lg:
                 type: text
                 label: input-padding-x-lg
                 default: 1.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-padding-x-lg
             bs4-input-padding-y-lg:
                 type: text
                 label: input-padding-y-lg
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-padding-y-lg
             bs4-input-height:
                 type: text
@@ -1262,7 +1262,7 @@ form:
                 default: >-
                     (($font-size-base * $input-line-height) + ($input-padding-y
                     * 2))
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-height
             bs4-input-height-lg:
                 type: text
@@ -1270,7 +1270,7 @@ form:
                 default: >-
                     (($font-size-lg * $line-height-lg) + ($input-padding-y-lg *
                     2))
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-height-lg
             bs4-input-height-sm:
                 type: text
@@ -1278,103 +1278,103 @@ form:
                 default: >-
                     (($font-size-sm * $line-height-sm) + ($input-padding-y-sm *
                     2))
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-height-sm
             bs4-input-transition:
                 type: text
                 label: input-transition
                 default: 'border-color ease-in-out .15s, box-shadow ease-in-out .15s'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-transition
             bs4-form-text-margin-top:
                 type: text
                 label: form-text-margin-top
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-text-margin-top
             bs4-form-feedback-margin-top:
                 type: text
                 label: form-feedback-margin-top
                 default: $form-text-margin-top
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-feedback-margin-top
             bs4-form-check-margin-bottom:
                 type: text
                 label: form-check-margin-bottom
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-check-margin-bottom
             bs4-form-check-input-gutter:
                 type: text
                 label: form-check-input-gutter
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-check-input-gutter
             bs4-form-check-input-margin-y:
                 type: text
                 label: form-check-input-margin-y
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-check-input-margin-y
             bs4-form-check-input-margin-x:
                 type: text
                 label: form-check-input-margin-x
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-check-input-margin-x
             bs4-form-check-inline-margin-x:
                 type: text
                 label: form-check-inline-margin-x
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-check-inline-margin-x
             bs4-form-group-margin-bottom:
                 type: text
                 label: form-group-margin-bottom
                 default: $spacer-y
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: form-group-margin-bottom
             bs4-input-group-addon-bg:
                 type: text
                 label: input-group-addon-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-group-addon-bg
             bs4-input-group-addon-border-color:
                 type: text
                 label: input-group-addon-border-color
                 default: $input-border-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: input-group-addon-border-color
             bs4-cursor-disabled:
                 type: text
                 label: cursor-disabled
                 default: not-allowed
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: cursor-disabled
             bs4-custom-control-gutter:
                 type: text
                 label: custom-control-gutter
                 default: 1.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-gutter
             bs4-custom-control-spacer-x:
                 type: text
                 label: custom-control-spacer-x
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-spacer-x
             bs4-custom-control-spacer-y:
                 type: text
                 label: custom-control-spacer-y
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-spacer-y
             bs4-custom-control-indicator-size:
                 type: text
                 label: custom-control-indicator-size
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-indicator-size
             bs4-custom-control-indicator-margin-y:
                 type: text
@@ -1382,169 +1382,169 @@ form:
                 default: >-
                     (($line-height-base * 1rem) -
                     $custom-control-indicator-size) / -2
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-indicator-margin-y
             bs4-custom-control-indicator-bg:
                 type: text
                 label: custom-control-indicator-bg
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-indicator-bg
             bs4-custom-control-indicator-bg-size:
                 type: text
                 label: custom-control-indicator-bg-size
                 default: 50% 50%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-indicator-bg-size
             bs4-custom-control-indicator-box-shadow:
                 type: text
                 label: custom-control-indicator-box-shadow
                 default: 'inset 0 .25rem .25rem rgba($black,.1)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-indicator-box-shadow
             bs4-custom-control-disabled-cursor:
                 type: text
                 label: custom-control-disabled-cursor
                 default: $cursor-disabled
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-disabled-cursor
             bs4-custom-control-disabled-indicator-bg:
                 type: text
                 label: custom-control-disabled-indicator-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-disabled-indicator-bg
             bs4-custom-control-disabled-description-color:
                 type: text
                 label: custom-control-disabled-description-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-disabled-description-color
             bs4-custom-control-checked-indicator-color:
                 type: text
                 label: custom-control-checked-indicator-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-checked-indicator-color
             bs4-custom-control-checked-indicator-bg:
                 type: text
                 label: custom-control-checked-indicator-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-checked-indicator-bg
             bs4-custom-control-checked-indicator-box-shadow:
                 type: text
                 label: custom-control-checked-indicator-box-shadow
                 default: none
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-checked-indicator-box-shadow
             bs4-custom-control-focus-indicator-box-shadow:
                 type: text
                 label: custom-control-focus-indicator-box-shadow
                 default: '0 0 0 1px $body-bg, 0 0 0 3px $brand-primary'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-focus-indicator-box-shadow
             bs4-custom-control-active-indicator-color:
                 type: text
                 label: custom-control-active-indicator-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-active-indicator-color
             bs4-custom-control-active-indicator-bg:
                 type: text
                 label: custom-control-active-indicator-bg
                 default: 'lighten($brand-primary, 35%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-active-indicator-bg
             bs4-custom-control-active-indicator-box-shadow:
                 type: text
                 label: custom-control-active-indicator-box-shadow
                 default: none
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-control-active-indicator-box-shadow
             bs4-custom-checkbox-radius:
                 type: text
                 label: custom-checkbox-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-checkbox-radius
             bs4-custom-checkbox-indeterminate-bg:
                 type: text
                 label: custom-checkbox-indeterminate-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-checkbox-indeterminate-bg
             bs4-custom-checkbox-indeterminate-indicator-color:
                 type: text
                 label: custom-checkbox-indeterminate-indicator-color
                 default: $custom-control-checked-indicator-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-checkbox-indeterminate-indicator-color
             bs4-custom-checkbox-indeterminate-box-shadow:
                 type: text
                 label: custom-checkbox-indeterminate-box-shadow
                 default: none
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-checkbox-indeterminate-box-shadow
             bs4-custom-radio-radius:
                 type: text
                 label: custom-radio-radius
                 default: 50%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-radio-radius
             bs4-custom-select-padding-x:
                 type: text
                 label: custom-select-padding-x
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-padding-x
             bs4-custom-select-padding-y:
                 type: text
                 label: custom-select-padding-y
                 default: .375rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-padding-y
             bs4-custom-select-indicator-padding:
                 type: text
                 label: custom-select-indicator-padding
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-indicator-padding
             bs4-custom-select-line-height:
                 type: text
                 label: custom-select-line-height
                 default: $input-line-height
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-line-height
             bs4-custom-select-color:
                 type: text
                 label: custom-select-color
                 default: $input-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-color
             bs4-custom-select-disabled-color:
                 type: text
                 label: custom-select-disabled-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-disabled-color
             bs4-custom-select-bg:
                 type: text
                 label: custom-select-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-bg
             bs4-custom-select-disabled-bg:
                 type: text
                 label: custom-select-disabled-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-disabled-bg
             bs4-custom-select-bg-size:
                 type: text
                 label: custom-select-bg-size
                 default: 8px 10px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: |
                     In pixels because image dimensions
                 assetVar: custom-select-bg-size
@@ -1552,31 +1552,31 @@ form:
                 type: text
                 label: custom-select-indicator-color
                 default: '#333'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-indicator-color
             bs4-custom-select-border-width:
                 type: text
                 label: custom-select-border-width
                 default: $input-btn-border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-border-width
             bs4-custom-select-border-color:
                 type: text
                 label: custom-select-border-color
                 default: $input-border-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-border-color
             bs4-custom-select-border-radius:
                 type: text
                 label: custom-select-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-border-radius
             bs4-custom-select-focus-border-color:
                 type: text
                 label: custom-select-focus-border-color
                 default: 'lighten($brand-primary, 25%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-focus-border-color
             bs4-custom-select-focus-box-shadow:
                 type: text
@@ -1584,133 +1584,133 @@ form:
                 default: >-
                     inset 0 1px 2px rgba($black, .075), 0 0 5px
                     rgba($custom-select-focus-border-color, .5)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-focus-box-shadow
             bs4-custom-select-sm-padding-y:
                 type: text
                 label: custom-select-sm-padding-y
                 default: .2rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-sm-padding-y
             bs4-custom-select-sm-font-size:
                 type: text
                 label: custom-select-sm-font-size
                 default: 75%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-select-sm-font-size
             bs4-custom-file-height:
                 type: text
                 label: custom-file-height
                 default: 2.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-height
             bs4-custom-file-width:
                 type: text
                 label: custom-file-width
                 default: 14rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-width
             bs4-custom-file-focus-box-shadow:
                 type: text
                 label: custom-file-focus-box-shadow
                 default: '0 0 0 .075rem $white, 0 0 0 .2rem $brand-primary'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-focus-box-shadow
             bs4-custom-file-padding-x:
                 type: text
                 label: custom-file-padding-x
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-padding-x
             bs4-custom-file-padding-y:
                 type: text
                 label: custom-file-padding-y
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-padding-y
             bs4-custom-file-line-height:
                 type: text
                 label: custom-file-line-height
                 default: '1.5'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-line-height
             bs4-custom-file-color:
                 type: text
                 label: custom-file-color
                 default: $gray
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-color
             bs4-custom-file-bg:
                 type: text
                 label: custom-file-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-bg
             bs4-custom-file-border-width:
                 type: text
                 label: custom-file-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-border-width
             bs4-custom-file-border-color:
                 type: text
                 label: custom-file-border-color
                 default: $input-border-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-border-color
             bs4-custom-file-border-radius:
                 type: text
                 label: custom-file-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-border-radius
             bs4-custom-file-box-shadow:
                 type: text
                 label: custom-file-box-shadow
                 default: 'inset 0 .2rem .4rem rgba($black,.05)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-box-shadow
             bs4-custom-file-button-color:
                 type: text
                 label: custom-file-button-color
                 default: $custom-file-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-button-color
             bs4-custom-file-button-bg:
                 type: text
                 label: custom-file-button-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-button-bg
             bs4-custom-file-text-placeholder-en:
                 type: text
                 label: custom-file-text-placeholder-en
                 default: '"Choose file..."'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-text-placeholder-en
             bs4-custom-file-text-placeholder-de:
                 type: text
                 label: custom-file-text-placeholder-de
                 default: '"Datei auswählen..."'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-text-placeholder-de
             bs4-custom-file-text-button-label-en:
                 type: text
                 label: custom-file-text-button-label-en
                 default: '"Browse"'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-text-button-label-en
             bs4-custom-file-text-button-label-de:
                 type: text
                 label: custom-file-text-button-label-de
                 default: '"Durchsuchen"'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: custom-file-text-button-label-de
             bs4-form-icon-success-color:
                 type: text
                 label: form-icon-success-color
                 default: $brand-success
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: |
                     Form validation icons
                 assetVar: form-icon-success-color
@@ -1718,7 +1718,7 @@ form:
                 type: text
                 label: form-icon-warning-color
                 default: $brand-warning
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: |
                     Form validation icons
                 assetVar: form-icon-warning-color
@@ -1726,953 +1726,953 @@ form:
                 type: text
                 label: form-icon-danger-color
                 default: $brand-danger
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: |
                     Form validation icons
                 assetVar: form-icon-danger-color
             bs4-dropdowns:
                 label: Dropdowns
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-dropdown-min-width:
                 type: text
                 label: dropdown-min-width
                 default: 10rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-min-width
             bs4-dropdown-padding-y:
                 type: text
                 label: dropdown-padding-y
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-padding-y
             bs4-dropdown-margin-top:
                 type: text
                 label: dropdown-margin-top
                 default: .125rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-margin-top
             bs4-dropdown-bg:
                 type: text
                 label: dropdown-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-bg
             bs4-dropdown-border-color:
                 type: text
                 label: dropdown-border-color
                 default: 'rgba($black,.15)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-border-color
             bs4-dropdown-border-width:
                 type: text
                 label: dropdown-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-border-width
             bs4-dropdown-divider-bg:
                 type: text
                 label: dropdown-divider-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-divider-bg
             bs4-dropdown-box-shadow:
                 type: text
                 label: dropdown-box-shadow
                 default: '0 .5rem 1rem rgba($black,.175)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-box-shadow
             bs4-dropdown-link-color:
                 type: text
                 label: dropdown-link-color
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-link-color
             bs4-dropdown-link-hover-color:
                 type: text
                 label: dropdown-link-hover-color
                 default: 'darken($gray-dark, 5%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-link-hover-color
             bs4-dropdown-link-hover-bg:
                 type: text
                 label: dropdown-link-hover-bg
                 default: $gray-lightest
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-link-hover-bg
             bs4-dropdown-link-active-color:
                 type: text
                 label: dropdown-link-active-color
                 default: $component-active-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-link-active-color
             bs4-dropdown-link-active-bg:
                 type: text
                 label: dropdown-link-active-bg
                 default: $component-active-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-link-active-bg
             bs4-dropdown-link-disabled-color:
                 type: text
                 label: dropdown-link-disabled-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-link-disabled-color
             bs4-dropdown-item-padding-x:
                 type: text
                 label: dropdown-item-padding-x
                 default: 1.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-item-padding-x
             bs4-dropdown-header-color:
                 type: text
                 label: dropdown-header-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: dropdown-header-color
             bs4-z-index_master_list:
                 label: Z-index Master List
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-zindex-dropdown-backdrop:
                 type: number
                 label: zindex-dropdown-backdrop
                 default: 990
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-dropdown-backdrop
             bs4-zindex-navbar:
                 type: number
                 label: zindex-navbar
                 default: 1000
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-navbar
             bs4-zindex-dropdown:
                 type: number
                 label: zindex-dropdown
                 default: 1000
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-dropdown
             bs4-zindex-fixed:
                 type: number
                 label: zindex-fixed
                 default: 1030
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-fixed
             bs4-zindex-sticky:
                 type: number
                 label: zindex-sticky
                 default: 1030
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-sticky
             bs4-zindex-modal-backdrop:
                 type: number
                 label: zindex-modal-backdrop
                 default: 1040
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-modal-backdrop
             bs4-zindex-modal:
                 type: number
                 label: zindex-modal
                 default: 1050
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-modal
             bs4-zindex-popover:
                 type: number
                 label: zindex-popover
                 default: 1060
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-popover
             bs4-zindex-tooltip:
                 type: number
                 label: zindex-tooltip
                 default: 1070
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: zindex-tooltip
             bs4-navbar:
                 label: Navbar
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-navbar-border-radius:
                 type: text
                 label: navbar-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-border-radius
             bs4-navbar-padding-x:
                 type: text
                 label: navbar-padding-x
                 default: $spacer
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-padding-x
             bs4-navbar-padding-y:
                 type: text
                 label: navbar-padding-y
                 default: ($spacer / 2)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-padding-y
             bs4-navbar-brand-padding-y:
                 type: text
                 label: navbar-brand-padding-y
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-brand-padding-y
             bs4-navbar-toggler-padding-x:
                 type: text
                 label: navbar-toggler-padding-x
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-toggler-padding-x
             bs4-navbar-toggler-padding-y:
                 type: text
                 label: navbar-toggler-padding-y
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-toggler-padding-y
             bs4-navbar-toggler-font-size:
                 type: text
                 label: navbar-toggler-font-size
                 default: $font-size-lg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-toggler-font-size
             bs4-navbar-toggler-border-radius:
                 type: text
                 label: navbar-toggler-border-radius
                 default: $btn-border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-toggler-border-radius
             bs4-navbar-inverse-color:
                 type: text
                 label: navbar-inverse-color
                 default: 'rgba($white,.5)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-inverse-color
             bs4-navbar-inverse-hover-color:
                 type: text
                 label: navbar-inverse-hover-color
                 default: 'rgba($white,.75)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-inverse-hover-color
             bs4-navbar-inverse-active-color:
                 type: text
                 label: navbar-inverse-active-color
                 default: 'rgba($white,1)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-inverse-active-color
             bs4-navbar-inverse-disabled-color:
                 type: text
                 label: navbar-inverse-disabled-color
                 default: 'rgba($white,.25)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-inverse-disabled-color
             bs4-navbar-inverse-toggler-border:
                 type: text
                 label: navbar-inverse-toggler-border
                 default: 'rgba($white,.1)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-inverse-toggler-border
             bs4-navbar-light-color:
                 type: text
                 label: navbar-light-color
                 default: 'rgba($black,.5)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-light-color
             bs4-navbar-light-hover-color:
                 type: text
                 label: navbar-light-hover-color
                 default: 'rgba($black,.7)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-light-hover-color
             bs4-navbar-light-active-color:
                 type: text
                 label: navbar-light-active-color
                 default: 'rgba($black,.9)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-light-active-color
             bs4-navbar-light-disabled-color:
                 type: text
                 label: navbar-light-disabled-color
                 default: 'rgba($black,.3)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-light-disabled-color
             bs4-navbar-light-toggler-border:
                 type: text
                 label: navbar-light-toggler-border
                 default: 'rgba($black,.1)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: navbar-light-toggler-border
             bs4-navs:
                 label: Navs
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-nav-item-margin:
                 type: text
                 label: nav-item-margin
                 default: .2rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-item-margin
             bs4-nav-item-inline-spacer:
                 type: text
                 label: nav-item-inline-spacer
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-item-inline-spacer
             bs4-nav-link-padding:
                 type: text
                 label: nav-link-padding
                 default: .5em 1em
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-link-padding
             bs4-nav-link-hover-bg:
                 type: text
                 label: nav-link-hover-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-link-hover-bg
             bs4-nav-disabled-link-color:
                 type: text
                 label: nav-disabled-link-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-disabled-link-color
             bs4-nav-disabled-link-hover-color:
                 type: text
                 label: nav-disabled-link-hover-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-disabled-link-hover-color
             bs4-nav-disabled-link-hover-bg:
                 type: text
                 label: nav-disabled-link-hover-bg
                 default: transparent
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-disabled-link-hover-bg
             bs4-nav-tabs-border-color:
                 type: colorpicker
                 label: nav-tabs-border-color
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-border-color
             bs4-nav-tabs-border-width:
                 type: text
                 label: nav-tabs-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-border-width
             bs4-nav-tabs-border-radius:
                 type: text
                 label: nav-tabs-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-border-radius
             bs4-nav-tabs-link-hover-border-color:
                 type: text
                 label: nav-tabs-link-hover-border-color
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-link-hover-border-color
             bs4-nav-tabs-active-link-hover-color:
                 type: text
                 label: nav-tabs-active-link-hover-color
                 default: $gray
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-active-link-hover-color
             bs4-nav-tabs-active-link-hover-bg:
                 type: text
                 label: nav-tabs-active-link-hover-bg
                 default: $body-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-active-link-hover-bg
             bs4-nav-tabs-active-link-hover-border-color:
                 type: colorpicker
                 label: nav-tabs-active-link-hover-border-color
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-active-link-hover-border-color
             bs4-nav-tabs-justified-link-border-color:
                 type: colorpicker
                 label: nav-tabs-justified-link-border-color
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-justified-link-border-color
             bs4-nav-tabs-justified-active-link-border-color:
                 type: text
                 label: nav-tabs-justified-active-link-border-color
                 default: $body-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-tabs-justified-active-link-border-color
             bs4-nav-pills-border-radius:
                 type: text
                 label: nav-pills-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-pills-border-radius
             bs4-nav-pills-active-link-color:
                 type: text
                 label: nav-pills-active-link-color
                 default: $component-active-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-pills-active-link-color
             bs4-nav-pills-active-link-bg:
                 type: text
                 label: nav-pills-active-link-bg
                 default: $component-active-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: nav-pills-active-link-bg
             bs4-pagination:
                 label: Pagination
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-pagination-padding-x:
                 type: text
                 label: pagination-padding-x
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-padding-x
             bs4-pagination-padding-y:
                 type: text
                 label: pagination-padding-y
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-padding-y
             bs4-pagination-padding-x-sm:
                 type: text
                 label: pagination-padding-x-sm
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-padding-x-sm
             bs4-pagination-padding-y-sm:
                 type: text
                 label: pagination-padding-y-sm
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-padding-y-sm
             bs4-pagination-padding-x-lg:
                 type: text
                 label: pagination-padding-x-lg
                 default: 1.5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-padding-x-lg
             bs4-pagination-padding-y-lg:
                 type: text
                 label: pagination-padding-y-lg
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-padding-y-lg
             bs4-pagination-line-height:
                 type: text
                 label: pagination-line-height
                 default: '1.25'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-line-height
             bs4-pagination-color:
                 type: text
                 label: pagination-color
                 default: $link-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-color
             bs4-pagination-bg:
                 type: text
                 label: pagination-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-bg
             bs4-pagination-border-width:
                 type: text
                 label: pagination-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-border-width
             bs4-pagination-border-color:
                 type: colorpicker
                 label: pagination-border-color
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-border-color
             bs4-pagination-hover-color:
                 type: text
                 label: pagination-hover-color
                 default: $link-hover-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-hover-color
             bs4-pagination-hover-bg:
                 type: text
                 label: pagination-hover-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-hover-bg
             bs4-pagination-hover-border:
                 type: colorpicker
                 label: pagination-hover-border
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-hover-border
             bs4-pagination-active-color:
                 type: text
                 label: pagination-active-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-active-color
             bs4-pagination-active-bg:
                 type: text
                 label: pagination-active-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-active-bg
             bs4-pagination-active-border:
                 type: text
                 label: pagination-active-border
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-active-border
             bs4-pagination-disabled-color:
                 type: text
                 label: pagination-disabled-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-disabled-color
             bs4-pagination-disabled-bg:
                 type: text
                 label: pagination-disabled-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-disabled-bg
             bs4-pagination-disabled-border:
                 type: colorpicker
                 label: pagination-disabled-border
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pagination-disabled-border
             bs4-jumbotron:
                 label: Jumbotron
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-jumbotron-padding:
                 type: text
                 label: jumbotron-padding
                 default: 2rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: jumbotron-padding
             bs4-jumbotron-bg:
                 type: text
                 label: jumbotron-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: jumbotron-bg
             bs4-form_states_and_alerts:
                 label: Form States And Alerts
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-state-success-text:
                 type: colorpicker
                 label: state-success-text
                 default: '#3c763d'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-success-text
             bs4-state-success-bg:
                 type: colorpicker
                 label: state-success-bg
                 default: '#dff0d8'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-success-bg
             bs4-state-success-border:
                 type: text
                 label: state-success-border
                 default: 'darken($state-success-bg, 5%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-success-border
             bs4-state-info-text:
                 type: colorpicker
                 label: state-info-text
                 default: '#31708f'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-info-text
             bs4-state-info-bg:
                 type: colorpicker
                 label: state-info-bg
                 default: '#d9edf7'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-info-bg
             bs4-state-info-border:
                 type: text
                 label: state-info-border
                 default: 'darken($state-info-bg, 7%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-info-border
             bs4-state-warning-text:
                 type: colorpicker
                 label: state-warning-text
                 default: '#8a6d3b'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-warning-text
             bs4-state-warning-bg:
                 type: colorpicker
                 label: state-warning-bg
                 default: '#fcf8e3'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-warning-bg
             bs4-mark-bg:
                 type: text
                 label: mark-bg
                 default: $state-warning-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: mark-bg
             bs4-state-warning-border:
                 type: text
                 label: state-warning-border
                 default: 'darken($state-warning-bg, 5%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-warning-border
             bs4-state-danger-text:
                 type: colorpicker
                 label: state-danger-text
                 default: '#a94442'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-danger-text
             bs4-state-danger-bg:
                 type: colorpicker
                 label: state-danger-bg
                 default: '#f2dede'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-danger-bg
             bs4-state-danger-border:
                 type: text
                 label: state-danger-border
                 default: 'darken($state-danger-bg, 5%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: state-danger-border
             bs4-cards:
                 label: Cards
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-card-spacer-x:
                 type: text
                 label: card-spacer-x
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-spacer-x
             bs4-card-spacer-y:
                 type: text
                 label: card-spacer-y
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-spacer-y
             bs4-card-border-width:
                 type: text
                 label: card-border-width
                 default: 1px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-border-width
             bs4-card-border-radius:
                 type: text
                 label: card-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-border-radius
             bs4-card-border-color:
                 type: text
                 label: card-border-color
                 default: 'rgba($black,.125)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-border-color
             bs4-card-border-radius-inner:
                 type: text
                 label: card-border-radius-inner
                 default: 'calc(#{$card-border-radius} - #{$card-border-width})'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-border-radius-inner
             bs4-card-cap-bg:
                 type: text
                 label: card-cap-bg
                 default: $gray-lightest
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-cap-bg
             bs4-card-bg:
                 type: text
                 label: card-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-bg
             bs4-card-link-hover-color:
                 type: text
                 label: card-link-hover-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-link-hover-color
             bs4-card-img-overlay-padding:
                 type: text
                 label: card-img-overlay-padding
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-img-overlay-padding
             bs4-card-deck-margin:
                 type: text
                 label: card-deck-margin
                 default: ($grid-gutter-width-base / 2)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-deck-margin
             bs4-card-columns-sm-up-column-gap:
                 type: text
                 label: card-columns-sm-up-column-gap
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-columns-sm-up-column-gap
             bs4-card-columns-count:
                 type: text
                 label: card-columns-count
                 default: '3'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-columns-count
             bs4-card-columns-gap:
                 type: text
                 label: card-columns-gap
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-columns-gap
             bs4-card-columns-margin:
                 type: text
                 label: card-columns-margin
                 default: $card-spacer-y
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: card-columns-margin
             bs4-tooltips:
                 label: Tooltips
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-tooltip-max-width:
                 type: text
                 label: tooltip-max-width
                 default: 200px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-max-width
             bs4-tooltip-color:
                 type: text
                 label: tooltip-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-color
             bs4-tooltip-bg:
                 type: text
                 label: tooltip-bg
                 default: $black
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-bg
             bs4-tooltip-opacity:
                 type: text
                 label: tooltip-opacity
                 default: '.9'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-opacity
             bs4-tooltip-padding-y:
                 type: text
                 label: tooltip-padding-y
                 default: 3px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-padding-y
             bs4-tooltip-padding-x:
                 type: text
                 label: tooltip-padding-x
                 default: 8px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-padding-x
             bs4-tooltip-margin:
                 type: text
                 label: tooltip-margin
                 default: 3px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-margin
             bs4-tooltip-arrow-width:
                 type: text
                 label: tooltip-arrow-width
                 default: 5px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-arrow-width
             bs4-tooltip-arrow-color:
                 type: text
                 label: tooltip-arrow-color
                 default: $tooltip-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: tooltip-arrow-color
             bs4-popovers:
                 label: Popovers
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-popover-inner-padding:
                 type: text
                 label: popover-inner-padding
                 default: 1px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-inner-padding
             bs4-popover-bg:
                 type: text
                 label: popover-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-bg
             bs4-popover-max-width:
                 type: text
                 label: popover-max-width
                 default: 276px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-max-width
             bs4-popover-border-width:
                 type: text
                 label: popover-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-border-width
             bs4-popover-border-color:
                 type: text
                 label: popover-border-color
                 default: 'rgba($black,.2)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-border-color
             bs4-popover-box-shadow:
                 type: text
                 label: popover-box-shadow
                 default: '0 5px 10px rgba($black,.2)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-box-shadow
             bs4-popover-title-bg:
                 type: text
                 label: popover-title-bg
                 default: 'darken($popover-bg, 3%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-title-bg
             bs4-popover-title-padding-x:
                 type: text
                 label: popover-title-padding-x
                 default: 14px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-title-padding-x
             bs4-popover-title-padding-y:
                 type: text
                 label: popover-title-padding-y
                 default: 8px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-title-padding-y
             bs4-popover-content-padding-x:
                 type: text
                 label: popover-content-padding-x
                 default: 14px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-content-padding-x
             bs4-popover-content-padding-y:
                 type: text
                 label: popover-content-padding-y
                 default: 9px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-content-padding-y
             bs4-popover-arrow-width:
                 type: text
                 label: popover-arrow-width
                 default: 10px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-arrow-width
             bs4-popover-arrow-color:
                 type: text
                 label: popover-arrow-color
                 default: $popover-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-arrow-color
             bs4-popover-arrow-outer-width:
                 type: text
                 label: popover-arrow-outer-width
                 default: ($popover-arrow-width + 1px)
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-arrow-outer-width
             bs4-popover-arrow-outer-color:
                 type: text
                 label: popover-arrow-outer-color
                 default: 'fade-in($popover-border-color, .05)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: popover-arrow-outer-color
             bs4-badges:
                 label: Badges
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-badge-default-bg:
                 type: text
                 label: badge-default-bg
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-default-bg
             bs4-badge-primary-bg:
                 type: text
                 label: badge-primary-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-primary-bg
             bs4-badge-success-bg:
                 type: text
                 label: badge-success-bg
                 default: $brand-success
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-success-bg
             bs4-badge-info-bg:
                 type: text
                 label: badge-info-bg
                 default: $brand-info
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-info-bg
             bs4-badge-warning-bg:
                 type: text
                 label: badge-warning-bg
                 default: $brand-warning
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-warning-bg
             bs4-badge-danger-bg:
                 type: text
                 label: badge-danger-bg
                 default: $brand-danger
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-danger-bg
             bs4-badge-color:
                 type: text
                 label: badge-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-color
             bs4-badge-link-hover-color:
                 type: text
                 label: badge-link-hover-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-link-hover-color
             bs4-badge-font-size:
                 type: text
                 label: badge-font-size
                 default: 75%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-font-size
             bs4-badge-font-weight:
                 type: text
                 label: badge-font-weight
                 default: bold
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-font-weight
             bs4-badge-padding-x:
                 type: text
                 label: badge-padding-x
                 default: .4em
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-padding-x
             bs4-badge-padding-y:
                 type: text
                 label: badge-padding-y
                 default: .25em
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-padding-y
             bs4-badge-pill-padding-x:
                 type: text
                 label: badge-pill-padding-x
                 default: .6em
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: badge-pill-padding-x
             bs4-badge-pill-border-radius:
                 type: text
                 label: badge-pill-border-radius
                 default: 10rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: >
                     Use a higher than normal value to ensure completely rounded
                     edges when
@@ -2682,12 +2682,12 @@ form:
             bs4-modals:
                 label: Modals
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-modal-inner-padding:
                 type: text
                 label: modal-inner-padding
                 default: 15px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 comment: |
                     Padding applied to the modal body
                 assetVar: modal-inner-padding
@@ -2695,699 +2695,699 @@ form:
                 type: text
                 label: modal-dialog-margin
                 default: 10px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-dialog-margin
             bs4-modal-dialog-sm-up-margin-y:
                 type: text
                 label: modal-dialog-sm-up-margin-y
                 default: 30px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-dialog-sm-up-margin-y
             bs4-modal-title-line-height:
                 type: text
                 label: modal-title-line-height
                 default: $line-height-base
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-title-line-height
             bs4-modal-content-bg:
                 type: text
                 label: modal-content-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-content-bg
             bs4-modal-content-border-color:
                 type: text
                 label: modal-content-border-color
                 default: 'rgba($black,.2)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-content-border-color
             bs4-modal-content-border-width:
                 type: text
                 label: modal-content-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-content-border-width
             bs4-modal-content-xs-box-shadow:
                 type: text
                 label: modal-content-xs-box-shadow
                 default: '0 3px 9px rgba($black,.5)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-content-xs-box-shadow
             bs4-modal-content-sm-up-box-shadow:
                 type: text
                 label: modal-content-sm-up-box-shadow
                 default: '0 5px 15px rgba($black,.5)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-content-sm-up-box-shadow
             bs4-modal-backdrop-bg:
                 type: text
                 label: modal-backdrop-bg
                 default: $black
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-backdrop-bg
             bs4-modal-backdrop-opacity:
                 type: text
                 label: modal-backdrop-opacity
                 default: '.5'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-backdrop-opacity
             bs4-modal-header-border-color:
                 type: text
                 label: modal-header-border-color
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-header-border-color
             bs4-modal-footer-border-color:
                 type: text
                 label: modal-footer-border-color
                 default: $modal-header-border-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-footer-border-color
             bs4-modal-header-border-width:
                 type: text
                 label: modal-header-border-width
                 default: $modal-content-border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-header-border-width
             bs4-modal-footer-border-width:
                 type: text
                 label: modal-footer-border-width
                 default: $modal-header-border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-footer-border-width
             bs4-modal-header-padding:
                 type: text
                 label: modal-header-padding
                 default: 15px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-header-padding
             bs4-modal-lg:
                 type: text
                 label: modal-lg
                 default: 800px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-lg
             bs4-modal-md:
                 type: text
                 label: modal-md
                 default: 500px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-md
             bs4-modal-sm:
                 type: text
                 label: modal-sm
                 default: 300px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-sm
             bs4-modal-transition:
                 type: text
                 label: modal-transition
                 default: transform .3s ease-out
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: modal-transition
             bs4-alerts:
                 label: Alerts
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-alert-padding-x:
                 type: text
                 label: alert-padding-x
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-padding-x
             bs4-alert-padding-y:
                 type: text
                 label: alert-padding-y
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-padding-y
             bs4-alert-margin-bottom:
                 type: text
                 label: alert-margin-bottom
                 default: $spacer-y
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-margin-bottom
             bs4-alert-border-radius:
                 type: text
                 label: alert-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-border-radius
             bs4-alert-link-font-weight:
                 type: text
                 label: alert-link-font-weight
                 default: $font-weight-bold
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-link-font-weight
             bs4-alert-border-width:
                 type: text
                 label: alert-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-border-width
             bs4-alert-success-bg:
                 type: text
                 label: alert-success-bg
                 default: $state-success-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-success-bg
             bs4-alert-success-text:
                 type: text
                 label: alert-success-text
                 default: $state-success-text
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-success-text
             bs4-alert-success-border:
                 type: text
                 label: alert-success-border
                 default: $state-success-border
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-success-border
             bs4-alert-info-bg:
                 type: text
                 label: alert-info-bg
                 default: $state-info-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-info-bg
             bs4-alert-info-text:
                 type: text
                 label: alert-info-text
                 default: $state-info-text
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-info-text
             bs4-alert-info-border:
                 type: text
                 label: alert-info-border
                 default: $state-info-border
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-info-border
             bs4-alert-warning-bg:
                 type: text
                 label: alert-warning-bg
                 default: $state-warning-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-warning-bg
             bs4-alert-warning-text:
                 type: text
                 label: alert-warning-text
                 default: $state-warning-text
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-warning-text
             bs4-alert-warning-border:
                 type: text
                 label: alert-warning-border
                 default: $state-warning-border
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-warning-border
             bs4-alert-danger-bg:
                 type: text
                 label: alert-danger-bg
                 default: $state-danger-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-danger-bg
             bs4-alert-danger-text:
                 type: text
                 label: alert-danger-text
                 default: $state-danger-text
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-danger-text
             bs4-alert-danger-border:
                 type: text
                 label: alert-danger-border
                 default: $state-danger-border
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: alert-danger-border
             bs4-progress_bars:
                 label: Progress Bars
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-progress-height:
                 type: text
                 label: progress-height
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-height
             bs4-progress-font-size:
                 type: text
                 label: progress-font-size
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-font-size
             bs4-progress-bg:
                 type: text
                 label: progress-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-bg
             bs4-progress-border-radius:
                 type: text
                 label: progress-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-border-radius
             bs4-progress-box-shadow:
                 type: text
                 label: progress-box-shadow
                 default: 'inset 0 .1rem .1rem rgba($black,.1)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-box-shadow
             bs4-progress-bar-color:
                 type: text
                 label: progress-bar-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-bar-color
             bs4-progress-bar-bg:
                 type: text
                 label: progress-bar-bg
                 default: $brand-primary
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-bar-bg
             bs4-progress-bar-animation-timing:
                 type: text
                 label: progress-bar-animation-timing
                 default: 1s linear infinite
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: progress-bar-animation-timing
             bs4-list_group:
                 label: List Group
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-list-group-color:
                 type: text
                 label: list-group-color
                 default: $body-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-color
             bs4-list-group-bg:
                 type: text
                 label: list-group-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-bg
             bs4-list-group-border-color:
                 type: text
                 label: list-group-border-color
                 default: 'rgba($black,.125)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-border-color
             bs4-list-group-border-width:
                 type: text
                 label: list-group-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-border-width
             bs4-list-group-border-radius:
                 type: text
                 label: list-group-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-border-radius
             bs4-list-group-item-padding-x:
                 type: text
                 label: list-group-item-padding-x
                 default: 1.25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-item-padding-x
             bs4-list-group-item-padding-y:
                 type: text
                 label: list-group-item-padding-y
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-item-padding-y
             bs4-list-group-hover-bg:
                 type: text
                 label: list-group-hover-bg
                 default: $gray-lightest
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-hover-bg
             bs4-list-group-active-color:
                 type: text
                 label: list-group-active-color
                 default: $component-active-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-active-color
             bs4-list-group-active-bg:
                 type: text
                 label: list-group-active-bg
                 default: $component-active-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-active-bg
             bs4-list-group-active-border:
                 type: text
                 label: list-group-active-border
                 default: $list-group-active-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-active-border
             bs4-list-group-active-text-color:
                 type: text
                 label: list-group-active-text-color
                 default: 'lighten($list-group-active-bg, 50%)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-active-text-color
             bs4-list-group-disabled-color:
                 type: text
                 label: list-group-disabled-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-disabled-color
             bs4-list-group-disabled-bg:
                 type: text
                 label: list-group-disabled-bg
                 default: $list-group-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-disabled-bg
             bs4-list-group-disabled-text-color:
                 type: text
                 label: list-group-disabled-text-color
                 default: $list-group-disabled-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-disabled-text-color
             bs4-list-group-link-color:
                 type: text
                 label: list-group-link-color
                 default: $gray
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-link-color
             bs4-list-group-link-heading-color:
                 type: text
                 label: list-group-link-heading-color
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-link-heading-color
             bs4-list-group-link-hover-color:
                 type: text
                 label: list-group-link-hover-color
                 default: $list-group-link-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-link-hover-color
             bs4-list-group-link-active-color:
                 type: text
                 label: list-group-link-active-color
                 default: $list-group-color
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-link-active-color
             bs4-list-group-link-active-bg:
                 type: text
                 label: list-group-link-active-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: list-group-link-active-bg
             bs4-image_thumbnails:
                 label: Image Thumbnails
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-thumbnail-padding:
                 type: text
                 label: thumbnail-padding
                 default: .25rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-padding
             bs4-thumbnail-bg:
                 type: text
                 label: thumbnail-bg
                 default: $body-bg
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-bg
             bs4-thumbnail-border-width:
                 type: text
                 label: thumbnail-border-width
                 default: $border-width
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-border-width
             bs4-thumbnail-border-color:
                 type: colorpicker
                 label: thumbnail-border-color
                 default: '#ddd'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-border-color
             bs4-thumbnail-border-radius:
                 type: text
                 label: thumbnail-border-radius
                 default: $border-radius
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-border-radius
             bs4-thumbnail-box-shadow:
                 type: text
                 label: thumbnail-box-shadow
                 default: '0 1px 2px rgba($black,.075)'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-box-shadow
             bs4-thumbnail-transition:
                 type: text
                 label: thumbnail-transition
                 default: all .2s ease-in-out
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: thumbnail-transition
             bs4-figures:
                 label: Figures
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-figure-caption-font-size:
                 type: text
                 label: figure-caption-font-size
                 default: 90%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: figure-caption-font-size
             bs4-figure-caption-color:
                 type: text
                 label: figure-caption-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: figure-caption-color
             bs4-breadcrumbs:
                 label: Breadcrumbs
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-breadcrumb-padding-y:
                 type: text
                 label: breadcrumb-padding-y
                 default: .75rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-padding-y
             bs4-breadcrumb-padding-x:
                 type: text
                 label: breadcrumb-padding-x
                 default: 1rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-padding-x
             bs4-breadcrumb-item-padding:
                 type: text
                 label: breadcrumb-item-padding
                 default: .5rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-item-padding
             bs4-breadcrumb-bg:
                 type: text
                 label: breadcrumb-bg
                 default: $gray-lighter
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-bg
             bs4-breadcrumb-divider-color:
                 type: text
                 label: breadcrumb-divider-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-divider-color
             bs4-breadcrumb-active-color:
                 type: text
                 label: breadcrumb-active-color
                 default: $gray-light
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-active-color
             bs4-breadcrumb-divider:
                 type: text
                 label: breadcrumb-divider
                 default: '"/"'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: breadcrumb-divider
             bs4-media_objects:
                 label: Media Objects
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-media-margin-top:
                 type: text
                 label: media-margin-top
                 default: 15px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: media-margin-top
             bs4-media-heading-margin-bottom:
                 type: text
                 label: media-heading-margin-bottom
                 default: 5px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: media-heading-margin-bottom
             bs4-media-alignment-padding-x:
                 type: text
                 label: media-alignment-padding-x
                 default: 10px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: media-alignment-padding-x
             bs4-carousel:
                 label: Carousel
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-carousel-control-color:
                 type: text
                 label: carousel-control-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-control-color
             bs4-carousel-control-width:
                 type: text
                 label: carousel-control-width
                 default: 15%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-control-width
             bs4-carousel-control-opacity:
                 type: text
                 label: carousel-control-opacity
                 default: '.5'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-control-opacity
             bs4-carousel-indicator-width:
                 type: text
                 label: carousel-indicator-width
                 default: 30px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-indicator-width
             bs4-carousel-indicator-height:
                 type: text
                 label: carousel-indicator-height
                 default: 3px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-indicator-height
             bs4-carousel-indicator-spacer:
                 type: text
                 label: carousel-indicator-spacer
                 default: 3px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-indicator-spacer
             bs4-carousel-indicator-active-bg:
                 type: text
                 label: carousel-indicator-active-bg
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-indicator-active-bg
             bs4-carousel-caption-width:
                 type: text
                 label: carousel-caption-width
                 default: 70%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-caption-width
             bs4-carousel-caption-color:
                 type: text
                 label: carousel-caption-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-caption-color
             bs4-carousel-control-icon-width:
                 type: text
                 label: carousel-control-icon-width
                 default: 20px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-control-icon-width
             bs4-carousel-transition:
                 type: text
                 label: carousel-transition
                 default: transform .6s ease-in-out
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: carousel-transition
             bs4-close:
                 label: Close
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-close-font-size:
                 type: text
                 label: close-font-size
                 default: $font-size-base * 1.5
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: close-font-size
             bs4-close-font-weight:
                 type: text
                 label: close-font-weight
                 default: $font-weight-bold
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: close-font-weight
             bs4-close-color:
                 type: text
                 label: close-color
                 default: $black
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: close-color
             bs4-close-text-shadow:
                 type: text
                 label: close-text-shadow
                 default: 0 1px 0 $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: close-text-shadow
             bs4-code:
                 label: Code
                 type: section
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
             bs4-code-font-size:
                 type: text
                 label: code-font-size
                 default: 90%
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: code-font-size
             bs4-code-padding-x:
                 type: text
                 label: code-padding-x
                 default: .4rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: code-padding-x
             bs4-code-padding-y:
                 type: text
                 label: code-padding-y
                 default: .2rem
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: code-padding-y
             bs4-code-color:
                 type: colorpicker
                 label: code-color
                 default: '#bd4147'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: code-color
             bs4-code-bg:
                 type: text
                 label: code-bg
                 default: $gray-lightest
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: code-bg
             bs4-kbd-color:
                 type: text
                 label: kbd-color
                 default: $white
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: kbd-color
             bs4-kbd-bg:
                 type: text
                 label: kbd-bg
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: kbd-bg
             bs4-pre-bg:
                 type: text
                 label: pre-bg
                 default: $gray-lightest
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pre-bg
             bs4-pre-color:
                 type: text
                 label: pre-color
                 default: $gray-dark
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pre-color
             bs4-pre-border-color:
                 type: colorpicker
                 label: pre-border-color
                 default: '#ccc'
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pre-border-color
             bs4-pre-scrollable-max-height:
                 type: text
                 label: pre-scrollable-max-height
                 default: 340px
-                tab: Bootstrap 4.0.0-alpha.5
+                tab: Bootstrap 4.0.0-alpha.6
                 assetVar: pre-scrollable-max-height

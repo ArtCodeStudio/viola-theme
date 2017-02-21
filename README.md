@@ -1,5 +1,5 @@
 # Viola Theme
-One Page October Theme for Medical Professionals. There is a [demo](http://healthyteeth.jumplink.eu/) and a [customized productive](http://www.thp-garber.de) example of this theme.
+Bootstrap 4 One Page October Theme for Medical Professionals. There is a [demo](http://healthyteeth.jumplink.eu/) and a [customized productive](http://www.thp-garber.de) example of this theme.
 
 ![Theme Preview](assets/images/theme-preview.png)
 
@@ -9,10 +9,20 @@ One Page October Theme for Medical Professionals. There is a [demo](http://healt
 * Different selectable color schemes
 * Beautiful homemade Icons
 * Based on Bootstrap 4
-* Almost full customizable using the [Static Pages Plugin](https://octobercms.com/plugin/rainlab-pages)
+* Use scss files directly
+* Bootstrap variables using the theme settings
+* Pages almost full customizable using the [Static Pages Plugin](https://octobercms.com/plugin/rainlab-pages)
 * Customizable slideshows using a [Slideshow Plugin](https://octobercms.com/plugin/flosch-slideshow)
 * Builtin Contact Form
 * Free Pictures from [Pixabay](https://pixabay.com/)
+
+## Bootstrap 4
+To make it possible to use Bootstrap 4 Sass files directly we have create a fork of Bootstrap 4 called [Bootstrap 4 Backward](https://github.com/JumpLinkNetwork/bootstrap-backward).
+
+## Variables
+All Bootstrap 4 Variables full customizable on runtime:
+
+![Alt text](/theme_settings.png?raw=true "Optional Title")
 
 ## Install
 
@@ -38,7 +48,7 @@ Subject: {{regard}}
 Message: {{sendermessage}}
 ```
 
-## Develop
+## Develop and contribute
 
 In order to change core stuff of the Theme you need to install the dependencies with `bower` and `npm`:
 
@@ -52,11 +62,11 @@ bower install --force
 npm install
 ```
 
-### Styles
-The styles are written in sass and compiled to css, if you want to change the style you need to do this in the sass files and to recompile the css.
-
-You can recompile the styles with `npm run build`.
+If you change the theme setting files like utilities/custom.yaml you can generate a new theme.yaml with
 
 ```
-npm run build
+npm run theme_settings
 ```
+
+## See also
+ * [Bootstrap 4 Boilerplate for OctoberCMS](https://github.com/JumpLinkNetwork/jumplink-october-boilerplate)
