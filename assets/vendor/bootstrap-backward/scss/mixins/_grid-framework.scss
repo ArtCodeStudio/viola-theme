@@ -1,0 +1,392 @@
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+
+@mixin make-grid-column($breakpoint, $infix, $columns: $grid-columns, $gutter: $grid-gutter-width, $xs: $grid-breakpoints-xs, $sm: $grid-breakpoints-sm, $md: $grid-breakpoints-md, $lg: $grid-breakpoints-lg, $xl: $grid-breakpoints-xl) {
+
+  @for $i from 1 through $columns {
+    .col#{$infix}-#{$i} {
+      @extend %grid-column;
+    }
+  }
+
+  .col#{$infix} {
+    @extend %grid-column;
+  }
+
+  @include media-breakpoint-up($breakpoint, $xs, $sm, $md, $lg, $xl) {
+    // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+    .col#{$infix} {
+      @include vp-flex-basis(0);
+      @include vp-flex-grow(1);
+      max-width: 100%;
+    }
+
+    .col#{$infix}-auto {
+      @include vp-flex(0 0 auto);
+      width: auto;
+    }
+
+    @for $i from 1 through $columns {
+      .col#{$infix}-#{$i} {
+        // WORKAROUND for phpscss
+        // @include make-col($i, $columns);
+        @if $i == 1 {
+          @include make-col(1, $grid-columns);
+        }
+        @if $i == 2 {
+          @include make-col(2, $grid-columns);
+        }
+        @if $i == 3 {
+          @include make-col(3, $grid-columns);
+        }
+        @if $i == 4 {
+          @include make-col(4, $grid-columns);
+        }
+        @if $i == 5 {
+          @include make-col(5, $grid-columns);
+        }
+        @if $i == 6 {
+          @include make-col(6, $grid-columns);
+        }
+        @if $i == 7 {
+          @include make-col(7, $grid-columns);
+        }
+        @if $i == 8 {
+          @include make-col(8, $grid-columns);
+        }
+        @if $i == 9 {
+          @include make-col(9, $grid-columns);
+        }
+        @if $i == 10 {
+          @include make-col(10, $grid-columns);
+        }
+        @if $i == 11 {
+          @include make-col(11, $grid-columns);
+        }
+        @if $i == 12 {
+          @include make-col(12, $grid-columns);
+        }
+        @if $i == 13 {
+          @include make-col(13, $grid-columns);
+        }
+        @if $i == 14 {
+          @include make-col(14, $grid-columns);
+        }
+        @if $i == 15 {
+          @include make-col(15, $grid-columns);
+        }
+        @if $i == 16 {
+          @include make-col(16, $grid-columns);
+        }
+        @if $i == 17 {
+          @include make-col(17, $grid-columns);
+        }
+        @if $i == 18 {
+          @include make-col(18, $grid-columns);
+        }
+        @if $i == 19 {
+          @include make-col(19, $grid-columns);
+        }
+        @if $i == 20 {
+          @include make-col(20, $grid-columns);
+        }
+        @if $i == 21 {
+          @include make-col(21, $grid-columns);
+        }
+        @if $i == 22 {
+          @include make-col(22, $grid-columns);
+        }
+        @if $i == 23 {
+          @include make-col(23, $grid-columns);
+        }
+        @if $i == 24 {
+          @include make-col(24, $grid-columns);
+        }
+      }
+    }
+
+    @each $modifier in (pull, push) {
+      @for $i from 0 through $columns {
+        @if $modifier == pull {
+          .#{$modifier}#{$infix}-#{$i} {
+            // WORKAROUND for phpscss
+            // @include make-col-modifier($modifier, $i, $columns)
+            @if $i == 0 {
+              @include make-col-modifier(pull, 0, $grid-columns);
+            }
+            @if $i == 1 {
+              @include make-col-modifier(pull, 1, $grid-columns);
+            }
+            @if $i == 2 {
+              @include make-col-modifier(pull, 2, $grid-columns);
+            }
+            @if $i == 3 {
+              @include make-col-modifier(pull, 3, $grid-columns);
+            }
+            @if $i == 4 {
+              @include make-col-modifier(pull, 4, $grid-columns);
+            }
+            @if $i == 5 {
+              @include make-col-modifier(pull, 5, $grid-columns);
+            }
+            @if $i == 6 {
+              @include make-col-modifier(pull, 6, $grid-columns);
+            }
+            @if $i == 7 {
+              @include make-col-modifier(pull, 7, $grid-columns);
+            }
+            @if $i == 8 {
+              @include make-col-modifier(pull, 8, $grid-columns);
+            }
+            @if $i == 9 {
+              @include make-col-modifier(pull, 9, $grid-columns);
+            }
+            @if $i == 10 {
+              @include make-col-modifier(pull, 10, $grid-columns);
+            }
+            @if $i == 11 {
+              @include make-col-modifier(pull, 11, $grid-columns);
+            }
+            @if $i == 12 {
+              @include make-col-modifier(pull, 12, $grid-columns);
+            }
+            @if $i == 13 {
+              @include make-col-modifier(pull, 13, $grid-columns);
+            }
+            @if $i == 14 {
+              @include make-col-modifier(pull, 14, $grid-columns);
+            }
+            @if $i == 15 {
+              @include make-col-modifier(pull, 15, $grid-columns);
+            }
+            @if $i == 16 {
+              @include make-col-modifier(pull, 16, $grid-columns);
+            }
+            @if $i == 17 {
+              @include make-col-modifier(pull, 17, $grid-columns);
+            }
+            @if $i == 18 {
+              @include make-col-modifier(pull, 18, $grid-columns);
+            }
+            @if $i == 19 {
+              @include make-col-modifier(pull, 19, $grid-columns);
+            }
+            @if $i == 20 {
+              @include make-col-modifier(pull, 20, $grid-columns);
+            }
+            @if $i == 21 {
+              @include make-col-modifier(pull, 21, $grid-columns);
+            }
+            @if $i == 22 {
+              @include make-col-modifier(pull, 22, $grid-columns);
+            }
+            @if $i == 23 {
+              @include make-col-modifier(pull, 23, $grid-columns);
+            }
+            @if $i == 24 {
+              @include make-col-modifier(pull, 24, $grid-columns);
+            }
+          }
+        }
+        @if $modifier == push {
+          .#{$modifier}#{$infix}-#{$i} {
+            @if $i == 0 {
+              @include make-col-modifier(push, 0, $grid-columns);
+            }
+            @if $i == 1 {
+              @include make-col-modifier(push, 1, $grid-columns);
+            }
+            @if $i == 2 {
+              @include make-col-modifier(push, 2, $grid-columns);
+            }
+            @if $i == 3 {
+              @include make-col-modifier(push, 3, $grid-columns);
+            }
+            @if $i == 4 {
+              @include make-col-modifier(push, 4, $grid-columns);
+            }
+            @if $i == 5 {
+              @include make-col-modifier(push, 5, $grid-columns);
+            }
+            @if $i == 6 {
+              @include make-col-modifier(push, 6, $grid-columns);
+            }
+            @if $i == 7 {
+              @include make-col-modifier(push, 7, $grid-columns);
+            }
+            @if $i == 8 {
+              @include make-col-modifier(push, 8, $grid-columns);
+            }
+            @if $i == 9 {
+              @include make-col-modifier(push, 9, $grid-columns);
+            }
+            @if $i == 10 {
+              @include make-col-modifier(push, 10, $grid-columns);
+            }
+            @if $i == 11 {
+              @include make-col-modifier(push, 11, $grid-columns);
+            }
+            @if $i == 12 {
+              @include make-col-modifier(push, 12, $grid-columns);
+            }
+            @if $i == 13 {
+              @include make-col-modifier(push, 13, $grid-columns);
+            }
+            @if $i == 14 {
+              @include make-col-modifier(push, 14, $grid-columns);
+            }
+            @if $i == 15 {
+              @include make-col-modifier(push, 15, $grid-columns);
+            }
+            @if $i == 16 {
+              @include make-col-modifier(push, 16, $grid-columns);
+            }
+            @if $i == 17 {
+              @include make-col-modifier(push, 17, $grid-columns);
+            }
+            @if $i == 18 {
+              @include make-col-modifier(push, 18, $grid-columns);
+            }
+            @if $i == 19 {
+              @include make-col-modifier(push, 19, $grid-columns);
+            }
+            @if $i == 20 {
+              @include make-col-modifier(push, 20, $grid-columns);
+            }
+            @if $i == 21 {
+              @include make-col-modifier(push, 21, $grid-columns);
+            }
+            @if $i == 22 {
+              @include make-col-modifier(push, 22, $grid-columns);
+            }
+            @if $i == 23 {
+              @include make-col-modifier(push, 23, $grid-columns);
+            }
+            @if $i == 24 {
+              @include make-col-modifier(push, 24, $grid-columns);
+            }
+          }
+        }
+      }
+    }
+
+    // `$columns - 1` because offsetting by the width of an entire row isn't possible
+    @for $i from 0 through ($columns - 1) {
+      .offset#{$infix}-#{$i} {
+        // TODO @include make-col-modifier(offset, $i, $columns)
+        @if $i == 0 {
+          @include make-col-modifier(offset, 0, $grid-columns);
+        }
+        @if $i == 1 {
+          @include make-col-modifier(offset, 1, $grid-columns);
+        }
+        @if $i == 2 {
+          @include make-col-modifier(offset, 2, $grid-columns);
+        }
+        @if $i == 3 {
+          @include make-col-modifier(offset, 3, $grid-columns);
+        }
+        @if $i == 4 {
+          @include make-col-modifier(offset, 4, $grid-columns);
+        }
+        @if $i == 5 {
+          @include make-col-modifier(offset, 5, $grid-columns);
+        }
+        @if $i == 6 {
+          @include make-col-modifier(offset, 6, $grid-columns);
+        }
+        @if $i == 7 {
+          @include make-col-modifier(offset, 7, $grid-columns);
+        }
+        @if $i == 8 {
+          @include make-col-modifier(offset, 8, $grid-columns);
+        }
+        @if $i == 9 {
+          @include make-col-modifier(offset, 9, $grid-columns);
+        }
+        @if $i == 10 {
+          @include make-col-modifier(offset, 10, $grid-columns);
+        }
+        @if $i == 11 {
+          @include make-col-modifier(offset, 11, $grid-columns);
+        }
+        @if $i == 12 {
+          @include make-col-modifier(offset, 12, $grid-columns);
+        }
+        @if $i == 13 {
+          @include make-col-modifier(offset, 13, $grid-columns);
+        }
+        @if $i == 14 {
+          @include make-col-modifier(offset, 14, $grid-columns);
+        }
+        @if $i == 15 {
+          @include make-col-modifier(offset, 15, $grid-columns);
+        }
+        @if $i == 16 {
+          @include make-col-modifier(offset, 16, $grid-columns);
+        }
+        @if $i == 17 {
+          @include make-col-modifier(offset, 17, $grid-columns);
+        }
+        @if $i == 18 {
+          @include make-col-modifier(offset, 18, $grid-columns);
+        }
+        @if $i == 19 {
+          @include make-col-modifier(offset, 19, $grid-columns);
+        }
+        @if $i == 20 {
+          @include make-col-modifier(offset, 20, $grid-columns);
+        }
+        @if $i == 21 {
+          @include make-col-modifier(offset, 21, $grid-columns);
+        }
+        @if $i == 22 {
+          @include make-col-modifier(offset, 22, $grid-columns);
+        }
+        @if $i == 23 {
+          @include make-col-modifier(offset, 23, $grid-columns);
+        }
+        @if $i == 24 {
+          @include make-col-modifier(offset, 24, $grid-columns);
+        }
+      }
+    }
+  }
+}
+
+@mixin make-grid-columns(
+  $columns: $grid-columns,
+  $gutter-xs: $grid-gutter-widths-xs, $gutter-sm: $grid-gutter-widths-sm, $gutter-md: $grid-gutter-widths-md, $gutter-lg: $grid-gutter-widths-lg, $gutter-xl: $grid-gutter-widths-xl,
+  $xs: $grid-breakpoints-xs, $sm: $grid-breakpoints-sm, $md: $grid-breakpoints-md, $lg: $grid-breakpoints-lg, $xl: $grid-breakpoints-xl
+) {
+  // Common properties for all breakpoints
+  %grid-column {
+    position: relative;
+    width: 100%;
+    min-height: 1px; // Prevent columns from collapsing when empty
+
+    @include make-gutters($gutter-xs, $gutter-sm, $gutter-md, $gutter-lg, $gutter-xl);
+  }
+
+  $breakpoint: null;
+  $infix: '-xs';
+  @include make-grid-column($breakpoint, $infix, $columns, $xs, $sm, $md, $lg, $xl);
+
+  $breakpoint: sm;
+  $infix: '-sm';
+  @include make-grid-column($breakpoint, $infix, $columns, $xs, $sm, $md, $lg, $xl);
+
+  $breakpoint: md;
+  $infix: '-md';
+  @include make-grid-column($breakpoint, $infix, $columns, $xs, $sm, $md, $lg, $xl);
+
+  $breakpoint: lg;
+  $infix: '-lg';
+  @include make-grid-column($breakpoint, $infix, $columns, $xs, $sm, $md, $lg, $xl);
+
+  $breakpoint: xl;
+  $infix: '-xl';
+  @include make-grid-column($breakpoint, $infix, $columns, $xs, $sm, $md, $lg, $xl);
+}

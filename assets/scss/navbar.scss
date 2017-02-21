@@ -48,13 +48,13 @@ $navbar-brand-width: 150px;
 }
 
 .navbar-sticky-bottom-element {
-  @extend .navbar-sticky-top;
+  @extend .sticky-top;
   bottom: 0;
   top: initial;
 }
 
 
-@media (min-width: map-get($grid-breakpoints, xs)) and (max-width: map-get($grid-breakpoints, md)) {
+@media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-md) {
     
     #main-navbar.navbar {
         .container {

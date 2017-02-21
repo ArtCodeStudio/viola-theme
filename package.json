@@ -1,19 +1,21 @@
 {
-  "name": "jumplink-october-theme",
+  "name": "Viola",
   "version": "1.0.2",
-  "description": "OctoberCMS theme for jumplink.eu",
+  "description": "One Page October Theme for Medical Professionals by JumpLink",
   "main": "index.js",
+  "homepage": "https://www.jumplink.eu",
   "scripts": {
     "preinstall": "bower install",
     "postinstall": "npm run build",
-    "sass-purple": "node_modules/.bin/node-sass assets/sass/theme-purple.scss assets/css/theme-purple.css",
-    "sass-blue": "node_modules/.bin/node-sass assets/sass/theme-blue.scss assets/css/theme-blue.css",
-    "sass-orange": "node_modules/.bin/node-sass assets/sass/theme-orange.scss assets/css/theme-orange.css",
-    "sass-red": "node_modules/.bin/node-sass assets/sass/theme-red.scss assets/css/theme-red.css",
-    "sass-green": "node_modules/.bin/node-sass assets/sass/theme-green.scss assets/css/theme-green.css",
+    "sass-purple": "node_modules/.bin/node-sass assets/scss/theme-purple.scss assets/css/theme-purple.css",
+    "sass-blue": "node_modules/.bin/node-sass assets/scss/theme-blue.scss assets/css/theme-blue.css",
+    "sass-orange": "node_modules/.bin/node-sass assets/scss/theme-orange.scss assets/css/theme-orange.css",
+    "sass-red": "node_modules/.bin/node-sass assets/scss/theme-red.scss assets/css/theme-red.css",
+    "sass-green": "node_modules/.bin/node-sass assets/scss/theme-green.scss assets/css/theme-green.css",
     "autoprefixer": "node_modules/.bin/postcss --use autoprefixer assets/css/*.css -d assets/css/",
     "build": "npm run sass-purple && npm run sass-blue && npm run sass-orange && npm run sass-red && npm run sass-green && npm run autoprefixer",
-    "watch": "npm run sass -- -w"
+    "watch": "npm run sass -- -w",
+    "theme_settings": "node ./utilities/bootstrap_theme_settings.js && node ./utilities/merge_theme_settings.js"
   },
   "author": "Pascal Garber <pascal.jumplink.eu>",
   "license": "MIT",
@@ -21,5 +23,10 @@
     "autoprefixer": "^6.3.6",
     "node-sass": "^3.4.2",
     "postcss-cli": "^2.5.1"
+  },
+  "devDependencies": {
+    "extend": "^3.0.0",
+    "js-yaml": "^3.8.1",
+    "write-yaml": "^0.2.2"
   }
 }

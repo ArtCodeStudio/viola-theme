@@ -1,0 +1,186 @@
+/// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+@mixin make-container($gutter-widths-xs: $grid-gutter-widths-xs, $gutter-widths-sm: $grid-gutter-widths-sm, $gutter-widths-md: $grid-gutter-widths-md, $gutter-widths-lg: $grid-gutter-widths-lg, $gutter-widths-xl: $grid-gutter-widths-xl) {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @include media-breakpoint-up(xs) {
+    $gutter: $gutter-widths-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+
+  @include media-breakpoint-up(sm) {
+    $gutter: $gutter-widths-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+
+  @include media-breakpoint-up(md) {
+    $gutter: $gutter-widths-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+
+  @include media-breakpoint-up(lg) {
+    $gutter: $gutter-widths-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+
+  @include media-breakpoint-up(xl) {
+    $gutter: $gutter-widths-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+}
+
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths($container-max-widths-xs: $container-max-widths-xs, $container-max-widths-sm: $container-max-widths-sm, $container-max-widths-md: $container-max-widths-md, $container-max-widths-lg: $container-max-widths-lg, $container-max-widths-xs: $container-max-widths-xs, $breakpoints-xs: $grid-breakpoints-xs, $breakpoints-sm: $grid-breakpoints-sm, $breakpoints-md: $grid-breakpoints-md, $breakpoints-lg: $grid-breakpoints-lg, $breakpoints-xl: $grid-breakpoints-xl) {
+  @include media-breakpoint-up(sm, $breakpoints-xs, $breakpoints-sm, $breakpoints-md, $breakpoints-lg, $breakpoints-xl) {
+    width: $container-max-widths-sm;
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(md, $breakpoints-xs, $breakpoints-sm, $breakpoints-md, $breakpoints-lg, $breakpoints-xl) {
+    width: $container-max-widths-md;
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(lg, $breakpoints-xs, $breakpoints-sm, $breakpoints-md, $breakpoints-lg, $breakpoints-xl) {
+    width: $container-max-widths-lg;
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(xl, $breakpoints-xs, $breakpoints-sm, $breakpoints-md, $breakpoints-lg, $breakpoints-xl) {
+    width: $container-max-widths-xl;
+    max-width: 100%;
+  }
+}
+
+@mixin make-gutters($gutter-xs: $grid-gutter-widths-xs, $gutter-sm: $grid-gutter-widths-sm, $gutter-md: $grid-gutter-widths-md, $gutter-lg: $grid-gutter-widths-lg, $gutter-xl: $grid-gutter-widths-xl) {
+  @include media-breakpoint-up(xs) {
+    $gutter: $gutter-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(sm) {
+    $gutter: $gutter-sm;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(md) {
+    $gutter: $gutter-md;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(xl) {
+    $gutter: $gutter-xl;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(lg) {
+    $gutter: $gutter-lg;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+}
+
+@mixin make-row($gutter-xs: $grid-gutter-widths-xs, $gutter-sm: $grid-gutter-widths-sm, $gutter-md: $grid-gutter-widths-md, $gutter-lg: $grid-gutter-widths-lg, $gutter-xl: $grid-gutter-widths-xl) {
+  @include vp-display(flex);
+  flex-wrap: wrap;
+  @include media-breakpoint-up(xs) {
+    $gutter: $gutter-xs;
+    margin-right: ($gutter / -2);
+    margin-left:  ($gutter / -2);
+  }
+  @include media-breakpoint-up(sm) {
+    $gutter: $gutter-sm;
+    margin-right: ($gutter / -2);
+    margin-left:  ($gutter / -2);
+  }
+  @include media-breakpoint-up(md) {
+    $gutter: $gutter-md;
+    margin-right: ($gutter / -2);
+    margin-left:  ($gutter / -2);
+  }
+  @include media-breakpoint-up(lg) {
+    $gutter: $gutter-lg;
+    margin-right: ($gutter / -2);
+    margin-left:  ($gutter / -2);
+  }
+  @include media-breakpoint-up(xl) {
+    $gutter: $gutter-xl;
+    margin-right: ($gutter / -2);
+    margin-left:  ($gutter / -2);
+  }
+
+}
+
+@mixin make-col-ready($gutter-xs: $grid-gutter-widths-xs, $gutter-sm: $grid-gutter-widths-sm, $gutter-md: $grid-gutter-widths-md, $gutter-lg: $grid-gutter-widths-lg, $gutter-xl: $grid-gutter-widths-xl) {
+  position: relative;
+  // Prevent columns from becoming too narrow when at smaller grid tiers by
+  // always setting `width: 100%;`. This works because we use `flex` values
+  // later on to override this initial width.
+  width: 100%;
+  min-height: 1px; // Prevent collapsing
+
+  @include media-breakpoint-up(xs) {
+    $gutter: $gutter-xs;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(sm) {
+    $gutter: $gutter-sm;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(md) {
+    $gutter: $gutter-md;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(lg) {
+    $gutter: $gutter-lg;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+  @include media-breakpoint-up(xl) {
+    $gutter: $gutter-xl;
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+  }
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+  @include vp-flex(0 0 percentage($size / $columns));
+  // width: percentage($size / $columns);
+  // Add a `max-width` to ensure content within each column does not blow out
+  // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+  // do not appear to require this.
+  max-width: percentage($size / $columns);
+}
+
+@mixin make-col-offset($size, $columns: $grid-columns) {
+  margin-left: percentage($size / $columns);
+}
+
+@mixin make-col-push($size, $columns: $grid-columns) {
+  left: if($size > 0, percentage($size / $columns), auto);
+}
+
+@mixin make-col-pull($size, $columns: $grid-columns) {
+  right: if($size > 0, percentage($size / $columns), auto);
+}
+
+@mixin make-col-modifier($type, $size, $columns) {
+  // Work around the lack of dynamic mixin @include support (https://github.com/sass/sass/issues/626)
+  @if $type == push {
+    @include make-col-push($size, $columns);
+  } @else if $type == pull {
+    @include make-col-pull($size, $columns);
+  } @else if $type == offset {
+    @include make-col-offset($size, $columns);
+  }
+}

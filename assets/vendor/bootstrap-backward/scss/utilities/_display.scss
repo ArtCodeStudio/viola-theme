@@ -1,0 +1,119 @@
+//
+// Display utilities
+//
+
+$bp: xs;
+$infix: null;
+@include media-breakpoint-up($bp) {
+  .d#{$infix}-none         { display: none !important; }
+  .d#{$infix}-inline       { display: inline !important; }
+  .d#{$infix}-inline-block { display: inline-block !important; }
+  .d#{$infix}-block        { display: block !important; }
+  .d#{$infix}-table        { display: table !important; }
+  .d#{$infix}-table-cell   { display: table-cell !important; }
+  .d#{$infix}-flex         {
+    display: -webkit-box !important;		
+    display: -webkit-flex !important;		
+    display: -ms-flexbox !important;		
+    display: flex !important;
+  }
+  .d#{$infix}-inline-flex  {
+    display: -webkit-inline-box !important;		
+    display: -webkit-inline-flex !important;		
+    display: -ms-inline-flexbox !important;		
+    display: inline-flex !important;
+  }
+}
+
+$bp: sm;
+$infix: '-sm';
+@include media-breakpoint-up($bp) {
+  .d#{$infix}-none         { display: none !important; }
+  .d#{$infix}-inline       { display: inline !important; }
+  .d#{$infix}-inline-block { display: inline-block !important; }
+  .d#{$infix}-block        { display: block !important; }
+  .d#{$infix}-table        { display: table !important; }
+  .d#{$infix}-table-cell   { display: table-cell !important; }
+  .d#{$infix}-flex         {
+    display: -webkit-box !important;		
+    display: -webkit-flex !important;		
+    display: -ms-flexbox !important;		
+    display: flex !important;
+  }
+  .d#{$infix}-inline-flex  {
+    display: -webkit-inline-box !important;		
+    display: -webkit-inline-flex !important;		
+    display: -ms-inline-flexbox !important;		
+    display: inline-flex !important;
+  }
+}
+
+$bp: md;
+$infix: '-md';
+@include media-breakpoint-up($bp) {
+  .d#{$infix}-none         { display: none !important; }
+  .d#{$infix}-inline       { display: inline !important; }
+  .d#{$infix}-inline-block { display: inline-block !important; }
+  .d#{$infix}-block        { display: block !important; }
+  .d#{$infix}-table        { display: table !important; }
+  .d#{$infix}-table-cell   { display: table-cell !important; }
+  .d#{$infix}-flex         {
+    display: -webkit-box !important;		
+    display: -webkit-flex !important;		
+    display: -ms-flexbox !important;		
+    display: flex !important;
+  }
+  .d#{$infix}-inline-flex  {
+    display: -webkit-inline-box !important;		
+    display: -webkit-inline-flex !important;		
+    display: -ms-inline-flexbox !important;		
+    display: inline-flex !important;
+  }
+}
+
+$bp: lg;
+$infix: '-lg';
+@include media-breakpoint-up($bp) {
+  .d#{$infix}-none         { display: none !important; }
+  .d#{$infix}-inline       { display: inline !important; }
+  .d#{$infix}-inline-block { display: inline-block !important; }
+  .d#{$infix}-block        { display: block !important; }
+  .d#{$infix}-table        { display: table !important; }
+  .d#{$infix}-table-cell   { display: table-cell !important; }
+  .d#{$infix}-flex         {
+    display: -webkit-box !important;		
+    display: -webkit-flex !important;		
+    display: -ms-flexbox !important;		
+    display: flex !important;
+  }
+  .d#{$infix}-inline-flex  {
+    display: -webkit-inline-box !important;		
+    display: -webkit-inline-flex !important;		
+    display: -ms-inline-flexbox !important;		
+    display: inline-flex !important;
+  }
+}
+
+$bp: xl;
+$infix: '-xl';
+@include media-breakpoint-up($bp) {
+  .d#{$infix}-none         { display: none !important; }
+  .d#{$infix}-inline       { display: inline !important; }
+  .d#{$infix}-inline-block { display: inline-block !important; }
+  .d#{$infix}-block        { display: block !important; }
+  .d#{$infix}-table        { display: table !important; }
+  .d#{$infix}-table-cell   { display: table-cell !important; }
+  .d#{$infix}-flex         {
+    display: -webkit-box !important;		
+    display: -webkit-flex !important;		
+    display: -ms-flexbox !important;		
+    display: flex !important;
+  }
+  .d#{$infix}-inline-flex  {
+    display: -webkit-inline-box !important;		
+    display: -webkit-inline-flex !important;		
+    display: -ms-inline-flexbox !important;		
+    display: inline-flex !important;
+  }
+}
+

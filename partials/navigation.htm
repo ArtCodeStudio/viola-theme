@@ -4,13 +4,15 @@
 code = "main"
 ==
 <!-- Nav -->
-<nav class="navbar navbar-fixed-top navbar-light bg-white-transparent fg-primary navbar-big" id="main-navbar">
+<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-white-transparent fg-primary navbar-big" id="main-navbar">
     <button class="navbar-toggler hidden-md-up" type="button">
         &#9776;
     </button>
     <div class="container">
         <a href="/" class="navbar-brand">&nbsp;</a>
-        {% partial 'navigation/navbar-items' items=main.menuItems class='nav navbar-nav pull-xs-right hidden-sm-down' itemClass='nav-item' %}
+        <div class="w-100">
+            {% partial 'navigation/navbar-items' items=main.menuItems class='hidden-sm-down navbar-nav d-flex justify-content-end' itemClass='nav-item' %}
+        </div>
     </div>
 </nav>
 

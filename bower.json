@@ -1,7 +1,7 @@
 {
-  "name": "jumplink-october-theme",
+  "name": "jumplink-october-viola-theme",
   "version": "1.0.2",
-  "description": "OctoberCMS theme for jumplink.eu",
+  "description": "One Page October Theme for Medical Professionals by JumpLink",
   "main": "",
   "private": true,
   "moduleType": [],
@@ -18,7 +18,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.2",
     "Stickyfill": "^1.1.3",
     "bootstrap-validator": "^0.10.1",
     "leaflet": "^0.7.7",
@@ -26,6 +25,8 @@
     "within-viewport": "^1.0.0",
     "simpler-sidebar": "^1.4.11",
     "tether": "^1.3.2",
-    "jquery-ui": "jqueryui#^1.11.4"
+    "jquery-ui": "jqueryui#^1.11.4",
+    "bootstrap-backward": "^4.0.0-alpha.6",
+    "sass-autoprefixer": "^1.0.1"
   }
 }

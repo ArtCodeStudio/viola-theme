@@ -1,0 +1,252 @@
+// Flex variation
+//
+// Custom styles for additional flex alignment options.
+
+.flex-first     { @include vp-order(-1); }
+.flex-last      { @include vp-order(1); }
+.flex-unordered { @include vp-order(0); }
+
+.flex-row            { @include vp-flex-direction(row !important); }
+.flex-column         { @include vp-flex-direction(column !important); }
+.flex-row-reverse    { @include vp-flex-direction(row-reverse !important); }
+.flex-column-reverse { @include vp-flex-direction(column-reverse !important); }
+
+.flex-wrap         { @include vp-flex-wrap(wrap !important); }
+.flex-nowrap       { @include vp-flex-wrap(nowrap !important); }
+.flex-wrap-reverse { @include vp-flex-wrap(wrap-reverse !important); }
+
+.justify-content-start   { @include vp-justify-content(flex-start !important); }
+.justify-content-end     { @include vp-justify-content(flex-end !important); }
+.justify-content-center  { @include vp-justify-content(center !important); }
+.justify-content-between { @include vp-justify-content(space-between !important); }
+.justify-content-around  { @include vp-justify-content(space-around !important); }
+
+.align-items-start    { @include vp-align-items(flex-start !important); }
+.align-items-end      { @include vp-align-items(flex-end !important); }
+.align-items-center   { @include vp-align-items(center !important); }
+.align-items-baseline { @include vp-align-items(baseline !important); }
+.align-items-stretch  { @include vp-align-items(stretch !important); }
+
+.align-content-start   { @include vp-align-content(flex-start !important); }
+.align-content-end     { @include vp-align-content(flex-end !important); }
+.align-content-center  { @include vp-align-content(center !important); }
+.align-content-between { @include vp-align-content(space-between !important); }
+.align-content-around  { @include vp-align-content(space-around !important); }
+.align-content-stretch { @include vp-align-content(stretch !important); }
+
+.align-self-auto     { @include vp-align-self(auto !important); }
+.align-self-start    { @include vp-align-self(flex-start !important); }
+.align-self-end      { @include vp-align-self(flex-end !important); }
+.align-self-center   { @include vp-align-self(center !important); }
+.align-self-baseline { @include vp-align-self(baseline !important); }
+.align-self-stretch  { @include vp-align-self(stretch !important); }
+
+$infix: xs;
+@include media-breakpoint-up($infix) {
+  .flex-#{$infix}-first     { @include vp-order(-1); }
+  .flex-#{$infix}-last      { @include vp-order(1); }
+  .flex-#{$infix}-unordered { @include vp-order(0); }
+
+  .flex-#{$infix}-row            { @include vp-flex-direction(row !important); }
+  .flex-#{$infix}-column         { @include vp-flex-direction(column !important); }
+  .flex-#{$infix}-row-reverse    { @include vp-flex-direction(row-reverse !important); }
+  .flex-#{$infix}-column-reverse { @include vp-flex-direction(column-reverse !important); }
+
+  .flex-#{$infix}-wrap         { @include vp-flex-wrap(wrap !important); }
+  .flex-#{$infix}-nowrap       { @include vp-flex-wrap(nowrap !important); }
+  .flex-#{$infix}-wrap-reverse { @include vp-flex-wrap(wrap-reverse !important); }
+
+  .justify-content-#{$infix}-start   { @include vp-justify-content(flex-start !important); }
+  .justify-content-#{$infix}-end     { @include vp-justify-content(flex-end !important); }
+  .justify-content-#{$infix}-center  { @include vp-justify-content(center !important); }
+  .justify-content-#{$infix}-between { @include vp-justify-content(space-between !important); }
+  .justify-content-#{$infix}-around  { @include vp-justify-content(space-around !important); }
+
+  .align-items-#{$infix}-start    { @include vp-align-items(flex-start !important); }
+  .align-items-#{$infix}-end      { @include vp-align-items(flex-end !important); }
+  .align-items-#{$infix}-center   { @include vp-align-items(center !important); }
+  .align-items-#{$infix}-baseline { @include vp-align-items(baseline !important); }
+  .align-items-#{$infix}-stretch  { @include vp-align-items(stretch !important); }
+
+  .align-content-#{$infix}-start   { @include vp-align-content(flex-start !important); }
+  .align-content-#{$infix}-end     { @include vp-align-content(flex-end !important); }
+  .align-content-#{$infix}-center  { @include vp-align-content(center !important); }
+  .align-content-#{$infix}-between { @include vp-align-content(space-between !important); }
+  .align-content-#{$infix}-around  { @include vp-align-content(space-around !important); }
+  .align-content-#{$infix}-stretch { @include vp-align-content(stretch !important); }
+
+  .align-self-#{$infix}-auto     { @include vp-align-self(auto !important); }
+  .align-self-#{$infix}-start    { @include vp-align-self(flex-start !important); }
+  .align-self-#{$infix}-end      { @include vp-align-self(flex-end !important); }
+  .align-self-#{$infix}-center   { @include vp-align-self(center !important); }
+  .align-self-#{$infix}-baseline { @include vp-align-self(baseline !important); }
+  .align-self-#{$infix}-stretch  { @include vp-align-self(stretch !important); }
+}
+
+$infix: sm;
+@include media-breakpoint-up($infix) {
+  .flex-#{$infix}-first     { @include vp-order(-1); }
+  .flex-#{$infix}-last      { @include vp-order(1); }
+  .flex-#{$infix}-unordered { @include vp-order(0); }
+
+  .flex-#{$infix}-row            { @include vp-flex-direction(row !important); }
+  .flex-#{$infix}-column         { @include vp-flex-direction(column !important); }
+  .flex-#{$infix}-row-reverse    { @include vp-flex-direction(row-reverse !important); }
+  .flex-#{$infix}-column-reverse { @include vp-flex-direction(column-reverse !important); }
+
+  .flex-#{$infix}-wrap         { @include vp-flex-wrap(wrap !important); }
+  .flex-#{$infix}-nowrap       { @include vp-flex-wrap(nowrap !important); }
+  .flex-#{$infix}-wrap-reverse { @include vp-flex-wrap(wrap-reverse !important); }
+
+  .justify-content-#{$infix}-start   { @include vp-justify-content(flex-start !important); }
+  .justify-content-#{$infix}-end     { @include vp-justify-content(flex-end !important); }
+  .justify-content-#{$infix}-center  { @include vp-justify-content(center !important); }
+  .justify-content-#{$infix}-between { @include vp-justify-content(space-between !important); }
+  .justify-content-#{$infix}-around  { @include vp-justify-content(space-around !important); }
+
+  .align-items-#{$infix}-start    { @include vp-align-items(flex-start !important); }
+  .align-items-#{$infix}-end      { @include vp-align-items(flex-end !important); }
+  .align-items-#{$infix}-center   { @include vp-align-items(center !important); }
+  .align-items-#{$infix}-baseline { @include vp-align-items(baseline !important); }
+  .align-items-#{$infix}-stretch  { @include vp-align-items(stretch !important); }
+
+  .align-content-#{$infix}-start   { @include vp-align-content(flex-start !important); }
+  .align-content-#{$infix}-end     { @include vp-align-content(flex-end !important); }
+  .align-content-#{$infix}-center  { @include vp-align-content(center !important); }
+  .align-content-#{$infix}-between { @include vp-align-content(space-between !important); }
+  .align-content-#{$infix}-around  { @include vp-align-content(space-around !important); }
+  .align-content-#{$infix}-stretch { @include vp-align-content(stretch !important); }
+
+  .align-self-#{$infix}-auto     { @include vp-align-self(auto !important); }
+  .align-self-#{$infix}-start    { @include vp-align-self(flex-start !important); }
+  .align-self-#{$infix}-end      { @include vp-align-self(flex-end !important); }
+  .align-self-#{$infix}-center   { @include vp-align-self(center !important); }
+  .align-self-#{$infix}-baseline { @include vp-align-self(baseline !important); }
+  .align-self-#{$infix}-stretch  { @include vp-align-self(stretch !important); }
+}
+
+$infix: md;
+@include media-breakpoint-up($infix) {
+  .flex-#{$infix}-first     { @include vp-order(-1); }
+  .flex-#{$infix}-last      { @include vp-order(1); }
+  .flex-#{$infix}-unordered { @include vp-order(0); }
+
+  .flex-#{$infix}-row            { @include vp-flex-direction(row !important); }
+  .flex-#{$infix}-column         { @include vp-flex-direction(column !important); }
+  .flex-#{$infix}-row-reverse    { @include vp-flex-direction(row-reverse !important); }
+  .flex-#{$infix}-column-reverse { @include vp-flex-direction(column-reverse !important); }
+
+  .flex-#{$infix}-wrap         { @include vp-flex-wrap(wrap !important); }
+  .flex-#{$infix}-nowrap       { @include vp-flex-wrap(nowrap !important); }
+  .flex-#{$infix}-wrap-reverse { @include vp-flex-wrap(wrap-reverse !important); }
+
+  .justify-content-#{$infix}-start   { @include vp-justify-content(flex-start !important); }
+  .justify-content-#{$infix}-end     { @include vp-justify-content(flex-end !important); }
+  .justify-content-#{$infix}-center  { @include vp-justify-content(center !important); }
+  .justify-content-#{$infix}-between { @include vp-justify-content(space-between !important); }
+  .justify-content-#{$infix}-around  { @include vp-justify-content(space-around !important); }
+
+  .align-items-#{$infix}-start    { @include vp-align-items(flex-start !important); }
+  .align-items-#{$infix}-end      { @include vp-align-items(flex-end !important); }
+  .align-items-#{$infix}-center   { @include vp-align-items(center !important); }
+  .align-items-#{$infix}-baseline { @include vp-align-items(baseline !important); }
+  .align-items-#{$infix}-stretch  { @include vp-align-items(stretch !important); }
+
+  .align-content-#{$infix}-start   { @include vp-align-content(flex-start !important); }
+  .align-content-#{$infix}-end     { @include vp-align-content(flex-end !important); }
+  .align-content-#{$infix}-center  { @include vp-align-content(center !important); }
+  .align-content-#{$infix}-between { @include vp-align-content(space-between !important); }
+  .align-content-#{$infix}-around  { @include vp-align-content(space-around !important); }
+  .align-content-#{$infix}-stretch { @include vp-align-content(stretch !important); }
+
+  .align-self-#{$infix}-auto     { @include vp-align-self(auto !important); }
+  .align-self-#{$infix}-start    { @include vp-align-self(flex-start !important); }
+  .align-self-#{$infix}-end      { @include vp-align-self(flex-end !important); }
+  .align-self-#{$infix}-center   { @include vp-align-self(center !important); }
+  .align-self-#{$infix}-baseline { @include vp-align-self(baseline !important); }
+  .align-self-#{$infix}-stretch  { @include vp-align-self(stretch !important); }
+}
+
+$infix: lg;
+@include media-breakpoint-up($infix) {
+  .flex-#{$infix}-first     { @include vp-order(-1); }
+  .flex-#{$infix}-last      { @include vp-order(1); }
+  .flex-#{$infix}-unordered { @include vp-order(0); }
+
+  .flex-#{$infix}-row            { @include vp-flex-direction(row !important); }
+  .flex-#{$infix}-column         { @include vp-flex-direction(column !important); }
+  .flex-#{$infix}-row-reverse    { @include vp-flex-direction(row-reverse !important); }
+  .flex-#{$infix}-column-reverse { @include vp-flex-direction(column-reverse !important); }
+
+  .flex-#{$infix}-wrap         { @include vp-flex-wrap(wrap !important); }
+  .flex-#{$infix}-nowrap       { @include vp-flex-wrap(nowrap !important); }
+  .flex-#{$infix}-wrap-reverse { @include vp-flex-wrap(wrap-reverse !important); }
+
+  .justify-content-#{$infix}-start   { @include vp-justify-content(flex-start !important); }
+  .justify-content-#{$infix}-end     { @include vp-justify-content(flex-end !important); }
+  .justify-content-#{$infix}-center  { @include vp-justify-content(center !important); }
+  .justify-content-#{$infix}-between { @include vp-justify-content(space-between !important); }
+  .justify-content-#{$infix}-around  { @include vp-justify-content(space-around !important); }
+
+  .align-items-#{$infix}-start    { @include vp-align-items(flex-start !important); }
+  .align-items-#{$infix}-end      { @include vp-align-items(flex-end !important); }
+  .align-items-#{$infix}-center   { @include vp-align-items(center !important); }
+  .align-items-#{$infix}-baseline { @include vp-align-items(baseline !important); }
+  .align-items-#{$infix}-stretch  { @include vp-align-items(stretch !important); }
+
+  .align-content-#{$infix}-start   { @include vp-align-content(flex-start !important); }
+  .align-content-#{$infix}-end     { @include vp-align-content(flex-end !important); }
+  .align-content-#{$infix}-center  { @include vp-align-content(center !important); }
+  .align-content-#{$infix}-between { @include vp-align-content(space-between !important); }
+  .align-content-#{$infix}-around  { @include vp-align-content(space-around !important); }
+  .align-content-#{$infix}-stretch { @include vp-align-content(stretch !important); }
+
+  .align-self-#{$infix}-auto     { @include vp-align-self(auto !important); }
+  .align-self-#{$infix}-start    { @include vp-align-self(flex-start !important); }
+  .align-self-#{$infix}-end      { @include vp-align-self(flex-end !important); }
+  .align-self-#{$infix}-center   { @include vp-align-self(center !important); }
+  .align-self-#{$infix}-baseline { @include vp-align-self(baseline !important); }
+  .align-self-#{$infix}-stretch  { @include vp-align-self(stretch !important); }
+}
+
+$infix: xl;
+@include media-breakpoint-up($infix) {
+  .flex-#{$infix}-first     { @include vp-order(-1); }
+  .flex-#{$infix}-last      { @include vp-order(1); }
+  .flex-#{$infix}-unordered { @include vp-order(0); }
+
+  .flex-#{$infix}-row            { @include vp-flex-direction(row !important); }
+  .flex-#{$infix}-column         { @include vp-flex-direction(column !important); }
+  .flex-#{$infix}-row-reverse    { @include vp-flex-direction(row-reverse !important); }
+  .flex-#{$infix}-column-reverse { @include vp-flex-direction(column-reverse !important); }
+
+  .flex-#{$infix}-wrap         { @include vp-flex-wrap(wrap !important); }
+  .flex-#{$infix}-nowrap       { @include vp-flex-wrap(nowrap !important); }
+  .flex-#{$infix}-wrap-reverse { @include vp-flex-wrap(wrap-reverse !important); }
+
+  .justify-content-#{$infix}-start   { @include vp-justify-content(flex-start !important); }
+  .justify-content-#{$infix}-end     { @include vp-justify-content(flex-end !important); }
+  .justify-content-#{$infix}-center  { @include vp-justify-content(center !important); }
+  .justify-content-#{$infix}-between { @include vp-justify-content(space-between !important); }
+  .justify-content-#{$infix}-around  { @include vp-justify-content(space-around !important); }
+
+  .align-items-#{$infix}-start    { @include vp-align-items(flex-start !important); }
+  .align-items-#{$infix}-end      { @include vp-align-items(flex-end !important); }
+  .align-items-#{$infix}-center   { @include vp-align-items(center !important); }
+  .align-items-#{$infix}-baseline { @include vp-align-items(baseline !important); }
+  .align-items-#{$infix}-stretch  { @include vp-align-items(stretch !important); }
+
+  .align-content-#{$infix}-start   { @include vp-align-content(flex-start !important); }
+  .align-content-#{$infix}-end     { @include vp-align-content(flex-end !important); }
+  .align-content-#{$infix}-center  { @include vp-align-content(center !important); }
+  .align-content-#{$infix}-between { @include vp-align-content(space-between !important); }
+  .align-content-#{$infix}-around  { @include vp-align-content(space-around !important); }
+  .align-content-#{$infix}-stretch { @include vp-align-content(stretch !important); }
+
+  .align-self-#{$infix}-auto     { @include vp-align-self(auto !important); }
+  .align-self-#{$infix}-start    { @include vp-align-self(flex-start !important); }
+  .align-self-#{$infix}-end      { @include vp-align-self(flex-end !important); }
+  .align-self-#{$infix}-center   { @include vp-align-self(center !important); }
+  .align-self-#{$infix}-baseline { @include vp-align-self(baseline !important); }
+  .align-self-#{$infix}-stretch  { @include vp-align-self(stretch !important); }
+}

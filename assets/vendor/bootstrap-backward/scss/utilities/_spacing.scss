@@ -1,0 +1,128 @@
+@mixin spacing($breakpoint, $infix, $prop, $abbrev, $size, $length-x, $length-y) {
+  @include media-breakpoint-up($breakpoint) {
+    .#{$abbrev}#{$infix}-#{$size} { #{$prop}:        $length-y $length-x !important; } // a = All sides
+    .#{$abbrev}t#{$infix}-#{$size} { #{$prop}-top:    $length-y !important; }
+    .#{$abbrev}r#{$infix}-#{$size} { #{$prop}-right:  $length-x !important; }
+    .#{$abbrev}b#{$infix}-#{$size} { #{$prop}-bottom: $length-y !important; }
+    .#{$abbrev}l#{$infix}-#{$size} { #{$prop}-left:   $length-x !important; }
+
+    // Axes
+    .#{$abbrev}x#{$infix}-#{$size} {
+      #{$prop}-right:  $length-x !important;
+      #{$prop}-left:   $length-x !important;
+    }
+    .#{$abbrev}y#{$infix}-#{$size} {
+      #{$prop}-top:    $length-y !important;
+      #{$prop}-bottom: $length-y !important;
+    }
+  }
+}
+
+@mixin spacing-margin($breakpoint, $infix) {
+  @include media-breakpoint-up($breakpoint) {
+    // Some special margin utils
+    .m#{$infix}-auto  { margin:        auto !important; }
+    .mt#{$infix}-auto { margin-top:    auto !important; }
+    .mr#{$infix}-auto { margin-right:  auto !important; }
+    .mb#{$infix}-auto { margin-bottom: auto !important; }
+    .ml#{$infix}-auto { margin-left:   auto !important; }
+    .mx#{$infix}-auto {
+      margin-right: auto !important;
+      margin-left:  auto !important;
+    }
+    .my#{$infix}-auto {
+      margin-top:    auto !important;
+      margin-bottom: auto !important;
+    }
+  }
+}
+
+$breakpoint: xs;
+$infix: null;
+@include spacing($breakpoint, $infix, margin, m, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, margin, m, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, margin, m, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, margin, m, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, margin, m, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, margin, m, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing($breakpoint, $infix, padding, p, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, padding, p, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, padding, p, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, padding, p, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, padding, p, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, padding, p, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing-margin($breakpoint, $infix);
+
+$breakpoint: sm;
+$infix: '-sm';
+@include spacing($breakpoint, $infix, margin, m, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, margin, m, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, margin, m, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, margin, m, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, margin, m, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, margin, m, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing($breakpoint, $infix, padding, p, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, padding, p, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, padding, p, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, padding, p, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, padding, p, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, padding, p, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing-margin($breakpoint, $infix);
+
+$breakpoint: md;
+$infix: '-md';
+@include spacing($breakpoint, $infix, margin, m, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, margin, m, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, margin, m, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, margin, m, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, margin, m, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, margin, m, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing($breakpoint, $infix, padding, p, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, padding, p, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, padding, p, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, padding, p, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, padding, p, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, padding, p, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing-margin($breakpoint, $infix);
+
+$breakpoint: lg;
+$infix: '-lg';
+@include spacing($breakpoint, $infix, margin, m, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, margin, m, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, margin, m, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, margin, m, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, margin, m, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, margin, m, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing($breakpoint, $infix, padding, p, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, padding, p, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, padding, p, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, padding, p, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, padding, p, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, padding, p, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing-margin($breakpoint, $infix);
+
+$breakpoint: xl;
+$infix: '-xl';
+@include spacing($breakpoint, $infix, margin, m, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, margin, m, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, margin, m, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, margin, m, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, margin, m, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, margin, m, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing($breakpoint, $infix, padding, p, 0, $spacers-x-0, $spacers-y-0);
+@include spacing($breakpoint, $infix, padding, p, 1, $spacers-x-1, $spacers-y-1);
+@include spacing($breakpoint, $infix, padding, p, 2, $spacers-x-2, $spacers-y-2);
+@include spacing($breakpoint, $infix, padding, p, 3, $spacers-x-3, $spacers-y-3);
+@include spacing($breakpoint, $infix, padding, p, 4, $spacers-x-4, $spacers-y-4);
+@include spacing($breakpoint, $infix, padding, p, 5, $spacers-x-5, $spacers-y-5);
+
+@include spacing-margin($breakpoint, $infix);

@@ -63,15 +63,17 @@ assets/vendor/tether/dist/*
 assets/vendor/tether/dist/js/*
 !assets/vendor/tether/dist/js/tether.js
 
-!assets/vendor/bootstrap/
-assets/vendor/bootstrap/*
-!assets/vendor/bootstrap/dist/
+!assets/vendor/bootstrap-backward/
+assets/vendor/bootstrap-backward/*
+!assets/vendor/bootstrap-backward/dist/
 
-assets/vendor/bootstrap/dist/*
-!assets/vendor/bootstrap/dist/js/
+assets/vendor/bootstrap-backward/dist/*
+!assets/vendor/bootstrap-backward/dist/js/
 
-assets/vendor/bootstrap/dist/js/*
-!assets/vendor/bootstrap/dist/js/bootstrap.js
+assets/vendor/bootstrap-backward/dist/js/*
+!assets/vendor/bootstrap-backward/dist/js/bootstrap.js
+
+!assets/vendor/bootstrap-backward/scss/
 
 !assets/vendor/simpler-sidebar/
 assets/vendor/simpler-sidebar/*
@@ -110,6 +112,7 @@ assets/vendor/leaflet/dist/*
 !assets/vendor/font-awesome/
 assets/vendor/font-awesome/*
 !assets/vendor/font-awesome/fonts/
+!assets/vendor/font-awesome/scss/
 
 # Optional npm cache directory
 .npm

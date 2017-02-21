@@ -1,0 +1,3 @@
+require:
+    - RainLab.Pages
+    - Flosch.Slideshow

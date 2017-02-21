@@ -1,0 +1,18 @@
+// Width and height
+
+@mixin sizing($prop, $abbrev, $size, $length) {
+  .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+}
+
+@include sizing(width, w, 25, 25%);
+@include sizing(width, w, 50, 50%);
+@include sizing(width, w, 75, 75%);
+@include sizing(width, w, 100, 100%);
+
+@include sizing(height, h, 25, 25%);
+@include sizing(height, h, 50, 50%);
+@include sizing(height, h, 75, 75%);
+@include sizing(height, h, 100, 100%);
+
+.mw-100 { max-width: 100% !important; }
+.mh-100 { max-height: 100% !important; }

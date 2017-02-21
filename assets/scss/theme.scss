@@ -7,24 +7,25 @@ $font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Roboto", Helve
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             18px; //default 16px
 
-@import "../vendor/bootstrap/scss/bootstrap.scss";
+@import "../vendor/sass-autoprefixer/scss/prefixes";
+@import "../vendor/bootstrap-backward/scss/bootstrap";
 
 // font awesome variables
 $fa-font-path: '../vendor/font-awesome/fonts';
 
-@import "../vendor/font-awesome/scss/font-awesome.scss";
+@import "../vendor/font-awesome/scss/font-awesome";
 
 // own variables
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 $navbar-height-big:         130px;
 
-@import "./animate";
-@import "./fonts.scss";
-@import "./navbar.scss";
-@import "./sidebar.scss";
-@import "./sticky.scss";
-@import "./location.scss";
-@import "./carousel.scss";
+@import "animate";
+@import "fonts.scss";
+@import "navbar.scss";
+@import "sidebar.scss";
+@import "sticky.scss";
+@import "location.scss";
+@import "carousel.scss";
 
 /**
  * @see http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
@@ -163,9 +164,9 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
 :not(nav).bg-brand-primary {
     a {
         &:hover {
-            color: $navbar-dark-active-color;
+            color: $navbar-inverse-active-color;
         }
-        color: $navbar-dark-color;
+        color: $navbar-inverse-color;
     }
 }
 
@@ -217,7 +218,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     .description {
         background-color: $body-bg;
         .container {
-            @extend .p-y-2;
+            @extend .py-2;
         }
     }
         
@@ -245,6 +246,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
         top: -70px;
         position: relative;
         background-color: rgba(0,0,0,0.4);
+        display: block;
         .fa {
             color: white;
             font-size: 30px;
@@ -288,5 +290,10 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4 {
     .subtext {
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
+    }
+    .bg-inverse {
+        a {
+            color: #eceeef;
+        }
     }
 }

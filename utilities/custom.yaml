@@ -1,0 +1,49 @@
+form:
+    fields:
+        color:
+            label: 'Color scheme'
+            type: dropdown
+            comment: 'Choose the color schema you like'
+            options:
+                blue: Blue
+                purple: Purple
+                orange: Orange
+                red: Red
+                green: Green
+            default: 'blue'
+        site_name:
+            label: 'Site name'
+            type: text
+            comment: 'The website name as it should appear on the front-end'
+            default: 'Healthy Teeth'
+        company_name:
+            label: 'Company name'
+            type: text
+            comment: 'Company name of your site'
+            default: 'Healthy Teeth'
+        phone_number:
+            label: Phone
+            type: text
+            comment: 'Phone number'
+            default: '+01 101 01 01 01 01'
+        email_address:
+            label: Email
+            type: text
+            comment: 'Email address for contact form and imprint'
+            default: info@domain.ltd
+    tabs:
+        fields:
+            contact_succeess_text:
+                label: 'Contact form success text'
+                type: text
+                default: 'Sent message successfully'
+            contact_regard:
+                label: 'Contact form success text'
+                type: text
+                comment: 'The regard for your contact requests'
+                default: 'New request from {{name}}: {{regard}}'
+            mail_template:
+                label: 'Mail Template'
+                type: text
+                comment: 'The template code you want to use'
+                default: 'viola::contact-notification'
