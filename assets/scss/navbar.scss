@@ -53,19 +53,11 @@ $navbar-brand-width: 150px;
   top: initial;
 }
 
+.navbar-toggler-right {
+    position: absolute;
+    left: 1rem;
+}
 
-@media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-md) {
-    
-    #main-navbar.navbar {
-        .container {
-            float: right;
-            width: 100%;
-            margin-left: -100px;
-            display: flex;
-            padding: 0;
-        }
-        .navbar-brand {
-            margin: 0 auto;
-        }
-    }
+.navbar-toggler {
+    border: none;
 }
