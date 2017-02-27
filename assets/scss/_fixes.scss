@@ -1,0 +1,32 @@
+//
+// Fix some bootstrap variable conversations
+//
+
+
+// Convert value to bool
+// @see http://hugogiraudel.com/2014/01/27/casting-types-in-sass/
+@function to-bool($value) {
+    @if ($value == 1) {
+        @return true;
+    } @else {
+        @return false
+    }
+}
+
+$enable-flex:               false !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        false !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+$enable-flex:               to-bool($enable-flex);
+$enable-rounded:            to-bool($enable-rounded);
+$enable-shadows:            to-bool($enable-shadows);
+$enable-gradients:          to-bool($enable-gradients);
+$enable-transitions:        to-bool($enable-transitions);
+$enable-hover-media-query:  to-bool($enable-hover-media-query);
+$enable-grid-classes:       to-bool($enable-grid-classes);
+$enable-print-styles:       to-bool($enable-print-styles);

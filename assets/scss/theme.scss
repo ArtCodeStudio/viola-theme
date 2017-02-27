@@ -7,6 +7,7 @@ $font-family-sans-serif:    "Source Sans Pro", "Helvetica Neue", "Roboto", Helve
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
 $font-size-root:             18px; //default 16px
 
+@import "fixes";
 @import "../vendor/sass-autoprefixer/scss/prefixes";
 @import "../vendor/bootstrap-backward/scss/bootstrap";
 
@@ -20,12 +21,12 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 $navbar-height-big:         130px;
 
 @import "animate";
-@import "fonts.scss";
-@import "navbar.scss";
-@import "sidebar.scss";
-@import "sticky.scss";
-@import "location.scss";
-@import "carousel.scss";
+@import "fonts";
+@import "navbar";
+@import "sidebar";
+@import "sticky";
+@import "location";
+@import "carousel";
 
 /**
  * @see http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
