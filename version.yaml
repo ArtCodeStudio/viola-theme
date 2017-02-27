@@ -10,3 +10,5 @@
     - All Bootstrap 4 Variables full customizable in the theme settings
     - Use scss files directly
     - Use placeholder slides if none has been established
+2.1.0:
+    - Example Slideshow bug fixed
