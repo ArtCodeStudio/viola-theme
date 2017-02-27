@@ -20,44 +20,9 @@ snippetProperties[headertextblock3][options][] = ""
 
 [slideshow]
 slideshow = 1
-injectSlickAssets = 1
-injectSlickTheme = 1
-injectJLSlideshowCSS = 1
-injectJQuery = 0
-showCaptions = 1
-captionPosition = "middle center"
-autoplayOnShow = 1
-nextSlideOnEnd = 1
-accessibility = 1
-adaptiveHeight = 0
-autoplay = 0
-arrows = 1
-centerMode = 0
-dots = 0
-draggable = 1
-fade = 0
-focusOnSelect = 0
-infinite = 1
-mobileFirst = 0
-pauseOnFocus = 1
-pauseOnHover = 1
-pauseOnDotsHover = 0
-respondTo = "window"
-slidesToShow = 1
-swipe = 1
-swipeToSlide = 0
-touchMove = 1
-useCSS = 1
-useTransform = 1
-variableWidth = 0
-vertical = 0
-verticalSwiping = 0
-rtl = 0
-waitForAnimate = 1
+numberOfSlide = 5
 ==
-{% if slideshow and slideshow.slideshow != null %}
-    {% set _slideshow = slideshow.slideshow %}
-{% else %}
+{% if not slideshow or slideshow.slideshow == null or slideshow.slideshow.name == 'Example' %}
     {# placeholder slidehsow if no slideshow is set #}
     {% set _slideshow = {
            "id":1,
@@ -84,6 +49,8 @@ waitForAnimate = 1
            ]
         }
     %}
+{% else %}
+    {% set _slideshow = slideshow.slideshow %}
 {% endif %}
 
 <div class="bg-gray-lighter" id="services" data-target="#services">
